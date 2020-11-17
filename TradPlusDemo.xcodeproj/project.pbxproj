@@ -1,0 +1,616 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0448433B248F6AB400550234 /* AdvancedNativeAdViewSampleFB.m in Sources */ = {isa = PBXBuildFile; fileRef = 04484336248F6AB400550234 /* AdvancedNativeAdViewSampleFB.m */; };
+		0448433C248F6AB400550234 /* AdvancedNativeAdViewSampleGG.m in Sources */ = {isa = PBXBuildFile; fileRef = 04484337248F6AB400550234 /* AdvancedNativeAdViewSampleGG.m */; };
+		0448433D248F6AB400550234 /* AdvancedNativeAdViewSampleGG.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04484339248F6AB400550234 /* AdvancedNativeAdViewSampleGG.xib */; };
+		0448433E248F6AB400550234 /* AdvancedNativeAdViewSampleFB.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0448433A248F6AB400550234 /* AdvancedNativeAdViewSampleFB.xib */; };
+		048B022B248BF2650003F53E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 048B022A248BF2650003F53E /* main.m */; };
+		048B0248248BF4540003F53E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 048B0231248BF4530003F53E /* Assets.xcassets */; };
+		048B024B248BF4540003F53E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 048B0236248BF4540003F53E /* LaunchScreen.storyboard */; };
+		048B024C248BF4540003F53E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 048B0238248BF4540003F53E /* Main.storyboard */; };
+		048B024D248BF4540003F53E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 048B023A248BF4540003F53E /* AppDelegate.m */; };
+		048B0253248BF4540003F53E /* MsADTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 048B0245248BF4540003F53E /* MsADTableViewController.m */; };
+		048B028E248C01010003F53E /* InterstitialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 048B027A248C01000003F53E /* InterstitialViewController.xib */; };
+		048B028F248C01010003F53E /* InterstitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 048B027B248C01000003F53E /* InterstitialViewController.m */; };
+		048B0290248C01010003F53E /* RewardedVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 048B027D248C01000003F53E /* RewardedVideoViewController.m */; };
+		048B0291248C01010003F53E /* RewardedVideoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 048B027E248C01000003F53E /* RewardedVideoViewController.xib */; };
+		048B0293248C01010003F53E /* AdvancedNativeAdViewSample.m in Sources */ = {isa = PBXBuildFile; fileRef = 048B0285248C01010003F53E /* AdvancedNativeAdViewSample.m */; };
+		048B0294248C01010003F53E /* NativeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 048B0288248C01010003F53E /* NativeViewController.m */; };
+		048B0295248C01010003F53E /* AdvancedNativeAdViewSample.xib in Resources */ = {isa = PBXBuildFile; fileRef = 048B0289248C01010003F53E /* AdvancedNativeAdViewSample.xib */; };
+		048B0296248C01010003F53E /* BannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 048B028C248C01010003F53E /* BannerViewController.m */; };
+		048B029F248C122E0003F53E /* NativeHTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 048B029D248C122E0003F53E /* NativeHTViewController.m */; };
+		048B02A0248C122E0003F53E /* NativeHTViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 048B029E248C122E0003F53E /* NativeHTViewController.xib */; };
+		048B02A7248D41670003F53E /* readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = 048B02A6248D41670003F53E /* readme.txt */; };
+		04E47FD824971BE4006903C5 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 04E47FD724971BE4006903C5 /* libresolv.tbd */; };
+		04E47FDA24971BEA006903C5 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 04E47FD924971BEA006903C5 /* libxml2.tbd */; };
+		04E47FDC24971BEF006903C5 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 04E47FDB24971BEE006903C5 /* libz.tbd */; };
+		89D605CD255E7D6D008659F5 /* OfferwallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89D605CA255E7D6D008659F5 /* OfferwallViewController.m */; };
+		89D605CE255E7D6D008659F5 /* OfferwallViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89D605CB255E7D6D008659F5 /* OfferwallViewController.xib */; };
+		BAF08820C5745F19D64F9387 /* Pods_TradPlusDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AA628CDDCE0A90002571385 /* Pods_TradPlusDemo.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		04484335248F6AB300550234 /* AdvancedNativeAdViewSampleFB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdvancedNativeAdViewSampleFB.h; sourceTree = "<group>"; };
+		04484336248F6AB400550234 /* AdvancedNativeAdViewSampleFB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdvancedNativeAdViewSampleFB.m; sourceTree = "<group>"; };
+		04484337248F6AB400550234 /* AdvancedNativeAdViewSampleGG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdvancedNativeAdViewSampleGG.m; sourceTree = "<group>"; };
+		04484338248F6AB400550234 /* AdvancedNativeAdViewSampleGG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdvancedNativeAdViewSampleGG.h; sourceTree = "<group>"; };
+		04484339248F6AB400550234 /* AdvancedNativeAdViewSampleGG.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AdvancedNativeAdViewSampleGG.xib; sourceTree = "<group>"; };
+		0448433A248F6AB400550234 /* AdvancedNativeAdViewSampleFB.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AdvancedNativeAdViewSampleFB.xib; sourceTree = "<group>"; };
+		048B0215248BF2600003F53E /* TradPlusDemoN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TradPlusDemoN.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		048B0229248BF2650003F53E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		048B022A248BF2650003F53E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		048B0231248BF4530003F53E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		048B0237248BF4540003F53E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		048B0239248BF4540003F53E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
+		048B023A248BF4540003F53E /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		048B023E248BF4540003F53E /* MsADTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MsADTableViewController.h; sourceTree = "<group>"; };
+		048B0243248BF4540003F53E /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		048B0245248BF4540003F53E /* MsADTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MsADTableViewController.m; sourceTree = "<group>"; };
+		048B0279248C01000003F53E /* InterstitialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InterstitialViewController.h; sourceTree = "<group>"; };
+		048B027A248C01000003F53E /* InterstitialViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InterstitialViewController.xib; sourceTree = "<group>"; };
+		048B027B248C01000003F53E /* InterstitialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InterstitialViewController.m; sourceTree = "<group>"; };
+		048B027D248C01000003F53E /* RewardedVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RewardedVideoViewController.m; sourceTree = "<group>"; };
+		048B027E248C01000003F53E /* RewardedVideoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RewardedVideoViewController.xib; sourceTree = "<group>"; };
+		048B027F248C01010003F53E /* RewardedVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RewardedVideoViewController.h; sourceTree = "<group>"; };
+		048B0281248C01010003F53E /* AdvancedNativeAdViewSample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdvancedNativeAdViewSample.h; sourceTree = "<group>"; };
+		048B0285248C01010003F53E /* AdvancedNativeAdViewSample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdvancedNativeAdViewSample.m; sourceTree = "<group>"; };
+		048B0287248C01010003F53E /* NativeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NativeViewController.h; sourceTree = "<group>"; };
+		048B0288248C01010003F53E /* NativeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NativeViewController.m; sourceTree = "<group>"; };
+		048B0289248C01010003F53E /* AdvancedNativeAdViewSample.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AdvancedNativeAdViewSample.xib; sourceTree = "<group>"; };
+		048B028C248C01010003F53E /* BannerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BannerViewController.m; sourceTree = "<group>"; };
+		048B028D248C01010003F53E /* BannerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BannerViewController.h; sourceTree = "<group>"; };
+		048B029C248C122E0003F53E /* NativeHTViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NativeHTViewController.h; sourceTree = "<group>"; };
+		048B029D248C122E0003F53E /* NativeHTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NativeHTViewController.m; sourceTree = "<group>"; };
+		048B029E248C122E0003F53E /* NativeHTViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NativeHTViewController.xib; sourceTree = "<group>"; };
+		048B02A6248D41670003F53E /* readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
+		04E47FD724971BE4006903C5 /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
+		04E47FD924971BEA006903C5 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		04E47FDB24971BEE006903C5 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		24FB5399EB3909262337C872 /* Pods-TradPlusDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TradPlusDemo.release.xcconfig"; path = "Target Support Files/Pods-TradPlusDemo/Pods-TradPlusDemo.release.xcconfig"; sourceTree = "<group>"; };
+		2AA628CDDCE0A90002571385 /* Pods_TradPlusDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TradPlusDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5784C44A51FB336370792105 /* Pods-TradPlusDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TradPlusDemo.debug.xcconfig"; path = "Target Support Files/Pods-TradPlusDemo/Pods-TradPlusDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		89D605CA255E7D6D008659F5 /* OfferwallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OfferwallViewController.m; sourceTree = "<group>"; };
+		89D605CB255E7D6D008659F5 /* OfferwallViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OfferwallViewController.xib; sourceTree = "<group>"; };
+		89D605CC255E7D6D008659F5 /* OfferwallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OfferwallViewController.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		048B0212248BF2600003F53E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04E47FDC24971BEF006903C5 /* libz.tbd in Frameworks */,
+				04E47FDA24971BEA006903C5 /* libxml2.tbd in Frameworks */,
+				04E47FD824971BE4006903C5 /* libresolv.tbd in Frameworks */,
+				BAF08820C5745F19D64F9387 /* Pods_TradPlusDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0218058DED31D362A848F7C7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5784C44A51FB336370792105 /* Pods-TradPlusDemo.debug.xcconfig */,
+				24FB5399EB3909262337C872 /* Pods-TradPlusDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		048B020C248BF2600003F53E = {
+			isa = PBXGroup;
+			children = (
+				048B0217248BF2600003F53E /* TradPlusDemo */,
+				048B0216248BF2600003F53E /* Products */,
+				048B025E248BF57A0003F53E /* Frameworks */,
+				0218058DED31D362A848F7C7 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		048B0216248BF2600003F53E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				048B0215248BF2600003F53E /* TradPlusDemoN.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		048B0217248BF2600003F53E /* TradPlusDemo */ = {
+			isa = PBXGroup;
+			children = (
+				048B0243248BF4540003F53E /* AppDelegate.h */,
+				048B023A248BF4540003F53E /* AppDelegate.m */,
+				048B0231248BF4530003F53E /* Assets.xcassets */,
+				048B028B248C01010003F53E /* Banner */,
+				048B0235248BF4540003F53E /* Base.lproj */,
+				048B0229248BF2650003F53E /* Info.plist */,
+				048B0278248C01000003F53E /* Interstitial */,
+				048B022A248BF2650003F53E /* main.m */,
+				048B023E248BF4540003F53E /* MsADTableViewController.h */,
+				048B0245248BF4540003F53E /* MsADTableViewController.m */,
+				048B0280248C01010003F53E /* Native */,
+				89D605C9255E7D6D008659F5 /* Offerwall */,
+				048B027C248C01000003F53E /* Rewarded */,
+			);
+			path = TradPlusDemo;
+			sourceTree = "<group>";
+		};
+		048B0235248BF4540003F53E /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				048B0236248BF4540003F53E /* LaunchScreen.storyboard */,
+				048B0238248BF4540003F53E /* Main.storyboard */,
+			);
+			path = Base.lproj;
+			sourceTree = "<group>";
+		};
+		048B025E248BF57A0003F53E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				04E47FDB24971BEE006903C5 /* libz.tbd */,
+				04E47FD924971BEA006903C5 /* libxml2.tbd */,
+				04E47FD724971BE4006903C5 /* libresolv.tbd */,
+				2AA628CDDCE0A90002571385 /* Pods_TradPlusDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		048B0278248C01000003F53E /* Interstitial */ = {
+			isa = PBXGroup;
+			children = (
+				048B0279248C01000003F53E /* InterstitialViewController.h */,
+				048B027B248C01000003F53E /* InterstitialViewController.m */,
+				048B027A248C01000003F53E /* InterstitialViewController.xib */,
+			);
+			path = Interstitial;
+			sourceTree = "<group>";
+		};
+		048B027C248C01000003F53E /* Rewarded */ = {
+			isa = PBXGroup;
+			children = (
+				048B027F248C01010003F53E /* RewardedVideoViewController.h */,
+				048B027D248C01000003F53E /* RewardedVideoViewController.m */,
+				048B027E248C01000003F53E /* RewardedVideoViewController.xib */,
+			);
+			path = Rewarded;
+			sourceTree = "<group>";
+		};
+		048B0280248C01010003F53E /* Native */ = {
+			isa = PBXGroup;
+			children = (
+				04484335248F6AB300550234 /* AdvancedNativeAdViewSampleFB.h */,
+				04484336248F6AB400550234 /* AdvancedNativeAdViewSampleFB.m */,
+				0448433A248F6AB400550234 /* AdvancedNativeAdViewSampleFB.xib */,
+				04484338248F6AB400550234 /* AdvancedNativeAdViewSampleGG.h */,
+				04484337248F6AB400550234 /* AdvancedNativeAdViewSampleGG.m */,
+				04484339248F6AB400550234 /* AdvancedNativeAdViewSampleGG.xib */,
+				048B0281248C01010003F53E /* AdvancedNativeAdViewSample.h */,
+				048B0285248C01010003F53E /* AdvancedNativeAdViewSample.m */,
+				048B0289248C01010003F53E /* AdvancedNativeAdViewSample.xib */,
+				048B0286248C01010003F53E /* Normal */,
+				048B028A248C01010003F53E /* Stream(HT) */,
+			);
+			path = Native;
+			sourceTree = "<group>";
+		};
+		048B0286248C01010003F53E /* Normal */ = {
+			isa = PBXGroup;
+			children = (
+				048B0287248C01010003F53E /* NativeViewController.h */,
+				048B0288248C01010003F53E /* NativeViewController.m */,
+			);
+			path = Normal;
+			sourceTree = "<group>";
+		};
+		048B028A248C01010003F53E /* Stream(HT) */ = {
+			isa = PBXGroup;
+			children = (
+				048B02A6248D41670003F53E /* readme.txt */,
+				048B029C248C122E0003F53E /* NativeHTViewController.h */,
+				048B029D248C122E0003F53E /* NativeHTViewController.m */,
+				048B029E248C122E0003F53E /* NativeHTViewController.xib */,
+			);
+			path = "Stream(HT)";
+			sourceTree = "<group>";
+		};
+		048B028B248C01010003F53E /* Banner */ = {
+			isa = PBXGroup;
+			children = (
+				048B028D248C01010003F53E /* BannerViewController.h */,
+				048B028C248C01010003F53E /* BannerViewController.m */,
+			);
+			path = Banner;
+			sourceTree = "<group>";
+		};
+		89D605C9255E7D6D008659F5 /* Offerwall */ = {
+			isa = PBXGroup;
+			children = (
+				89D605CA255E7D6D008659F5 /* OfferwallViewController.m */,
+				89D605CB255E7D6D008659F5 /* OfferwallViewController.xib */,
+				89D605CC255E7D6D008659F5 /* OfferwallViewController.h */,
+			);
+			path = Offerwall;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		048B0214248BF2600003F53E /* TradPlusDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 048B022E248BF2650003F53E /* Build configuration list for PBXNativeTarget "TradPlusDemo" */;
+			buildPhases = (
+				F3721E7B714EA149DAB966D6 /* [CP] Check Pods Manifest.lock */,
+				048B0211248BF2600003F53E /* Sources */,
+				048B0212248BF2600003F53E /* Frameworks */,
+				048B0213248BF2600003F53E /* Resources */,
+				07CBCDDBB42FEAAD21362E98 /* [CP] Embed Pods Frameworks */,
+				611C9B16E220F38AD742D260 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TradPlusDemo;
+			productName = TradPlusDemo;
+			productReference = 048B0215248BF2600003F53E /* TradPlusDemoN.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		048B020D248BF2600003F53E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = tradplus;
+				TargetAttributes = {
+					048B0214248BF2600003F53E = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = 048B0210248BF2600003F53E /* Build configuration list for PBXProject "TradPlusDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 048B020C248BF2600003F53E;
+			productRefGroup = 048B0216248BF2600003F53E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				048B0214248BF2600003F53E /* TradPlusDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		048B0213248BF2600003F53E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				048B0295248C01010003F53E /* AdvancedNativeAdViewSample.xib in Resources */,
+				048B024C248BF4540003F53E /* Main.storyboard in Resources */,
+				048B0248248BF4540003F53E /* Assets.xcassets in Resources */,
+				048B0291248C01010003F53E /* RewardedVideoViewController.xib in Resources */,
+				0448433E248F6AB400550234 /* AdvancedNativeAdViewSampleFB.xib in Resources */,
+				048B02A0248C122E0003F53E /* NativeHTViewController.xib in Resources */,
+				0448433D248F6AB400550234 /* AdvancedNativeAdViewSampleGG.xib in Resources */,
+				048B02A7248D41670003F53E /* readme.txt in Resources */,
+				048B024B248BF4540003F53E /* LaunchScreen.storyboard in Resources */,
+				048B028E248C01010003F53E /* InterstitialViewController.xib in Resources */,
+				89D605CE255E7D6D008659F5 /* OfferwallViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		07CBCDDBB42FEAAD21362E98 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TradPlusDemo/Pods-TradPlusDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TradPlusDemo/Pods-TradPlusDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TradPlusDemo/Pods-TradPlusDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		611C9B16E220F38AD742D260 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TradPlusDemo/Pods-TradPlusDemo-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TradPlusDemo/Pods-TradPlusDemo-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TradPlusDemo/Pods-TradPlusDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F3721E7B714EA149DAB966D6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TradPlusDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		048B0211248BF2600003F53E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				048B0290248C01010003F53E /* RewardedVideoViewController.m in Sources */,
+				048B029F248C122E0003F53E /* NativeHTViewController.m in Sources */,
+				048B024D248BF4540003F53E /* AppDelegate.m in Sources */,
+				048B0253248BF4540003F53E /* MsADTableViewController.m in Sources */,
+				048B028F248C01010003F53E /* InterstitialViewController.m in Sources */,
+				048B0296248C01010003F53E /* BannerViewController.m in Sources */,
+				048B022B248BF2650003F53E /* main.m in Sources */,
+				048B0293248C01010003F53E /* AdvancedNativeAdViewSample.m in Sources */,
+				0448433B248F6AB400550234 /* AdvancedNativeAdViewSampleFB.m in Sources */,
+				89D605CD255E7D6D008659F5 /* OfferwallViewController.m in Sources */,
+				0448433C248F6AB400550234 /* AdvancedNativeAdViewSampleGG.m in Sources */,
+				048B0294248C01010003F53E /* NativeViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		048B0236248BF4540003F53E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				048B0237248BF4540003F53E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		048B0238248BF4540003F53E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				048B0239248BF4540003F53E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		048B022C248BF2650003F53E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		048B022D248BF2650003F53E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		048B022F248BF2650003F53E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5784C44A51FB336370792105 /* Pods-TradPlusDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 0;
+				DEVELOPMENT_TEAM = 39CE8S36WK;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TradPlusFrameworks/AdMob",
+					"$(PROJECT_DIR)/TradPlusFrameworks/Facebook",
+					"$(PROJECT_DIR)/TradPlusFrameworks/TradPlusAds",
+					"$(PROJECT_DIR)/TradPlusFrameworks",
+					"$(PROJECT_DIR)/Pangle",
+				);
+				INFOPLIST_FILE = TradPlusDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.meetsocial.flute2048;
+				PRODUCT_NAME = TradPlusDemoN;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		048B0230248BF2650003F53E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24FB5399EB3909262337C872 /* Pods-TradPlusDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 0;
+				DEVELOPMENT_TEAM = 39CE8S36WK;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TradPlusFrameworks/AdMob",
+					"$(PROJECT_DIR)/TradPlusFrameworks/Facebook",
+					"$(PROJECT_DIR)/TradPlusFrameworks/TradPlusAds",
+					"$(PROJECT_DIR)/TradPlusFrameworks",
+					"$(PROJECT_DIR)/Pangle",
+				);
+				INFOPLIST_FILE = TradPlusDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.meetsocial.flute2048;
+				PRODUCT_NAME = TradPlusDemoN;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		048B0210248BF2600003F53E /* Build configuration list for PBXProject "TradPlusDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				048B022C248BF2650003F53E /* Debug */,
+				048B022D248BF2650003F53E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		048B022E248BF2650003F53E /* Build configuration list for PBXNativeTarget "TradPlusDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				048B022F248BF2650003F53E /* Debug */,
+				048B0230248BF2650003F53E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 048B020D248BF2600003F53E /* Project object */;
+}
