@@ -9,12 +9,35 @@
 #import "AppDelegate.h"
 #import <TradPlusAds/MsSDKUtils.h>
 #import <TradPlusAds/MSLogging.h>
+#import <TradPlusAds/MsCommon.h>
+#import <TradPlusAds/MsSplashView.h>
 
-@interface AppDelegate ()
+@interface AppDelegate ()<MsSplashViewDelegate>
+@property (nonatomic, strong) MsSplashView *splashAd;
 
 @end
 
 @implementation AppDelegate
+
+- (void)loadSplash
+{
+    if (!_splashAd)
+    {
+        _splashAd = [[MsSplashView alloc] init];
+        _splashAd.delegate = self;
+        _splashAd.adTimeoutInterval = 3;
+        [_splashAd setAdUnitID:@"E5BC6369FC7D96FD47612B279BC5AAE0"];
+    }
+    [_splashAd loadAd];
+}
+
+- (void)showSplash
+{
+    if (_splashAd && _splashAd.isAdReady)
+    {
+        [_splashAd showAdInKeyWindow:[UIApplication sharedApplication].keyWindow];
+    }
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
@@ -26,6 +49,7 @@
         }
     }];
 
+    [self loadSplash];
     return YES;
 }
 
@@ -56,5 +80,30 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+#pragma mark MsSplashViewDelegate
+- (void)MsSplashViewLoaded:(MsSplashView *)adView
+{
+    [self showSplash];
+}
+
+- (void)MsSplashView:(MsSplashView *)adView didFailWithError:(NSError *)error
+{
+    
+}
+
+- (void)MsSplashViewClicked:(MsSplashView *)adView
+{
+    
+}
+
+- (void)MsSplashViewShown:(MsSplashView *)adView
+{
+    
+}
+
+- (void)MsSplashViewDismissed:(MsSplashView *)adView
+{
+    
+}
 
 @end

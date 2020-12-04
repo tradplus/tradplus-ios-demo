@@ -16,6 +16,7 @@
 #import "AdvancedNativeAdViewSample.h"
 #import "AdvancedNativeAdViewSampleFB.h"
 #import "AdvancedNativeAdViewSampleGG.h"
+#import "YouDaoNativeAdView.h"
 
 @interface NativeHTViewController ()<MsNativeAdsLoaderDelegate, MSNativeAdDelegate, UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UILabel *lblPlacementId;
@@ -32,13 +33,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _placementId = @"0AA7414819EE56542DBA126FE5A19C7E"; //先获取facebook
-    _placementId = @"1E916A56353B12728E25766F8F242AD4"; //先获取admob
+    //_placementId = @"0AA7414819EE56542DBA126FE5A19C7E"; //fb admob
+    //_placementId = @"1FFA9E20ED4498EDD839BF008AE6152A"; //穿山甲
+    _placementId = @"7BDB36BCF18F9EEEB107ED3547B58F26"; //有道
     _lblPlacementId.text = _placementId;
     _tfAdsCount.delegate = self;
     _adsLoader = [[MsNativeAdsLoader alloc] init];
     _adsLoader.delegate = self;
     _adsLoader.defaultRenderingViewClass = [AdvancedNativeAdViewSample class];
+    _adsLoader.YDRenderingViewClass = [YouDaoNativeAdView class];
     [_adsLoader setAdUnitID:_placementId];
     // Do any additional setup after loading the view from its nib.
 }
@@ -115,6 +118,10 @@
                 adView = [nativeAd retrieveAdViewWithError:[AdvancedNativeAdViewSampleFB class] error:nil];
             else if (type && [type isEqualToString:@"admob"])
                 adView = [nativeAd retrieveAdViewWithError:[AdvancedNativeAdViewSampleGG class] error:nil];
+            else if (type && [type isEqualToString:@"pangle"])
+                adView = [nativeAd retrieveAdViewWithError:[AdvancedNativeAdViewSampleGG class] error:nil];
+            else if (type && [type isEqualToString:@"youdao"])
+                adView = [nativeAd retrieveYDAdViewWithError:nil];
             else
                 adView = [nativeAd retrieveAdViewWithError:[AdvancedNativeAdViewSampleGG class] error:nil];
             if (i == 0)

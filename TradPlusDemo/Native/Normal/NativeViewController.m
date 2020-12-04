@@ -29,8 +29,8 @@
     [super viewDidLoad];
     self.textViewLoadInfo.editable = NO;
     _nativeAd = [[MsNativeAdView alloc] init];
-//    [_nativeAd setAdUnitID:@"1E916A56353B12728E25766F8F242AD4"];
-    [_nativeAd setAdUnitID:@"281D8267EAEB582924B0A9410B24F407"];
+//    [_nativeAd setAdUnitID:@"0AA7414819EE56542DBA126FE5A19C7E"]; //fb admob
+    [_nativeAd setAdUnitID:@"1FFA9E20ED4498EDD839BF008AE6152A"]; //pangle
     
     _nativeAd.delegate = self;
     _nativeAd.renderingViewClass = [AdvancedNativeAdViewSample class];
