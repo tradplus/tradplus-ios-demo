@@ -154,7 +154,7 @@
 }
 
 - (IBAction)doRefreshStrategy:(id)sender {
-    [[MsServerApi sharedInstance] updateStrategy:_placementId completionBlock:^(NSError *error) {
+    [[MsServerApi sharedInstance] updateStrategy:_placementId segmentTag:nil dicUserInfo:nil completionBlock:^(NSError *error) {
         NSLog(@"refresh strategy end!");
     }];
 }

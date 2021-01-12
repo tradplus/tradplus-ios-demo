@@ -7,10 +7,11 @@
 //
 
 #import "AppDelegate.h"
-#import <TradPlusAds/MsSDKUtils.h>
+#import <TradPlusAds/TradPlus.h>
 #import <TradPlusAds/MSLogging.h>
 #import <TradPlusAds/MsCommon.h>
 #import <TradPlusAds/MsSplashView.h>
+#import "GDTSplashAd.h"
 
 @interface AppDelegate ()<MsSplashViewDelegate>
 @property (nonatomic, strong) MsSplashView *splashAd;
@@ -26,6 +27,7 @@
         _splashAd = [[MsSplashView alloc] init];
         _splashAd.delegate = self;
         _splashAd.adTimeoutInterval = 3;
+        _splashAd.pangleBottomHeight = 110;
         [_splashAd setAdUnitID:@"E5BC6369FC7D96FD47612B279BC5AAE0"];
     }
     [_splashAd loadAd];
@@ -35,13 +37,18 @@
 {
     if (_splashAd && _splashAd.isAdReady)
     {
-        [_splashAd showAdInKeyWindow:[UIApplication sharedApplication].keyWindow];
+        CGRect frame = UIScreen.mainScreen.bounds;
+        CGRect newframe = CGRectMake(0, frame.size.height - 110, frame.size.width, 110);
+        UIView *view = [[UIView alloc] initWithFrame:newframe];
+        view.backgroundColor = [UIColor blueColor];
+
+        [_splashAd showAdInKeyWindow:[UIApplication sharedApplication].keyWindow customView:view skipView:nil];
     }
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    [MsSDKUtils msSDKInit:^(NSError *error){
+    [TradPlus initSDK:@"TradPlus后台应用对应的appid" completionBlock:^(NSError * _Nonnull error) {
         if (!error)
         {
             //mFluteSDKInited = YES;
@@ -81,7 +88,7 @@
 }
 
 #pragma mark MsSplashViewDelegate
-- (void)MsSplashViewLoaded:(MsSplashView *)adView
+- (void)MsSplashViewLoaded:(MsSplashView *)adView splashAd:(nonnull UIView *)splashAd
 {
     [self showSplash];
 }

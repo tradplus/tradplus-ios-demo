@@ -33,6 +33,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     //_placementId = @"0AA7414819EE56542DBA126FE5A19C7E"; //fb admob
     //_placementId = @"1FFA9E20ED4498EDD839BF008AE6152A"; //穿山甲
     _placementId = @"7BDB36BCF18F9EEEB107ED3547B58F26"; //有道
@@ -47,7 +48,7 @@
 }
 
 - (IBAction)doRefreshStrategy:(id)sender {
-    [[MsServerApi sharedInstance] updateStrategy:_placementId completionBlock:nil];
+    [[MsServerApi sharedInstance] updateStrategy:_placementId segmentTag:nil dicUserInfo:nil completionBlock:nil];
 }
 
 - (IBAction)doLoadNativeAds:(id)sender {
@@ -114,6 +115,7 @@
             
             NSString *type = [nativeAd.properties objectForKey:@"type"];
             UIView *adView;
+            
             if (type && [type isEqualToString:@"facebook"])
                 adView = [nativeAd retrieveAdViewWithError:[AdvancedNativeAdViewSampleFB class] error:nil];
             else if (type && [type isEqualToString:@"admob"])

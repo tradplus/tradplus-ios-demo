@@ -39,7 +39,7 @@
 
 - (IBAction)doRefreshStrategy:(id)sender {
     [self.activityIndicatorView startAnimating];
-    [[MsServerApi sharedInstance] updateStrategy:_placementId completionBlock:^(NSError *error) {
+    [[MsServerApi sharedInstance] updateStrategy:_placementId segmentTag:nil dicUserInfo:nil completionBlock:^(NSError *error) {
         [self.activityIndicatorView stopAnimating];
     }];
     [self.rewardedVideoAd isNetWorkAdReady];
