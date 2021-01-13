@@ -542,14 +542,6 @@
 				CURRENT_PROJECT_VERSION = 0;
 				DEVELOPMENT_TEAM = 39CE8S36WK;
 				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/TradPlusFrameworks/AdMob",
-					"$(PROJECT_DIR)/TradPlusFrameworks/Facebook",
-					"$(PROJECT_DIR)/TradPlusFrameworks/TradPlusAds",
-					"$(PROJECT_DIR)/TradPlusFrameworks",
-					"$(PROJECT_DIR)/Pangle",
-				);
 				INFOPLIST_FILE = TradPlusDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -573,14 +565,6 @@
 				CURRENT_PROJECT_VERSION = 0;
 				DEVELOPMENT_TEAM = 39CE8S36WK;
 				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/TradPlusFrameworks/AdMob",
-					"$(PROJECT_DIR)/TradPlusFrameworks/Facebook",
-					"$(PROJECT_DIR)/TradPlusFrameworks/TradPlusAds",
-					"$(PROJECT_DIR)/TradPlusFrameworks",
-					"$(PROJECT_DIR)/Pangle",
-				);
 				INFOPLIST_FILE = TradPlusDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
