@@ -16,7 +16,6 @@
 #import "AdvancedNativeAdViewSample.h"
 #import "AdvancedNativeAdViewSampleFB.h"
 #import "AdvancedNativeAdViewSampleGG.h"
-#import "YouDaoNativeAdView.h"
 
 @interface NativeHTViewController ()<MsNativeAdsLoaderDelegate, MSNativeAdDelegate, UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UILabel *lblPlacementId;
@@ -42,7 +41,7 @@
     _adsLoader = [[MsNativeAdsLoader alloc] init];
     _adsLoader.delegate = self;
     _adsLoader.defaultRenderingViewClass = [AdvancedNativeAdViewSample class];
-    _adsLoader.YDRenderingViewClass = [YouDaoNativeAdView class];
+    //_adsLoader.YDRenderingViewClass = [YouDaoNativeAdView class];
     [_adsLoader setAdUnitID:_placementId];
     // Do any additional setup after loading the view from its nib.
 }

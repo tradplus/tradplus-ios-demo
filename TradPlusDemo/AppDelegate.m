@@ -11,7 +11,6 @@
 #import <TradPlusAds/MSLogging.h>
 #import <TradPlusAds/MsCommon.h>
 #import <TradPlusAds/MsSplashView.h>
-#import "GDTSplashAd.h"
 
 @interface AppDelegate ()<MsSplashViewDelegate>
 @property (nonatomic, strong) MsSplashView *splashAd;

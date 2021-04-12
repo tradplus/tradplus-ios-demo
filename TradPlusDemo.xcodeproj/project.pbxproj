@@ -31,7 +31,6 @@
 		04E47FD824971BE4006903C5 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 04E47FD724971BE4006903C5 /* libresolv.tbd */; };
 		04E47FDA24971BEA006903C5 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 04E47FD924971BEA006903C5 /* libxml2.tbd */; };
 		04E47FDC24971BEF006903C5 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 04E47FDB24971BEE006903C5 /* libz.tbd */; };
-		898F1D622579D4FB00BA165B /* YouDaoNativeAdView.m in Sources */ = {isa = PBXBuildFile; fileRef = 898F1D612579D4FB00BA165B /* YouDaoNativeAdView.m */; };
 		89D605CD255E7D6D008659F5 /* OfferwallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89D605CA255E7D6D008659F5 /* OfferwallViewController.m */; };
 		89D605CE255E7D6D008659F5 /* OfferwallViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89D605CB255E7D6D008659F5 /* OfferwallViewController.xib */; };
 		BAF08820C5745F19D64F9387 /* Pods_TradPlusDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AA628CDDCE0A90002571385 /* Pods_TradPlusDemo.framework */; };
@@ -77,8 +76,6 @@
 		24FB5399EB3909262337C872 /* Pods-TradPlusDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TradPlusDemo.release.xcconfig"; path = "Target Support Files/Pods-TradPlusDemo/Pods-TradPlusDemo.release.xcconfig"; sourceTree = "<group>"; };
 		2AA628CDDCE0A90002571385 /* Pods_TradPlusDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TradPlusDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5784C44A51FB336370792105 /* Pods-TradPlusDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TradPlusDemo.debug.xcconfig"; path = "Target Support Files/Pods-TradPlusDemo/Pods-TradPlusDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		898F1D602579D4FA00BA165B /* YouDaoNativeAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YouDaoNativeAdView.h; sourceTree = "<group>"; };
-		898F1D612579D4FB00BA165B /* YouDaoNativeAdView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YouDaoNativeAdView.m; sourceTree = "<group>"; };
 		89D605CA255E7D6D008659F5 /* OfferwallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OfferwallViewController.m; sourceTree = "<group>"; };
 		89D605CB255E7D6D008659F5 /* OfferwallViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OfferwallViewController.xib; sourceTree = "<group>"; };
 		89D605CC255E7D6D008659F5 /* OfferwallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OfferwallViewController.h; sourceTree = "<group>"; };
@@ -189,8 +186,6 @@
 		048B0280248C01010003F53E /* Native */ = {
 			isa = PBXGroup;
 			children = (
-				898F1D602579D4FA00BA165B /* YouDaoNativeAdView.h */,
-				898F1D612579D4FB00BA165B /* YouDaoNativeAdView.m */,
 				04484335248F6AB300550234 /* AdvancedNativeAdViewSampleFB.h */,
 				04484336248F6AB400550234 /* AdvancedNativeAdViewSampleFB.m */,
 				0448433A248F6AB400550234 /* AdvancedNativeAdViewSampleFB.xib */,
@@ -394,7 +389,6 @@
 				048B022B248BF2650003F53E /* main.m in Sources */,
 				048B0293248C01010003F53E /* AdvancedNativeAdViewSample.m in Sources */,
 				0448433B248F6AB400550234 /* AdvancedNativeAdViewSampleFB.m in Sources */,
-				898F1D622579D4FB00BA165B /* YouDaoNativeAdView.m in Sources */,
 				89D605CD255E7D6D008659F5 /* OfferwallViewController.m in Sources */,
 				0448433C248F6AB400550234 /* AdvancedNativeAdViewSampleGG.m in Sources */,
 				048B0294248C01010003F53E /* NativeViewController.m in Sources */,
