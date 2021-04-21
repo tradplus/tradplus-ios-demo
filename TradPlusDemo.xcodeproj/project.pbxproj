@@ -544,7 +544,7 @@
 				);
 				MARKETING_VERSION = 5.3.0;
 				OTHER_LDFLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = com.meetsocial.koala;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tradplusad.koala;
 				PRODUCT_NAME = TradPlusDemoN;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -567,7 +567,7 @@
 				);
 				MARKETING_VERSION = 5.3.0;
 				OTHER_LDFLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = com.meetsocial.koala;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tradplusad.koala;
 				PRODUCT_NAME = TradPlusDemoN;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
