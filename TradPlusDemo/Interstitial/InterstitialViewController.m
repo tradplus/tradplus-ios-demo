@@ -68,7 +68,7 @@
     self.textViewFreq.text = [self.interstitialAd getFreqInfo];
 }
 
-- (void)interstitialAdDidLoad:(MsInterstitialAd *)interstitialAd
+- (void)interstitialAdAllLoaded:(MsInterstitialAd *)interstitialAd readyCount:(int)readyCount
 {
     NSLog(@"%s->ready:%d", __FUNCTION__, interstitialAd.readyAdCount);
     dispatch_async(dispatch_get_main_queue(), ^{
@@ -89,15 +89,15 @@
     });
 }
 
-- (void)interstitialAdImpression:(MsInterstitialAd *)interstitialAd
+- (void)interstitialAdShown:(MsInterstitialAd *)interstitialAd
 {
     NSLog(@"%s->%@", __FUNCTION__, interstitialAd.channelName);
     dispatch_async(dispatch_get_main_queue(), ^{
-    _lblCacheNum.text = [NSString stringWithFormat:@"current channel: %@", interstitialAd.channelName];
+        self->_lblCacheNum.text = [NSString stringWithFormat:@"current channel: %@", interstitialAd.channelName];
     });
 }
 
-- (void)interstitialAdDidClick:(MsInterstitialAd *)interstitialAd
+- (void)interstitialAdClicked:(MsInterstitialAd *)interstitialAd
 {
     NSLog(@"%s", __FUNCTION__);
 }

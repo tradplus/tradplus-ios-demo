@@ -54,13 +54,13 @@
     [self.activityIndicatorView startAnimating];
 }
 
-#pragma mark - <FluteViewDelegate>
+#pragma mark - <MsBannerViewDelegate>
 - (UIViewController *)viewControllerForPresentingModalView
 {
     return self;
 }
 
-- (void)MsBannerViewDidLoaded:(MsBannerView *)adView
+- (void)MsBannerViewLoaded:(MsBannerView *)adView
 {
     NSLog(@"%s->%@", __FUNCTION__, [adView getLoadDetailInfo]);
     dispatch_async(dispatch_get_main_queue(), ^{
@@ -69,20 +69,19 @@
     [self.activityIndicatorView stopAnimating];
     });
 }
+
 - (void)MsBannerView:(MsBannerView *)adView didFailWithError:(NSError *)error
 {
-    NSLog(@"%s", __FUNCTION__);
+    //每次失败都能获取三方渠道信息
+    NSLog(@"%s\ncurrent channel info:%@", __FUNCTION__, adView.dicChannelInfo);
     dispatch_async(dispatch_get_main_queue(), ^{
     [self.textViewLoadInfo insertText:[adView getLoadDetailInfo]];
     self.btnLoad.enabled = YES;
     [self.activityIndicatorView stopAnimating];
     });
 }
-- (void)MsBannerViewImpression:(MsBannerView *)adView
-{
-    NSLog(@"%s", __FUNCTION__);
-}
-- (void)MsBannerViewDidClick:(MsBannerView *)adView
+
+- (void)MsBannerViewClicked:(MsBannerView *)adView
 {
     NSLog(@"%s", __FUNCTION__);
 }

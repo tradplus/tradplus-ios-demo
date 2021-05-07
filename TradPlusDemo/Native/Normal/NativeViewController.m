@@ -80,6 +80,8 @@
 
 - (void)nativeAd:(MsNativeAdView *)nativeAd didFailWithError:(NSError *)error
 {
+    //每次失败都能获取三方渠道信息
+    NSLog(@"%s\ncurrent channel info:%@", __FUNCTION__, nativeAd.dicChannelInfo);
     NSLog(@"%s->error:%@", __FUNCTION__, error);
     dispatch_async(dispatch_get_main_queue(), ^{
     self.btnLoad.enabled = YES;

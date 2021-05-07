@@ -531,6 +531,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5784C44A51FB336370792105 /* Pods-TradPlusDemo.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 0;
@@ -554,6 +555,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 24FB5399EB3909262337C872 /* Pods-TradPlusDemo.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 0;
