@@ -69,4 +69,9 @@
     return [UINib nibWithNibName:@"AdvancedNativeAdViewSample" bundle:nil];
 }
 
+- (NSArray <UIView *> *)clickableViews
+{
+    return @[_titleLabel, _mainTextLabel, _ctaLabel, _iconImageView, _mainImageView, _privacyInformationIconImageView];
+}
+
 @end
