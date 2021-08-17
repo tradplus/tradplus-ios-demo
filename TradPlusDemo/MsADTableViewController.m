@@ -13,23 +13,27 @@
 #import "InterstitialViewController.h"
 #import "NativeHTViewController.h"
 #import "OfferwallViewController.h"
+#import "TradPlusAdNativeViewController.h"
 
 @interface MsADTableViewController ()
 
+@property (nonatomic,strong)NSArray *titleArray;
 @end
 
 @implementation MsADTableViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     
-    self.view.backgroundColor = [UIColor colorWithRed:0.21 green:0.21 blue:0.21 alpha:1];
+    self.view.backgroundColor = [UIColor whiteColor];
     self.tableView.separatorColor = [UIColor colorWithRed:0.31 green:0.31 blue:0.31 alpha:1];
     self.tableView.rowHeight = 50;
     self.tableView.sectionHeaderHeight = 30;
-    
+    self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
     //self.title = @"Ads";
     self.tableView.accessibilityLabel = @"Ad Table View";
+    self.titleArray = @[@"横幅",@"高级原生",@"高级原生(并发拉取多个素材)",@"插屏",@"激励视频",@"积分墙",@"高级原生（6.0）"];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -46,7 +50,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 6;
+    return self.titleArray.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -56,30 +60,10 @@
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
     }
-    
-    switch (indexPath.row) {
-        case 0:
-            cell.textLabel.text = @"横幅";
-            break;
-        case 1:
-            cell.textLabel.text = @"高级原生";
-            break;
-        case 2:
-            cell.textLabel.text = @"高级原生(并发拉取多个素材)";
-            break;
-        case 3:
-            cell.textLabel.text = @"插屏";
-            break;
-        case 4:
-            cell.textLabel.text = @"激励视频";
-            break;
-        case 5:
-            cell.textLabel.text = @"积分墙";
-            break;
-        default:
-            break;
+    if(indexPath.row < self.titleArray.count)
+    {
+        cell.textLabel.text = self.titleArray[indexPath.row];
     }
-
     cell.textLabel.textColor = [UIColor colorWithRed:0.42 green:0.66 blue:0.85 alpha:1];
     cell.detailTextLabel.textColor = [UIColor colorWithRed:0.86 green:0.86 blue:0.86 alpha:1];
     
@@ -95,54 +79,52 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UIViewController *detailViewController = nil;
-    switch (indexPath.section) {
-        case 0:
-            switch (indexPath.row) {
-                case 0:
-                    detailViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"b"];
-                    detailViewController.modalPresentationStyle = UIModalPresentationFullScreen;
-                    [self.navigationController pushViewController:detailViewController animated:YES];
-                    break;
-                case 1:
-                    detailViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"n"];
-                    ((NativeViewController *)detailViewController).nativeADType = MsNativeADTypeAdvanced;
-                    detailViewController.modalPresentationStyle = UIModalPresentationFullScreen;
-                    [self.navigationController pushViewController:detailViewController animated:YES];
-                    break;
-                case 2:
-                    detailViewController = [[NativeHTViewController alloc] initWithNibName:@"NativeHTViewController" bundle:nil];
-                    detailViewController.modalPresentationStyle = UIModalPresentationFullScreen;
-                    [self presentViewController:detailViewController animated:YES completion:nil];
-                    break;
-                case 3:
-                {
-                    detailViewController = [[InterstitialViewController alloc] initWithNibName:@"InterstitialViewController" bundle:nil];
-                    detailViewController.modalPresentationStyle = UIModalPresentationFullScreen;
-                    [self presentViewController:detailViewController animated:YES completion:nil];
-                }
-                    break;
-                case 4:
-                {
-                    detailViewController = [[RewardedVideoViewController alloc] initWithNibName:@"RewardedVideoViewController" bundle:nil];
-                    detailViewController.modalPresentationStyle = UIModalPresentationFullScreen;
-                    [self presentViewController:detailViewController animated:YES completion:nil];
-                }
-                    break;
-                case 5:
-                {
-                    detailViewController = [[OfferwallViewController alloc] initWithNibName:@"OfferwallViewController" bundle:nil];
-                    detailViewController.modalPresentationStyle = UIModalPresentationFullScreen;
-                    [self presentViewController:detailViewController animated:YES completion:nil];
-                }
-                    break;
-                default:
-                    break;
+    if(indexPath.section == 0)
+    {
+        UIViewController *detailViewController = nil;
+        switch (indexPath.row)
+        {
+            case 0:
+            {
+                detailViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"b"];
+                break;
             }
-            break;
-           
-        default:
-            break;
+            case 1:
+            {
+                detailViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"n"];
+                ((NativeViewController *)detailViewController).nativeADType = MsNativeADTypeAdvanced;
+                break;
+            }
+            case 2:
+            {
+                detailViewController = [[NativeHTViewController alloc] initWithNibName:@"NativeHTViewController" bundle:nil];
+                break;
+            }
+            case 3:
+            {
+                detailViewController = [[InterstitialViewController alloc] initWithNibName:@"InterstitialViewController" bundle:nil];
+                break;
+            }
+            case 4:
+            {
+                detailViewController = [[RewardedVideoViewController alloc] initWithNibName:@"RewardedVideoViewController" bundle:nil];
+                break;
+            }
+            case 5:
+            {
+                detailViewController = [[OfferwallViewController alloc] initWithNibName:@"OfferwallViewController" bundle:nil];
+                break;
+            }
+            case 6:
+            {
+                detailViewController = [[TradPlusAdNativeViewController alloc] initWithNibName:@"TradPlusAdNativeViewController" bundle:nil];
+            }
+        }
+        if(detailViewController != nil)
+        {
+            detailViewController.modalPresentationStyle = UIModalPresentationFullScreen;
+            [self.navigationController pushViewController:detailViewController animated:YES];
+        }
     }
 }
 
