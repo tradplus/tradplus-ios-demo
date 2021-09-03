@@ -36,14 +36,14 @@
 
 - (IBAction)showAct:(id)sender
 {
-//    UIWindow *window = [UIApplication sharedApplication].keyWindow;
-//    [self.nativeSplash showInWindow:window];
+    UIWindow *window = [UIApplication sharedApplication].keyWindow;
+    [self.nativeSplash showInWindow:window];
     
     //自定义模版方式
 //    [self.nativeSplash showWithRenderingViewClass:[TPNativeTemplate class] window:window];
     
     //自定义view方式
-    [self showWithRenderer];
+//    [self showWithRenderer];
 }
 
 //通过设置 NativeRenderer 来渲染
