@@ -14,6 +14,8 @@
 #import "NativeHTViewController.h"
 #import "OfferwallViewController.h"
 #import "TradPlusAdNativeViewController.h"
+#import "TradPlusAdNativeBannerViewController.h"
+#import "TradPlusAdNativeSplashViewController.h"
 
 @interface MsADTableViewController ()
 
@@ -33,7 +35,7 @@
     self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
     //self.title = @"Ads";
     self.tableView.accessibilityLabel = @"Ad Table View";
-    self.titleArray = @[@"横幅",@"高级原生",@"高级原生(并发拉取多个素材)",@"插屏",@"激励视频",@"积分墙",@"高级原生（6.0）"];
+    self.titleArray = @[@"横幅",@"高级原生",@"高级原生(并发拉取多个素材)",@"插屏",@"激励视频",@"积分墙",@"高级原生（6.0）",@"原生开屏（6.1）",@"原生横幅（6.1）"];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -84,40 +86,51 @@
         UIViewController *detailViewController = nil;
         switch (indexPath.row)
         {
-            case 0:
+            case 0://@"横幅"
             {
                 detailViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"b"];
                 break;
             }
-            case 1:
+            case 1://@"高级原生"
             {
                 detailViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"n"];
                 ((NativeViewController *)detailViewController).nativeADType = MsNativeADTypeAdvanced;
                 break;
             }
-            case 2:
+            case 2://@"高级原生(并发拉取多个素材)"
             {
                 detailViewController = [[NativeHTViewController alloc] initWithNibName:@"NativeHTViewController" bundle:nil];
                 break;
             }
-            case 3:
+            case 3://@"插屏"
             {
                 detailViewController = [[InterstitialViewController alloc] initWithNibName:@"InterstitialViewController" bundle:nil];
                 break;
             }
-            case 4:
+            case 4://@"激励视频"
             {
                 detailViewController = [[RewardedVideoViewController alloc] initWithNibName:@"RewardedVideoViewController" bundle:nil];
                 break;
             }
-            case 5:
+            case 5://@"积分墙"
             {
                 detailViewController = [[OfferwallViewController alloc] initWithNibName:@"OfferwallViewController" bundle:nil];
                 break;
             }
-            case 6:
+            case 6://@"高级原生（6.0）"
             {
                 detailViewController = [[TradPlusAdNativeViewController alloc] initWithNibName:@"TradPlusAdNativeViewController" bundle:nil];
+                break;
+            }
+            case 7://@"原生开屏（6.1）"
+            {
+                detailViewController = [[TradPlusAdNativeSplashViewController alloc] initWithNibName:@"TradPlusAdNativeSplashViewController" bundle:nil];
+                break;
+            }
+            case 8://@"原生开屏（6.1）"
+            {
+                detailViewController = [[TradPlusAdNativeBannerViewController alloc] initWithNibName:@"TradPlusAdNativeBannerViewController" bundle:nil];
+                break;
             }
         }
         if(detailViewController != nil)

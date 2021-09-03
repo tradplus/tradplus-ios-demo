@@ -35,6 +35,12 @@
 		5A2F261B26CB57C300CAD358 /* TPNativeTemplate.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A2F261826CB57C300CAD358 /* TPNativeTemplate.xib */; };
 		5A98A01B26CB58D200C11B85 /* TradPlusAdNativeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A98A01926CB58D200C11B85 /* TradPlusAdNativeViewController.m */; };
 		5A98A01C26CB58D200C11B85 /* TradPlusAdNativeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A98A01A26CB58D200C11B85 /* TradPlusAdNativeViewController.xib */; };
+		5AD5C98426E0973C008C517E /* TradPlusAdNativeSplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AD5C98226E0973C008C517E /* TradPlusAdNativeSplashViewController.m */; };
+		5AD5C98926E0975E008C517E /* TradPlusAdNativeBannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AD5C98726E0975E008C517E /* TradPlusAdNativeBannerViewController.m */; };
+		5AD5CA7F26E1C1B4008C517E /* TradPlusAdNativeBannerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5AD5CA7E26E1C1B4008C517E /* TradPlusAdNativeBannerViewController.xib */; };
+		5AD5CA8A26E1D532008C517E /* NativeBannerTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AD5CA8826E1D532008C517E /* NativeBannerTemplate.m */; };
+		5AD5CA8B26E1D532008C517E /* NativeBannerTemplate.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5AD5CA8926E1D532008C517E /* NativeBannerTemplate.xib */; };
+		5AD5CA8E26E1DF16008C517E /* TradPlusAdNativeSplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5AD5CA8D26E1DF16008C517E /* TradPlusAdNativeSplashViewController.xib */; };
 		89D605CD255E7D6D008659F5 /* OfferwallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89D605CA255E7D6D008659F5 /* OfferwallViewController.m */; };
 		89D605CE255E7D6D008659F5 /* OfferwallViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89D605CB255E7D6D008659F5 /* OfferwallViewController.xib */; };
 		BAF08820C5745F19D64F9387 /* Pods_TradPlusDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AA628CDDCE0A90002571385 /* Pods_TradPlusDemo.framework */; };
@@ -86,6 +92,15 @@
 		5A98A01826CB58D200C11B85 /* TradPlusAdNativeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TradPlusAdNativeViewController.h; sourceTree = "<group>"; };
 		5A98A01926CB58D200C11B85 /* TradPlusAdNativeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TradPlusAdNativeViewController.m; sourceTree = "<group>"; };
 		5A98A01A26CB58D200C11B85 /* TradPlusAdNativeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TradPlusAdNativeViewController.xib; sourceTree = "<group>"; };
+		5AD5C98126E0973C008C517E /* TradPlusAdNativeSplashViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TradPlusAdNativeSplashViewController.h; sourceTree = "<group>"; };
+		5AD5C98226E0973C008C517E /* TradPlusAdNativeSplashViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TradPlusAdNativeSplashViewController.m; sourceTree = "<group>"; };
+		5AD5C98626E0975E008C517E /* TradPlusAdNativeBannerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TradPlusAdNativeBannerViewController.h; sourceTree = "<group>"; };
+		5AD5C98726E0975E008C517E /* TradPlusAdNativeBannerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TradPlusAdNativeBannerViewController.m; sourceTree = "<group>"; };
+		5AD5CA7E26E1C1B4008C517E /* TradPlusAdNativeBannerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TradPlusAdNativeBannerViewController.xib; sourceTree = "<group>"; };
+		5AD5CA8726E1D532008C517E /* NativeBannerTemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NativeBannerTemplate.h; sourceTree = "<group>"; };
+		5AD5CA8826E1D532008C517E /* NativeBannerTemplate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NativeBannerTemplate.m; sourceTree = "<group>"; };
+		5AD5CA8926E1D532008C517E /* NativeBannerTemplate.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NativeBannerTemplate.xib; sourceTree = "<group>"; };
+		5AD5CA8D26E1DF16008C517E /* TradPlusAdNativeSplashViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TradPlusAdNativeSplashViewController.xib; sourceTree = "<group>"; };
 		89D605CA255E7D6D008659F5 /* OfferwallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OfferwallViewController.m; sourceTree = "<group>"; };
 		89D605CB255E7D6D008659F5 /* OfferwallViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OfferwallViewController.xib; sourceTree = "<group>"; };
 		89D605CC255E7D6D008659F5 /* OfferwallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OfferwallViewController.h; sourceTree = "<group>"; };
@@ -250,8 +265,25 @@
 				5A98A01826CB58D200C11B85 /* TradPlusAdNativeViewController.h */,
 				5A98A01926CB58D200C11B85 /* TradPlusAdNativeViewController.m */,
 				5A98A01A26CB58D200C11B85 /* TradPlusAdNativeViewController.xib */,
+				5AD5C98126E0973C008C517E /* TradPlusAdNativeSplashViewController.h */,
+				5AD5C98226E0973C008C517E /* TradPlusAdNativeSplashViewController.m */,
+				5AD5CA8D26E1DF16008C517E /* TradPlusAdNativeSplashViewController.xib */,
+				5AD5CA8026E1C86A008C517E /* NativeBanner */,
 			);
 			path = 6.0;
+			sourceTree = "<group>";
+		};
+		5AD5CA8026E1C86A008C517E /* NativeBanner */ = {
+			isa = PBXGroup;
+			children = (
+				5AD5CA8726E1D532008C517E /* NativeBannerTemplate.h */,
+				5AD5CA8826E1D532008C517E /* NativeBannerTemplate.m */,
+				5AD5CA8926E1D532008C517E /* NativeBannerTemplate.xib */,
+				5AD5C98626E0975E008C517E /* TradPlusAdNativeBannerViewController.h */,
+				5AD5C98726E0975E008C517E /* TradPlusAdNativeBannerViewController.m */,
+				5AD5CA7E26E1C1B4008C517E /* TradPlusAdNativeBannerViewController.xib */,
+			);
+			path = NativeBanner;
 			sourceTree = "<group>";
 		};
 		89D605C9255E7D6D008659F5 /* Offerwall */ = {
@@ -331,11 +363,14 @@
 				048B0291248C01010003F53E /* RewardedVideoViewController.xib in Resources */,
 				0448433E248F6AB400550234 /* AdvancedNativeAdViewSampleFB.xib in Resources */,
 				048B02A0248C122E0003F53E /* NativeHTViewController.xib in Resources */,
+				5AD5CA8B26E1D532008C517E /* NativeBannerTemplate.xib in Resources */,
 				5A98A01C26CB58D200C11B85 /* TradPlusAdNativeViewController.xib in Resources */,
+				5AD5CA7F26E1C1B4008C517E /* TradPlusAdNativeBannerViewController.xib in Resources */,
 				0448433D248F6AB400550234 /* AdvancedNativeAdViewSampleGG.xib in Resources */,
 				048B02A7248D41670003F53E /* readme.txt in Resources */,
 				048B024B248BF4540003F53E /* LaunchScreen.storyboard in Resources */,
 				048B028E248C01010003F53E /* InterstitialViewController.xib in Resources */,
+				5AD5CA8E26E1DF16008C517E /* TradPlusAdNativeSplashViewController.xib in Resources */,
 				89D605CE255E7D6D008659F5 /* OfferwallViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -407,6 +442,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				048B0290248C01010003F53E /* RewardedVideoViewController.m in Sources */,
+				5AD5CA8A26E1D532008C517E /* NativeBannerTemplate.m in Sources */,
+				5AD5C98926E0975E008C517E /* TradPlusAdNativeBannerViewController.m in Sources */,
 				048B029F248C122E0003F53E /* NativeHTViewController.m in Sources */,
 				048B024D248BF4540003F53E /* AppDelegate.m in Sources */,
 				048B0253248BF4540003F53E /* MsADTableViewController.m in Sources */,
@@ -417,6 +454,7 @@
 				0448433B248F6AB400550234 /* AdvancedNativeAdViewSampleFB.m in Sources */,
 				89D605CD255E7D6D008659F5 /* OfferwallViewController.m in Sources */,
 				0448433C248F6AB400550234 /* AdvancedNativeAdViewSampleGG.m in Sources */,
+				5AD5C98426E0973C008C517E /* TradPlusAdNativeSplashViewController.m in Sources */,
 				048B0294248C01010003F53E /* NativeViewController.m in Sources */,
 				5A98A01B26CB58D200C11B85 /* TradPlusAdNativeViewController.m in Sources */,
 				5A2F261A26CB57C300CAD358 /* TPNativeTemplate.m in Sources */,
@@ -495,7 +533,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -547,7 +585,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -571,7 +609,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 6.0.0;
+				MARKETING_VERSION = 6.1.0;
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tradplusad.koala;
 				PRODUCT_NAME = TradPlusDemoN;
@@ -595,7 +633,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 6.0.0;
+				MARKETING_VERSION = 6.1.0;
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tradplusad.koala;
 				PRODUCT_NAME = TradPlusDemoN;

@@ -80,82 +80,101 @@
 }
 
 #pragma mark - MsRewardedVideoAdDelegate implementation
-- (void)rewardedVideoAdAllLoaded:(MsRewardedVideoAd *)rewardedVideoAd readyCount:(int)readyCount
+
+- (void)rewardedVideoAdAllLoaded:(int)readyCount
 {
-    NSLog(@"%s->ready:%d", __FUNCTION__, self.rewardedVideoAd.readyAdCount);
-        dispatch_async(dispatch_get_main_queue(), ^{
-    //    if (rewardedVideoAd.readyAdCount > 0)
-    //        self.btnShow.enabled = YES;
-        self.btnLoad.enabled = YES;
-        [self.activityIndicatorView stopAnimating];
-        self.textView.text = [self.rewardedVideoAd getLoadDetailInfo];
-        });
+    NSLog(@"%s->ready:%d", __FUNCTION__, readyCount);
+    __weak typeof(self) weakSelf = self;
+    dispatch_async(dispatch_get_main_queue(), ^{
+//    if (rewardedVideoAd.readyAdCount > 0)
+//        self.btnShow.enabled = YES;
+        weakSelf.btnLoad.enabled = YES;
+        [weakSelf.activityIndicatorView stopAnimating];
+        weakSelf.textView.text = [weakSelf.rewardedVideoAd getLoadDetailInfo];
+    });
 }
 
-- (void)rewardedVideoAdLoaded:(MsRewardedVideoAd *)rewardedVideoAd
+
+- (void)rewardedVideoAdDidLoaded:(NSDictionary *)dicChannelInfo
 {
     NSLog(@"%s", __FUNCTION__);
 }
 
-- (void)rewardedVideoAd:(MsRewardedVideoAd *)rewardedVideoAd didFailWithError:(NSError *)error
+- (void)rewardedVideoAd:(NSDictionary *)dicChannelInfo didFailedWithError:(NSError *)error
 {
     NSLog(@"%s->%@", __FUNCTION__, error);
+    __weak typeof(self) weakSelf = self;
     dispatch_async(dispatch_get_main_queue(), ^{
-        self.btnLoad.enabled = YES;
-        [self.activityIndicatorView stopAnimating];
+        weakSelf.btnLoad.enabled = YES;
+        [weakSelf.activityIndicatorView stopAnimating];
     });
 }
 
-- (void)rewardedVideoAdShown:(MsRewardedVideoAd *)rewardedVideoAd
+- (void)rewardedVideoAdShown:(NSDictionary *)dicChannelInfo
 {
     NSLog(@"%s", __FUNCTION__);
+    __weak typeof(self) weakSelf = self;
     dispatch_async(dispatch_get_main_queue(), ^{
-        self->_lblCacheNum.text = rewardedVideoAd.channelName;
+        weakSelf.lblCacheNum.text = dicChannelInfo[@"channel_name"];
     });
 }
 
-- (void)rewardedVideoAdClicked:(MsRewardedVideoAd *)rewardedVideoAd
+- (void)rewardedVideoAdClicked:(NSDictionary *)dicChannelInfo
 {
     NSLog(@"%s", __FUNCTION__);
 }
 
-- (void)rewardedVideoAdShouldReward:(MsRewardedVideoAd *)rewardedVideoAd reward:(MSRewardedVideoReward *)reward
-{
-    NSLog(@"%s", __FUNCTION__);
-    dispatch_async(dispatch_get_main_queue(), ^{
-    if (reward)
-    {
-        NSString *strReward = [NSString stringWithFormat:@"reward type:%@ amount:%d", reward.currencyType, [reward.amount intValue]];
-        self->_lblRewardInfo.text = strReward;
-    }
-    });
-}
-
-- (void)rewardedVideoAdShouldNotReward:(MsRewardedVideoAd *)rewardedVideoAd
-{
-    NSLog(@"%s", __FUNCTION__);
-}
-
-- (void)rewardedVideoAdDismissed:(MsRewardedVideoAd *)rewardedVideoAd
+- (void)rewardedVideoAdDismissed:(NSDictionary *)dicChannelInfo
 {
     NSLog(@"%s", __FUNCTION__);
     //如果setAdUnitID 参数isAutoLoad 为NO 需调用
     //[self.rewardedVideoAd loadAd];
 }
 
-- (void)loadingInfoChangedR:(MsRewardedVideoAd *)rewardedVideoAd
+//have reward
+- (void)rewardedVideoAdShouldReward:(NSDictionary *)dicChannelInfo reward:(MSRewardedVideoReward *)reward
 {
-    dispatch_async(dispatch_get_main_queue(), ^{
-        self.textView.text = [self.rewardedVideoAd getLoadDetailInfo];
-        self.textViewStatus.text = [self.rewardedVideoAd getLoadDetailStatus];
-//        _btnShow.enabled = self.rewardedVideoAd.readyAdCount > 0;
-//        _lblCacheNum.text = [NSString stringWithFormat:@"%d", self.rewardedVideoAd.cacheNum];
-    });
+    NSLog(@"%s", __FUNCTION__);
 }
 
-- (IBAction)doRefreshStrategy:(id)sender {
-    [[MsServerApi sharedInstance] updateStrategy:_placementId segmentTag:nil dicUserInfo:nil completionBlock:^(NSError *error) {
-        NSLog(@"refresh strategy end!");
-    }];
+//no reward
+- (void)rewardedVideoAdShouldNotReward:(NSDictionary *)dicChannelInfo
+{
+    NSLog(@"%s", __FUNCTION__);
 }
+
+- (void)rewardedVideoAdDidFailToPlay:(NSDictionary *)dicChannelInfo error:(NSError *)error
+{
+    
+}
+
+- (void)rewardedVideoAdOneLayerLoaded:(NSDictionary *)dicChannelInfo
+{
+    
+}
+- (void)rewardedVideoAdOneLayer:(NSDictionary *)dicChannelInfo didFailWithError:(NSError *)error
+{
+    
+}
+- (void)rewardedVideoAdBidStart
+{
+    
+}
+- (void)rewardedVideoAdBidEnd
+{
+    
+}
+- (void)rewardedVideoAdLoadStart:(NSDictionary *)dicChannelInfo
+{
+    
+}
+- (void)rewardedVideoAdPlayStart:(NSDictionary *)dicChannelInfo
+{
+    
+}
+- (void)rewardedVideoAdPlayEnd:(NSDictionary *)dicChannelInfo
+{
+    
+}
+
 @end

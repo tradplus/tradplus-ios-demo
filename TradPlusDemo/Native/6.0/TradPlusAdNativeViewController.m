@@ -80,7 +80,6 @@
     [nativeRenderer setCtaLable:adView.ctaLabel canClick:YES];
     [nativeRenderer setIconView:adView.iconImageView canClick:YES];
     [nativeRenderer setMainImageView:adView.mainImageView canClick:YES];
-    [nativeRenderer setMainImageView:adView.mainImageView canClick:YES];
     [nativeRenderer setAdChoiceImageView:adView.adChoiceImageView canClick:YES];
     [nativeRenderer setAdView:adView canClick:YES];
     [self.nativeAd showADWithNativeRenderer:nativeRenderer subview:self.adView sceneId:nil];
@@ -90,10 +89,7 @@
 - (void)tpNativeAdLoaded:(NSDictionary *)adInfo
 {
     NSLog(@"%s \n%@", __FUNCTION__ ,adInfo);
-    __weak typeof(self) weakSelf = self;
-    dispatch_async(dispatch_get_main_queue(), ^{
-        weakSelf.logLabel.text = @"加载成功";
-    });
+    self.logLabel.text = @"加载成功";
 }
 
 ///AD加载失败

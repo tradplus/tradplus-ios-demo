@@ -68,50 +68,86 @@
     self.textViewFreq.text = [self.interstitialAd getFreqInfo];
 }
 
-- (void)interstitialAdAllLoaded:(MsInterstitialAd *)interstitialAd readyCount:(int)readyCount
+- (void)interstitialAdAllLoaded:(int)readyCount
 {
-    NSLog(@"%s->ready:%d", __FUNCTION__, interstitialAd.readyAdCount);
+    NSLog(@"readyCount %@",@(readyCount));
+    __weak typeof(self) weakSelf = self;
     dispatch_async(dispatch_get_main_queue(), ^{
 //    if (interstitialAd.readyAdCount > 0)
 //        self.btnShow.enabled = YES;
-    self.btnLoad.enabled = YES;
-    [self.activityIndicatorView stopAnimating];
-    self.textView.text = [interstitialAd getLoadDetailInfo];
+        weakSelf.btnLoad.enabled = YES;
+        [weakSelf.activityIndicatorView stopAnimating];
     });
 }
 
-- (void)interstitialAd:(MsInterstitialAd *)interstitialAd didFailWithError:(NSError *)error
+- (void)interstitialAdDidLoaded:(NSDictionary *)dicChannelInfo
+{
+    
+}
+
+- (void)interstitialAd:(NSDictionary *)dicChannelInfo didFailedWithError:(NSError *)error
 {
     NSLog(@"%s->%@", __FUNCTION__, error);
+    __weak typeof(self) weakSelf = self;
     dispatch_async(dispatch_get_main_queue(), ^{
-    self.btnLoad.enabled = YES;
-    [self.activityIndicatorView stopAnimating];
+        weakSelf.btnLoad.enabled = YES;
+        [weakSelf.activityIndicatorView stopAnimating];
     });
 }
 
-- (void)interstitialAdShown:(MsInterstitialAd *)interstitialAd
+- (void)interstitialAdShown:(NSDictionary *)dicChannelInfo
 {
-    NSLog(@"%s->%@", __FUNCTION__, interstitialAd.channelName);
+    NSLog(@"%s->%@", __FUNCTION__, dicChannelInfo[@"channel_name"]);
+    __weak typeof(self) weakSelf = self;
     dispatch_async(dispatch_get_main_queue(), ^{
-        self->_lblCacheNum.text = [NSString stringWithFormat:@"current channel: %@", interstitialAd.channelName];
+        weakSelf.lblCacheNum.text = [NSString stringWithFormat:@"current channel: %@", dicChannelInfo[@"channel_name"]];
     });
 }
 
-- (void)interstitialAdClicked:(MsInterstitialAd *)interstitialAd
+- (void)interstitialAdFailToPlay:(NSDictionary *)dicChannelInfo error:(NSError *)error
+{
+    
+}
+
+- (void)interstitialAdClicked:(NSDictionary *)dicChannelInfo
 {
     NSLog(@"%s", __FUNCTION__);
 }
 
-
-- (void)loadingInfoChanged
+- (void)interstitialAdDismissed:(NSDictionary *)dicChannelInfo
 {
-    dispatch_async(dispatch_get_main_queue(), ^{
-        self.textView.text = [self.interstitialAd getLoadDetailInfo];
-        self.textViewStatus.text = [self.interstitialAd getLoadDetailStatus];
-        //_btnShow.enabled = self.interstitialAd.readyAdCount > 0;
-        if ([_lblCacheNum.text isEqualToString:@""])
-            _lblCacheNum.text = [NSString stringWithFormat:@"cache num: %d", self.interstitialAd.cacheNum];
-    });
+    
+}
+
+- (void)interstitialAdOneLayerLoaded:(NSDictionary *)dicChannelInfo
+{
+    
+}
+
+- (void)interstitialAdOneLayer:(NSDictionary *)dicChannelInfo didFailWithError:(NSError *)error
+
+{
+    
+}
+- (void)interstitialAdBidStart
+{
+    
+}
+- (void)interstitialAdBidEnd
+{
+    
+}
+- (void)interstitialAdLoadStart:(NSDictionary *)dicChannelInfo
+{
+    
+}
+- (void)interstitialAdPlayStart:(NSDictionary *)dicChannelInfo
+{
+    
+}
+- (void)interstitialAdPlayEnd:(NSDictionary *)dicChannelInfo
+{
+    
 }
 
 @end

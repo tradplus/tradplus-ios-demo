@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment version="2304" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -95,13 +95,6 @@
                     <rect key="frame" x="169" y="315" width="37" height="37"/>
                     <color key="color" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </activityIndicatorView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x8s-Sb-xfq">
-                    <rect key="frame" x="27" y="19" width="62" height="30"/>
-                    <state key="normal" title="刷新策略"/>
-                    <connections>
-                        <action selector="doRefreshStrategy:" destination="-1" eventType="touchUpInside" id="Ucs-CK-yz1"/>
-                    </connections>
-                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -112,7 +105,6 @@
                 <constraint firstItem="wRf-Dy-RgC" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="82" id="8xr-df-FHh"/>
                 <constraint firstItem="4Pb-5c-APD" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="B1x-jt-cJS"/>
                 <constraint firstItem="2GJ-V8-YwD" firstAttribute="leading" secondItem="K7X-HG-ObL" secondAttribute="trailing" constant="5" id="BYH-Sg-tZC"/>
-                <constraint firstItem="x8s-Sb-xfq" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="27" id="GPb-7J-LaK"/>
                 <constraint firstItem="4Pb-5c-APD" firstAttribute="centerY" secondItem="Q5M-cg-NOt" secondAttribute="centerY" id="HCy-Dy-W9F"/>
                 <constraint firstItem="HXq-Zw-ULh" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="75" id="KIe-z9-EiW"/>
                 <constraint firstItem="2GJ-V8-YwD" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.3" id="MmH-aN-U25"/>
@@ -121,7 +113,6 @@
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="boU-JC-WN2" secondAttribute="trailing" constant="45" id="TMi-Im-Iat"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="boU-JC-WN2" secondAttribute="bottom" constant="40" id="Ulp-Bx-cgK"/>
                 <constraint firstItem="boU-JC-WN2" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="37" id="ZTu-Ji-agI"/>
-                <constraint firstItem="x8s-Sb-xfq" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="19" id="aMI-co-qJC"/>
                 <constraint firstItem="K7X-HG-ObL" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.6" id="iIv-My-qIz"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="K7X-HG-ObL" secondAttribute="bottom" constant="136" id="nCB-tX-ego"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="HXq-Zw-ULh" secondAttribute="trailing" constant="99" id="p4H-Pt-R8X"/>

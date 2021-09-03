@@ -10,10 +10,10 @@
 #import <TradPlusAds/TradPlus.h>
 #import <TradPlusAds/MSLogging.h>
 #import <TradPlusAds/MsCommon.h>
-#import <TradPlusAds/MsSplashView.h>
+#import <TradPlusAds/TPSplashAd.h>
 
-@interface AppDelegate ()<MsSplashViewDelegate>
-@property (nonatomic, strong) MsSplashView *splashAd;
+@interface AppDelegate ()<TPSplashAdDelegate>
+@property (nonatomic, strong) TPSplashAd *splashAd;
 
 @end
 
@@ -23,9 +23,8 @@
 {
     if (!_splashAd)
     {
-        _splashAd = [[MsSplashView alloc] init];
+        _splashAd = [[TPSplashAd alloc] init];
         _splashAd.delegate = self;
-        _splashAd.adTimeoutInterval = 3;
         _splashAd.pangleBottomHeight = 110;
         [_splashAd setAdUnitID:@"E5BC6369FC7D96FD47612B279BC5AAE0"];
     }
@@ -41,7 +40,7 @@
         UIView *view = [[UIView alloc] initWithFrame:newframe];
         view.backgroundColor = [UIColor blueColor];
 
-        [_splashAd showAdInKeyWindow:[UIApplication sharedApplication].keyWindow customView:view skipView:nil];
+        [_splashAd showSplashInWindow:[UIApplication sharedApplication].keyWindow withBottomView:view];
     }
 }
 
@@ -87,29 +86,61 @@
 }
 
 #pragma mark MsSplashViewDelegate
-- (void)MsSplashViewLoaded:(MsSplashView *)adView splashAd:(nonnull UIView *)splashAd
+- (void)splashAdDidLoaded:(NSDictionary *)dicChannelInfo
 {
     [self showSplash];
 }
-
-- (void)MsSplashView:(MsSplashView *)adView didFailWithError:(NSError *)error
+- (void)splashAd:(NSDictionary *)dicChannelInfo didFailedWithError:(NSError *)error
+{
+    
+}
+- (void)splashAdShown:(NSDictionary *)dicChannelInfo
+{
+    
+}
+- (void)splashAdFailToPlay:(NSDictionary *)dicChannelInfo error:(NSError *)error
+{
+    
+}
+- (void)splashAdClicked:(NSDictionary *)dicChannelInfo
+{
+    
+}
+- (void)splashAdDismissed:(NSDictionary *)dicChannelInfo
 {
     
 }
 
-- (void)MsSplashViewClicked:(MsSplashView *)adView
+- (void)splashAdAllLoaded:(int)readyCount
 {
     
 }
-
-- (void)MsSplashViewShown:(MsSplashView *)adView
+- (void)splashAdOneLayerLoaded:(NSDictionary *)dicChannelInfo
 {
     
 }
-
-- (void)MsSplashViewDismissed:(MsSplashView *)adView
+- (void)splashAdOneLayer:(NSDictionary *)dicChannelInfo didFailWithError:(NSError *)error
 {
     
 }
-
+- (void)splashAdBidStart:(NSDictionary *)dicChannelInfo
+{
+    
+}
+- (void)splashAdBidEnd:(NSDictionary *)dicChannelInfo
+{
+    
+}
+- (void)splashAdLoadStart:(NSDictionary *)dicChannelInfo
+{
+    
+}
+- (void)splashAdPlayStart:(NSDictionary *)dicChannelInfo
+{
+    
+}
+- (void)splashAdPlayEnd:(NSDictionary *)dicChannelInfo
+{
+    
+}
 @end
