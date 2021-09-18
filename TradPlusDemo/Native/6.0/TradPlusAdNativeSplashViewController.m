@@ -45,7 +45,11 @@
     //自定义view方式
 //    [self showWithRendererInWindow];
     
+    
     //设置添加到指定view上 v6.4增加
+//    [self.nativeSplash showInSubView:self.adView];
+    
+    //自定义模版方式
 //    [self.nativeSplash showWithRenderingViewClass:[TPNativeTemplate class] subView:self.adView];
     
    //自定义view方式
