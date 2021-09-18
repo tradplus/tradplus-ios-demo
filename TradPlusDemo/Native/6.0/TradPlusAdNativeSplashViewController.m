@@ -43,11 +43,35 @@
 //    [self.nativeSplash showWithRenderingViewClass:[TPNativeTemplate class] window:window];
     
     //自定义view方式
-//    [self showWithRenderer];
+//    [self showWithRendererInWindow];
+    
+    //设置添加到指定view上 v6.4增加
+//    [self.nativeSplash showWithRenderingViewClass:[TPNativeTemplate class] subView:self.adView];
+    
+   //自定义view方式
+//    [self showWithRendererInSubView];
 }
 
-//通过设置 NativeRenderer 来渲染
-- (void)showWithRenderer
+//通过设置 NativeRenderer 来渲染 subView v6.4增加
+- (void)showWithRendererInSubView
+{
+    //支持任何UIView 无需支持任何协议
+    TPNativeTemplate *adView = [[NSBundle mainBundle] loadNibNamed:@"TPNativeTemplate" owner:self options:nil].lastObject;
+    adView.frame = self.adView.bounds;
+    [adView layoutIfNeeded];
+    TradPlusNativeRenderer *nativeRenderer = [[TradPlusNativeRenderer alloc] init];
+    [nativeRenderer setTitleLable:adView.titleLabel canClick:YES];
+    [nativeRenderer setTextLable:adView.textLabel canClick:YES];
+    [nativeRenderer setCtaLable:adView.ctaLabel canClick:YES];
+    [nativeRenderer setIconView:adView.iconImageView canClick:YES];
+    [nativeRenderer setMainImageView:adView.mainImageView canClick:YES];
+    [nativeRenderer setAdChoiceImageView:adView.adChoiceImageView canClick:YES];
+    [nativeRenderer setAdView:adView canClick:NO];
+    [self.nativeSplash showWithRenderer:nativeRenderer subView:self.adView];
+}
+
+//通过设置 NativeRenderer 来渲染 InWindow
+- (void)showWithRendererInWindow
 {
     UIWindow *window = [UIApplication sharedApplication].keyWindow;
     //支持任何UIView 无需支持任何协议
