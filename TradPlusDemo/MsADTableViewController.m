@@ -17,6 +17,9 @@
 #import "TradPlusAdNativeBannerViewController.h"
 #import "TradPlusAdNativeSplashViewController.h"
 #import "TradPlusAdBannerViewController.h"
+#import "TradPlusAdInterstitialViewController.h"
+#import "TradPlusAdRewardedViewController.h"
+#import "TradPlusAdSplashViewController.h"
 
 @interface MsADTableViewController ()
 
@@ -36,7 +39,7 @@
     self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
     //self.title = @"Ads";
     self.tableView.accessibilityLabel = @"Ad Table View";
-    self.titleArray = @[@"横幅",@"高级原生",@"高级原生(并发拉取多个素材)",@"插屏",@"激励视频",@"积分墙",@"高级原生（6.0）",@"原生开屏（6.1）",@"原生横幅（6.1）",@"横幅（6.4）"];
+    self.titleArray = @[@"横幅",@"高级原生",@"高级原生(并发拉取多个素材)",@"插屏",@"激励视频",@"积分墙",@"高级原生（6.0）",@"原生开屏（6.1）",@"原生横幅（6.1）",@"横幅（6.4）",@"插屏（6.4）",@"激励视频（6.4）",@"开屏（6.4）"];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -136,6 +139,21 @@
             case 9://@"横幅（6.4）"
             {
                 detailViewController = [[TradPlusAdBannerViewController alloc] initWithNibName:@"TradPlusAdBannerViewController" bundle:nil];
+                break;
+            }
+            case 10://@"插屏（6.4）"
+            {
+                detailViewController = [[TradPlusAdInterstitialViewController alloc] initWithNibName:@"TradPlusAdInterstitialViewController" bundle:nil];
+                break;
+            }
+            case 11://@"激励视频（6.4）"
+            {
+                detailViewController = [[TradPlusAdRewardedViewController alloc] initWithNibName:@"TradPlusAdRewardedViewController" bundle:nil];
+                break;
+            }
+            case 12://@"开屏（6.4）"
+            {
+                detailViewController = [[TradPlusAdSplashViewController alloc] initWithNibName:@"TradPlusAdSplashViewController" bundle:nil];
                 break;
             }
         }
