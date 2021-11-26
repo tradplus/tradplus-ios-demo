@@ -47,6 +47,7 @@
 		5AD5CA8A26E1D532008C517E /* NativeBannerTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AD5CA8826E1D532008C517E /* NativeBannerTemplate.m */; };
 		5AD5CA8B26E1D532008C517E /* NativeBannerTemplate.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5AD5CA8926E1D532008C517E /* NativeBannerTemplate.xib */; };
 		5AD5CA8E26E1DF16008C517E /* TradPlusAdNativeSplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5AD5CA8D26E1DF16008C517E /* TradPlusAdNativeSplashViewController.xib */; };
+		5AE6C5B22750C4D900B0AD17 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE6C5B12750C4D900B0AD17 /* File.swift */; };
 		5AF1AC622705B830006E2645 /* TradPlusAdInterstitialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5AF1AC5F2705B830006E2645 /* TradPlusAdInterstitialViewController.xib */; };
 		5AF1AC632705B830006E2645 /* TradPlusAdInterstitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AF1AC612705B830006E2645 /* TradPlusAdInterstitialViewController.m */; };
 		5AF1AC672705B8A7006E2645 /* TradPlusAdRewardedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5AF1AC642705B8A7006E2645 /* TradPlusAdRewardedViewController.xib */; };
@@ -127,6 +128,7 @@
 		5AD5CA8826E1D532008C517E /* NativeBannerTemplate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NativeBannerTemplate.m; sourceTree = "<group>"; };
 		5AD5CA8926E1D532008C517E /* NativeBannerTemplate.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NativeBannerTemplate.xib; sourceTree = "<group>"; };
 		5AD5CA8D26E1DF16008C517E /* TradPlusAdNativeSplashViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TradPlusAdNativeSplashViewController.xib; sourceTree = "<group>"; };
+		5AE6C5B12750C4D900B0AD17 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		5AF1AC5F2705B830006E2645 /* TradPlusAdInterstitialViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TradPlusAdInterstitialViewController.xib; sourceTree = "<group>"; };
 		5AF1AC602705B830006E2645 /* TradPlusAdInterstitialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TradPlusAdInterstitialViewController.h; sourceTree = "<group>"; };
 		5AF1AC612705B830006E2645 /* TradPlusAdInterstitialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TradPlusAdInterstitialViewController.m; sourceTree = "<group>"; };
@@ -192,6 +194,7 @@
 				048B0243248BF4540003F53E /* AppDelegate.h */,
 				048B023A248BF4540003F53E /* AppDelegate.m */,
 				048B0231248BF4530003F53E /* Assets.xcassets */,
+				5AE6C5B12750C4D900B0AD17 /* File.swift */,
 				048B028B248C01010003F53E /* Banner */,
 				048B0235248BF4540003F53E /* Base.lproj */,
 				048B0229248BF2650003F53E /* Info.plist */,
@@ -408,6 +411,7 @@
 				TargetAttributes = {
 					048B0214248BF2600003F53E = {
 						CreatedOnToolsVersion = 11.5;
+						LastSwiftMigration = 1310;
 					};
 				};
 			};
@@ -532,6 +536,7 @@
 				048B0253248BF4540003F53E /* MsADTableViewController.m in Sources */,
 				048B028F248C01010003F53E /* InterstitialViewController.m in Sources */,
 				5AF1AC632705B830006E2645 /* TradPlusAdInterstitialViewController.m in Sources */,
+				5AE6C5B22750C4D900B0AD17 /* File.swift in Sources */,
 				048B0296248C01010003F53E /* BannerViewController.m in Sources */,
 				5ACB75272711AC3500FC9735 /* CustomSplashAdapter.m in Sources */,
 				5ACB75332713EAAA00FC9735 /* CustomFacebookNativeAdapter.m in Sources */,
@@ -691,6 +696,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 39CE8S36WK;
@@ -705,6 +711,8 @@
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tradplusad.koala;
 				PRODUCT_NAME = TradPlusDemoN;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -715,6 +723,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 39CE8S36WK;
@@ -729,6 +738,7 @@
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tradplusad.koala;
 				PRODUCT_NAME = TradPlusDemoN;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
