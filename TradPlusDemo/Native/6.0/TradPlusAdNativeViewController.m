@@ -46,8 +46,8 @@
 
 - (IBAction)showAct:(id)sender
 {
-//    [self showWithRenderingViewClass];
-    [self showWithRenderer];
+    [self showWithRenderingViewClass];
+//    [self showWithRenderer];
     
 //    NSDictionary *adInfo = [self.nativeAd getReadyAdInfo];
 //    //为空则说明没有广告
@@ -73,7 +73,7 @@
     //支持任何UIView 无需支持任何协议
     TPNativeTemplate *adView = [[NSBundle mainBundle] loadNibNamed:@"TPNativeTemplate" owner:self options:nil].lastObject;
     adView.frame = self.adView.bounds;
-    
+    [adView layoutIfNeeded];
     TradPlusNativeRenderer *nativeRenderer = [[TradPlusNativeRenderer alloc] init];
     [nativeRenderer setTitleLable:adView.titleLabel canClick:YES];
     [nativeRenderer setTextLable:adView.textLabel canClick:YES];
