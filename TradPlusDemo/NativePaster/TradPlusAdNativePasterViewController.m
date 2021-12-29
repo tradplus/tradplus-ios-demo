@@ -47,7 +47,9 @@
 - (IBAction)showAct:(id)sender
 {
     self.infoLabel.text = @"展示中";
-    //获取一个已加载完成的 原生广告缓存，没有缓存时返回 nil
+    //获取一个已加载完成的，原生广告缓存，没有缓存时返回 nil
+    //注意获取后此广告会从缓存中移除，SDK同时移除此缓存的引用
+    //一般情况下一次只获取一个
     self.nativeObject = [self.native getReadyNativeObject];
     if(self.nativeObject != nil)
     {
