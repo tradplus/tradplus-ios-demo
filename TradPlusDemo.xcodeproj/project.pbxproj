@@ -184,6 +184,10 @@
 			isa = PBXGroup;
 			children = (
 				048B0217248BF2600003F53E /* TradPlusDemo */,
+				5AE6C5B12750C4D900B0AD17 /* File.swift */,
+				048B0231248BF4530003F53E /* Assets.xcassets */,
+				048B022A248BF2650003F53E /* main.m */,
+				048B0235248BF4540003F53E /* Base.lproj */,
 				048B0216248BF2600003F53E /* Products */,
 				048B025E248BF57A0003F53E /* Frameworks */,
 				0218058DED31D362A848F7C7 /* Pods */,
@@ -201,23 +205,27 @@
 		048B0217248BF2600003F53E /* TradPlusDemo */ = {
 			isa = PBXGroup;
 			children = (
+				5AFA31EF26F5B0E800F21A36 /* TradPlusAdBannerViewController.h */,
+				5AFA31F126F5B0E800F21A36 /* TradPlusAdBannerViewController.m */,
+				5AFA31F026F5B0E800F21A36 /* TradPlusAdBannerViewController.xib */,
+				5AF1AC602705B830006E2645 /* TradPlusAdInterstitialViewController.h */,
+				5AF1AC612705B830006E2645 /* TradPlusAdInterstitialViewController.m */,
+				5AF1AC5F2705B830006E2645 /* TradPlusAdInterstitialViewController.xib */,
+				5AF1AC6B2705B91B006E2645 /* TradPlusAdSplashViewController.h */,
+				5AF1AC6A2705B91B006E2645 /* TradPlusAdSplashViewController.m */,
+				5AF1AC6C2705B91B006E2645 /* TradPlusAdSplashViewController.xib */,
+				5AF1AC652705B8A7006E2645 /* TradPlusAdRewardedViewController.h */,
+				5AF1AC662705B8A7006E2645 /* TradPlusAdRewardedViewController.m */,
+				5AF1AC642705B8A7006E2645 /* TradPlusAdRewardedViewController.xib */,
+				048B0280248C01010003F53E /* Native */,
+				5AD5DE05277BFABB005BAA07 /* NativePaster */,
+				5AF1AC6F2705B954006E2645 /* CustomPlatform */,
+				5A1923722786FAB500DFE4A3 /* 5.x */,
 				048B0243248BF4540003F53E /* AppDelegate.h */,
 				048B023A248BF4540003F53E /* AppDelegate.m */,
-				048B0231248BF4530003F53E /* Assets.xcassets */,
-				5AE6C5B12750C4D900B0AD17 /* File.swift */,
-				048B028B248C01010003F53E /* Banner */,
-				048B0235248BF4540003F53E /* Base.lproj */,
-				048B0229248BF2650003F53E /* Info.plist */,
-				048B0278248C01000003F53E /* Interstitial */,
-				048B022A248BF2650003F53E /* main.m */,
 				048B023E248BF4540003F53E /* MsADTableViewController.h */,
 				048B0245248BF4540003F53E /* MsADTableViewController.m */,
-				5AD5DE05277BFABB005BAA07 /* NativePaster */,
-				048B0280248C01010003F53E /* Native */,
-				89D605C9255E7D6D008659F5 /* Offerwall */,
-				5AF1AC692705B900006E2645 /* Splash */,
-				048B027C248C01000003F53E /* Rewarded */,
-				5AF1AC6F2705B954006E2645 /* CustomPlatform */,
+				048B0229248BF2650003F53E /* Info.plist */,
 			);
 			path = TradPlusDemo;
 			sourceTree = "<group>";
@@ -242,47 +250,24 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		048B0278248C01000003F53E /* Interstitial */ = {
-			isa = PBXGroup;
-			children = (
-				5AF1AC602705B830006E2645 /* TradPlusAdInterstitialViewController.h */,
-				5AF1AC612705B830006E2645 /* TradPlusAdInterstitialViewController.m */,
-				5AF1AC5F2705B830006E2645 /* TradPlusAdInterstitialViewController.xib */,
-				048B0279248C01000003F53E /* InterstitialViewController.h */,
-				048B027B248C01000003F53E /* InterstitialViewController.m */,
-				048B027A248C01000003F53E /* InterstitialViewController.xib */,
-			);
-			path = Interstitial;
-			sourceTree = "<group>";
-		};
-		048B027C248C01000003F53E /* Rewarded */ = {
-			isa = PBXGroup;
-			children = (
-				5AF1AC652705B8A7006E2645 /* TradPlusAdRewardedViewController.h */,
-				5AF1AC662705B8A7006E2645 /* TradPlusAdRewardedViewController.m */,
-				5AF1AC642705B8A7006E2645 /* TradPlusAdRewardedViewController.xib */,
-				048B027F248C01010003F53E /* RewardedVideoViewController.h */,
-				048B027D248C01000003F53E /* RewardedVideoViewController.m */,
-				048B027E248C01000003F53E /* RewardedVideoViewController.xib */,
-			);
-			path = Rewarded;
-			sourceTree = "<group>";
-		};
 		048B0280248C01010003F53E /* Native */ = {
 			isa = PBXGroup;
 			children = (
-				5A2F261626CB574700CAD358 /* 6.0 */,
-				04484335248F6AB300550234 /* AdvancedNativeAdViewSampleFB.h */,
-				04484336248F6AB400550234 /* AdvancedNativeAdViewSampleFB.m */,
-				0448433A248F6AB400550234 /* AdvancedNativeAdViewSampleFB.xib */,
-				04484338248F6AB400550234 /* AdvancedNativeAdViewSampleGG.h */,
-				04484337248F6AB400550234 /* AdvancedNativeAdViewSampleGG.m */,
-				04484339248F6AB400550234 /* AdvancedNativeAdViewSampleGG.xib */,
-				048B0281248C01010003F53E /* AdvancedNativeAdViewSample.h */,
-				048B0285248C01010003F53E /* AdvancedNativeAdViewSample.m */,
-				048B0289248C01010003F53E /* AdvancedNativeAdViewSample.xib */,
-				048B0286248C01010003F53E /* Normal */,
-				048B028A248C01010003F53E /* Stream(HT) */,
+				5AD5CA8726E1D532008C517E /* NativeBannerTemplate.h */,
+				5AD5CA8826E1D532008C517E /* NativeBannerTemplate.m */,
+				5AD5CA8926E1D532008C517E /* NativeBannerTemplate.xib */,
+				5AD5C98626E0975E008C517E /* TradPlusAdNativeBannerViewController.h */,
+				5AD5C98726E0975E008C517E /* TradPlusAdNativeBannerViewController.m */,
+				5AD5CA7E26E1C1B4008C517E /* TradPlusAdNativeBannerViewController.xib */,
+				5A2F261926CB57C300CAD358 /* TPNativeTemplate.h */,
+				5A2F261726CB57C300CAD358 /* TPNativeTemplate.m */,
+				5A2F261826CB57C300CAD358 /* TPNativeTemplate.xib */,
+				5A98A01826CB58D200C11B85 /* TradPlusAdNativeViewController.h */,
+				5A98A01926CB58D200C11B85 /* TradPlusAdNativeViewController.m */,
+				5A98A01A26CB58D200C11B85 /* TradPlusAdNativeViewController.xib */,
+				5AD5C98126E0973C008C517E /* TradPlusAdNativeSplashViewController.h */,
+				5AD5C98226E0973C008C517E /* TradPlusAdNativeSplashViewController.m */,
+				5AD5CA8D26E1DF16008C517E /* TradPlusAdNativeSplashViewController.xib */,
 			);
 			path = Native;
 			sourceTree = "<group>";
@@ -307,46 +292,33 @@
 			path = "Stream(HT)";
 			sourceTree = "<group>";
 		};
-		048B028B248C01010003F53E /* Banner */ = {
+		5A1923722786FAB500DFE4A3 /* 5.x */ = {
 			isa = PBXGroup;
 			children = (
-				5AFA31EF26F5B0E800F21A36 /* TradPlusAdBannerViewController.h */,
-				5AFA31F126F5B0E800F21A36 /* TradPlusAdBannerViewController.m */,
-				5AFA31F026F5B0E800F21A36 /* TradPlusAdBannerViewController.xib */,
 				048B028D248C01010003F53E /* BannerViewController.h */,
 				048B028C248C01010003F53E /* BannerViewController.m */,
+				048B0279248C01000003F53E /* InterstitialViewController.h */,
+				048B027B248C01000003F53E /* InterstitialViewController.m */,
+				048B027A248C01000003F53E /* InterstitialViewController.xib */,
+				048B027F248C01010003F53E /* RewardedVideoViewController.h */,
+				048B027D248C01000003F53E /* RewardedVideoViewController.m */,
+				048B027E248C01000003F53E /* RewardedVideoViewController.xib */,
+				04484335248F6AB300550234 /* AdvancedNativeAdViewSampleFB.h */,
+				04484336248F6AB400550234 /* AdvancedNativeAdViewSampleFB.m */,
+				0448433A248F6AB400550234 /* AdvancedNativeAdViewSampleFB.xib */,
+				04484338248F6AB400550234 /* AdvancedNativeAdViewSampleGG.h */,
+				04484337248F6AB400550234 /* AdvancedNativeAdViewSampleGG.m */,
+				04484339248F6AB400550234 /* AdvancedNativeAdViewSampleGG.xib */,
+				048B0281248C01010003F53E /* AdvancedNativeAdViewSample.h */,
+				048B0285248C01010003F53E /* AdvancedNativeAdViewSample.m */,
+				048B0289248C01010003F53E /* AdvancedNativeAdViewSample.xib */,
+				89D605CA255E7D6D008659F5 /* OfferwallViewController.m */,
+				89D605CB255E7D6D008659F5 /* OfferwallViewController.xib */,
+				89D605CC255E7D6D008659F5 /* OfferwallViewController.h */,
+				048B0286248C01010003F53E /* Normal */,
+				048B028A248C01010003F53E /* Stream(HT) */,
 			);
-			path = Banner;
-			sourceTree = "<group>";
-		};
-		5A2F261626CB574700CAD358 /* 6.0 */ = {
-			isa = PBXGroup;
-			children = (
-				5A2F261926CB57C300CAD358 /* TPNativeTemplate.h */,
-				5A2F261726CB57C300CAD358 /* TPNativeTemplate.m */,
-				5A2F261826CB57C300CAD358 /* TPNativeTemplate.xib */,
-				5A98A01826CB58D200C11B85 /* TradPlusAdNativeViewController.h */,
-				5A98A01926CB58D200C11B85 /* TradPlusAdNativeViewController.m */,
-				5A98A01A26CB58D200C11B85 /* TradPlusAdNativeViewController.xib */,
-				5AD5C98126E0973C008C517E /* TradPlusAdNativeSplashViewController.h */,
-				5AD5C98226E0973C008C517E /* TradPlusAdNativeSplashViewController.m */,
-				5AD5CA8D26E1DF16008C517E /* TradPlusAdNativeSplashViewController.xib */,
-				5AD5CA8026E1C86A008C517E /* NativeBanner */,
-			);
-			path = 6.0;
-			sourceTree = "<group>";
-		};
-		5AD5CA8026E1C86A008C517E /* NativeBanner */ = {
-			isa = PBXGroup;
-			children = (
-				5AD5CA8726E1D532008C517E /* NativeBannerTemplate.h */,
-				5AD5CA8826E1D532008C517E /* NativeBannerTemplate.m */,
-				5AD5CA8926E1D532008C517E /* NativeBannerTemplate.xib */,
-				5AD5C98626E0975E008C517E /* TradPlusAdNativeBannerViewController.h */,
-				5AD5C98726E0975E008C517E /* TradPlusAdNativeBannerViewController.m */,
-				5AD5CA7E26E1C1B4008C517E /* TradPlusAdNativeBannerViewController.xib */,
-			);
-			path = NativeBanner;
+			path = 5.x;
 			sourceTree = "<group>";
 		};
 		5AD5DE05277BFABB005BAA07 /* NativePaster */ = {
@@ -360,16 +332,6 @@
 				5AD5DE08277BFAE5005BAA07 /* TradPlusAdNativePasterViewController.xib */,
 			);
 			path = NativePaster;
-			sourceTree = "<group>";
-		};
-		5AF1AC692705B900006E2645 /* Splash */ = {
-			isa = PBXGroup;
-			children = (
-				5AF1AC6B2705B91B006E2645 /* TradPlusAdSplashViewController.h */,
-				5AF1AC6A2705B91B006E2645 /* TradPlusAdSplashViewController.m */,
-				5AF1AC6C2705B91B006E2645 /* TradPlusAdSplashViewController.xib */,
-			);
-			path = Splash;
 			sourceTree = "<group>";
 		};
 		5AF1AC6F2705B954006E2645 /* CustomPlatform */ = {
@@ -389,16 +351,6 @@
 				5ACB75312713EAAA00FC9735 /* CustomFacebookNativeAdapter.m */,
 			);
 			path = CustomPlatform;
-			sourceTree = "<group>";
-		};
-		89D605C9255E7D6D008659F5 /* Offerwall */ = {
-			isa = PBXGroup;
-			children = (
-				89D605CA255E7D6D008659F5 /* OfferwallViewController.m */,
-				89D605CB255E7D6D008659F5 /* OfferwallViewController.xib */,
-				89D605CC255E7D6D008659F5 /* OfferwallViewController.h */,
-			);
-			path = Offerwall;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -14,21 +14,24 @@
 
 @interface AppDelegate ()<TPSplashAdDelegate>
 @property (nonatomic, strong) TPSplashAd *splashAd;
-
+@property (nonatomic, assign)BOOL openShow;
 @end
 
 @implementation AppDelegate
 
 - (void)loadSplash
 {
-    if (!_splashAd)
+    if(self.openShow)
     {
-        _splashAd = [[TPSplashAd alloc] init];
-        _splashAd.delegate = self;
-        _splashAd.pangleBottomHeight = 110;
-        [_splashAd setAdUnitID:@"E5BC6369FC7D96FD47612B279BC5AAE0"];
+        if (!_splashAd)
+        {
+            _splashAd = [[TPSplashAd alloc] init];
+            _splashAd.delegate = self;
+            _splashAd.pangleBottomHeight = 110;
+            [_splashAd setAdUnitID:@"E5BC6369FC7D96FD47612B279BC5AAE0"];
+        }
+        [_splashAd loadAd];
     }
-    [_splashAd loadAd];
 }
 
 - (void)showSplash

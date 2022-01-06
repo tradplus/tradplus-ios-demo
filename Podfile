@@ -69,7 +69,7 @@ target 'TradPlusDemo' do
   pod 'ChartboostSDK','8.5.0.1'
   pod 'TradPlusAdSDK/FyberAdapter', '6.8.0'
   pod 'Fyber_Marketplace_SDK','8.1.0'
-  pod 'TradPlusAdSDK/SuperAwesomeAdapter', '6.8.0'
-  pod 'SuperAwesome','8.1.3'
+#  pod 'TradPlusAdSDK/SuperAwesomeAdapter', '6.8.0'
+#  pod 'SuperAwesome','8.1.3'
   pod 'TradPlusAdSDK/TPADXAdapter', '6.8.0'
 end

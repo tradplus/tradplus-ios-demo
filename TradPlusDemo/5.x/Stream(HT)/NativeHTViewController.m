@@ -47,7 +47,6 @@
 }
 
 - (IBAction)doRefreshStrategy:(id)sender {
-    [[MsServerApi sharedInstance] updateStrategy:_placementId segmentTag:nil dicUserInfo:nil completionBlock:nil];
 }
 
 - (IBAction)doLoadNativeAds:(id)sender {
