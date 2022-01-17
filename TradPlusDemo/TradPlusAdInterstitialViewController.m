@@ -12,6 +12,7 @@
 
 @interface TradPlusAdInterstitialViewController ()<TradPlusADInterstitialDelegate>
 {
+    
 }
 
 @property (nonatomic,strong)TradPlusAdInterstitial *interstitial;
@@ -84,9 +85,9 @@
     NSLog(@"%s \n%@", __FUNCTION__ ,adInfo);
 }
 ///bidding结束
-- (void)tpInterstitialAdBidEnd:(NSDictionary *)adInfo success:(BOOL)success
+- (void)tpInterstitialAdBidEnd:(NSDictionary *)adInfo error:(NSError *)error
 {
-    NSLog(@"%s \n%@ success :%@", __FUNCTION__ ,adInfo,@(success));
+    NSLog(@"%s \n%@ error :%@", __FUNCTION__ ,adInfo,error);
 }
 ///开始加载
 - (void)tpInterstitialAdLoadStart:(NSDictionary *)adInfo

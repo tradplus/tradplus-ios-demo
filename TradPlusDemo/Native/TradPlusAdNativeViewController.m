@@ -31,7 +31,7 @@
 //    [self.nativeAd setTemplateRenderSize:CGSizeMake(320, 200)];
 }
 
-///部分三方源需要设置rootviewController smaato GDTMob kuaishou
+///部分三方源需要设置rootviewController
 - (UIViewController *)viewControllerForPresentingModalView
 {
     return self;
@@ -147,9 +147,9 @@
 }
 
 ///bidding结束
-- (void)tpNativeAdBidEnd:(NSDictionary *)adInfo success:(BOOL)success
+- (void)tpNativeAdBidEnd:(NSDictionary *)adInfo error:(NSError *)error
 {
-    NSLog(@"%s \n%@ \n success %@", __FUNCTION__ ,adInfo,@(success));
+    NSLog(@"%s \n%@ \n error %@", __FUNCTION__ ,adInfo,error);
 }
 
 ///AD被关闭 部分模版类型会返回相关回调

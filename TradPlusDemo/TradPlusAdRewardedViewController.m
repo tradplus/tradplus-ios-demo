@@ -88,9 +88,9 @@
     NSLog(@"%s \n%@", __FUNCTION__ ,adInfo);
 }
 ///bidding结束
-- (void)tpRewardedAdBidEnd:(NSDictionary *)adInfo success:(BOOL)success
+- (void)tpRewardedAdBidEnd:(NSDictionary *)adInfo error:(NSError *)error
 {
-    NSLog(@"%s \n%@ success :%@", __FUNCTION__ ,adInfo,@(success));
+    NSLog(@"%s \n%@ error :%@", __FUNCTION__ ,adInfo,error);
 }
 ///开始加载
 - (void)tpRewardedAdLoadStart:(NSDictionary *)adInfo
@@ -119,6 +119,12 @@
 }
 ///播放结束
 - (void)tpRewardedAdPlayEnd:(NSDictionary *)adInfo
+{
+    NSLog(@"%s \n%@", __FUNCTION__ ,adInfo);
+}
+
+///再看一个的完成奖励 （快手） v6.9.0新增
+- (void)tpRewardedAdPlayAgainReward:(NSDictionary *)adInfo
 {
     NSLog(@"%s \n%@", __FUNCTION__ ,adInfo);
 }

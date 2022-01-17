@@ -31,6 +31,14 @@
 		04E47FD824971BE4006903C5 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 04E47FD724971BE4006903C5 /* libresolv.tbd */; };
 		04E47FDA24971BEA006903C5 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 04E47FD924971BEA006903C5 /* libxml2.tbd */; };
 		04E47FDC24971BEF006903C5 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 04E47FDB24971BEE006903C5 /* libz.tbd */; };
+		5A1508D22795127300952903 /* TradPlusAdNativeDrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A1508D02795127300952903 /* TradPlusAdNativeDrawViewController.m */; };
+		5A1508D32795127300952903 /* TradPlusAdNativeDrawViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A1508D12795127300952903 /* TradPlusAdNativeDrawViewController.xib */; };
+		5A1508DE2795191E00952903 /* NativeGDTDrawView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A1508D52795191D00952903 /* NativeGDTDrawView.xib */; };
+		5A1508DF2795191E00952903 /* NativeGDTDrawListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A1508D62795191D00952903 /* NativeGDTDrawListViewController.xib */; };
+		5A1508E02795191E00952903 /* NativeDrawListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A1508D72795191D00952903 /* NativeDrawListViewController.m */; };
+		5A1508E12795191E00952903 /* NativeDrawListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A1508D82795191E00952903 /* NativeDrawListViewController.xib */; };
+		5A1508E22795191E00952903 /* NativeGDTDrawListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A1508DA2795191E00952903 /* NativeGDTDrawListViewController.m */; };
+		5A1508E32795191E00952903 /* NativeGDTDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A1508DC2795191E00952903 /* NativeGDTDrawView.m */; };
 		5A2F261A26CB57C300CAD358 /* TPNativeTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A2F261726CB57C300CAD358 /* TPNativeTemplate.m */; };
 		5A2F261B26CB57C300CAD358 /* TPNativeTemplate.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A2F261826CB57C300CAD358 /* TPNativeTemplate.xib */; };
 		5A98A01B26CB58D200C11B85 /* TradPlusAdNativeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A98A01926CB58D200C11B85 /* TradPlusAdNativeViewController.m */; };
@@ -105,6 +113,18 @@
 		24FB5399EB3909262337C872 /* Pods-TradPlusDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TradPlusDemo.release.xcconfig"; path = "Target Support Files/Pods-TradPlusDemo/Pods-TradPlusDemo.release.xcconfig"; sourceTree = "<group>"; };
 		2AA628CDDCE0A90002571385 /* Pods_TradPlusDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TradPlusDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5784C44A51FB336370792105 /* Pods-TradPlusDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TradPlusDemo.debug.xcconfig"; path = "Target Support Files/Pods-TradPlusDemo/Pods-TradPlusDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		5A1508CF2795127300952903 /* TradPlusAdNativeDrawViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TradPlusAdNativeDrawViewController.h; sourceTree = "<group>"; };
+		5A1508D02795127300952903 /* TradPlusAdNativeDrawViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TradPlusAdNativeDrawViewController.m; sourceTree = "<group>"; };
+		5A1508D12795127300952903 /* TradPlusAdNativeDrawViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TradPlusAdNativeDrawViewController.xib; sourceTree = "<group>"; };
+		5A1508D52795191D00952903 /* NativeGDTDrawView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NativeGDTDrawView.xib; sourceTree = "<group>"; };
+		5A1508D62795191D00952903 /* NativeGDTDrawListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NativeGDTDrawListViewController.xib; sourceTree = "<group>"; };
+		5A1508D72795191D00952903 /* NativeDrawListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NativeDrawListViewController.m; sourceTree = "<group>"; };
+		5A1508D82795191E00952903 /* NativeDrawListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NativeDrawListViewController.xib; sourceTree = "<group>"; };
+		5A1508D92795191E00952903 /* NativeGDTDrawListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NativeGDTDrawListViewController.h; sourceTree = "<group>"; };
+		5A1508DA2795191E00952903 /* NativeGDTDrawListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NativeGDTDrawListViewController.m; sourceTree = "<group>"; };
+		5A1508DB2795191E00952903 /* NativeDrawListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NativeDrawListViewController.h; sourceTree = "<group>"; };
+		5A1508DC2795191E00952903 /* NativeGDTDrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NativeGDTDrawView.m; sourceTree = "<group>"; };
+		5A1508DD2795191E00952903 /* NativeGDTDrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NativeGDTDrawView.h; sourceTree = "<group>"; };
 		5A2F261726CB57C300CAD358 /* TPNativeTemplate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPNativeTemplate.m; sourceTree = "<group>"; };
 		5A2F261826CB57C300CAD358 /* TPNativeTemplate.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TPNativeTemplate.xib; sourceTree = "<group>"; };
 		5A2F261926CB57C300CAD358 /* TPNativeTemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPNativeTemplate.h; sourceTree = "<group>"; };
@@ -217,6 +237,7 @@
 				5AF1AC652705B8A7006E2645 /* TradPlusAdRewardedViewController.h */,
 				5AF1AC662705B8A7006E2645 /* TradPlusAdRewardedViewController.m */,
 				5AF1AC642705B8A7006E2645 /* TradPlusAdRewardedViewController.xib */,
+				5A1508CE27950DEC00952903 /* NativeDraw */,
 				048B0280248C01010003F53E /* Native */,
 				5AD5DE05277BFABB005BAA07 /* NativePaster */,
 				5AF1AC6F2705B954006E2645 /* CustomPlatform */,
@@ -290,6 +311,25 @@
 				048B029E248C122E0003F53E /* NativeHTViewController.xib */,
 			);
 			path = "Stream(HT)";
+			sourceTree = "<group>";
+		};
+		5A1508CE27950DEC00952903 /* NativeDraw */ = {
+			isa = PBXGroup;
+			children = (
+				5A1508DD2795191E00952903 /* NativeGDTDrawView.h */,
+				5A1508DC2795191E00952903 /* NativeGDTDrawView.m */,
+				5A1508D52795191D00952903 /* NativeGDTDrawView.xib */,
+				5A1508D92795191E00952903 /* NativeGDTDrawListViewController.h */,
+				5A1508DA2795191E00952903 /* NativeGDTDrawListViewController.m */,
+				5A1508D62795191D00952903 /* NativeGDTDrawListViewController.xib */,
+				5A1508DB2795191E00952903 /* NativeDrawListViewController.h */,
+				5A1508D72795191D00952903 /* NativeDrawListViewController.m */,
+				5A1508D82795191E00952903 /* NativeDrawListViewController.xib */,
+				5A1508CF2795127300952903 /* TradPlusAdNativeDrawViewController.h */,
+				5A1508D02795127300952903 /* TradPlusAdNativeDrawViewController.m */,
+				5A1508D12795127300952903 /* TradPlusAdNativeDrawViewController.xib */,
+			);
+			path = NativeDraw;
 			sourceTree = "<group>";
 		};
 		5A1923722786FAB500DFE4A3 /* 5.x */ = {
@@ -420,13 +460,16 @@
 				048B024C248BF4540003F53E /* Main.storyboard in Resources */,
 				048B0248248BF4540003F53E /* Assets.xcassets in Resources */,
 				048B0291248C01010003F53E /* RewardedVideoViewController.xib in Resources */,
+				5A1508DF2795191E00952903 /* NativeGDTDrawListViewController.xib in Resources */,
 				0448433E248F6AB400550234 /* AdvancedNativeAdViewSampleFB.xib in Resources */,
+				5A1508E12795191E00952903 /* NativeDrawListViewController.xib in Resources */,
 				048B02A0248C122E0003F53E /* NativeHTViewController.xib in Resources */,
 				5AD5DE0E277BFAF8005BAA07 /* TPNativePasterView.xib in Resources */,
 				5AD5CA8B26E1D532008C517E /* NativeBannerTemplate.xib in Resources */,
 				5A98A01C26CB58D200C11B85 /* TradPlusAdNativeViewController.xib in Resources */,
 				5AD5CA7F26E1C1B4008C517E /* TradPlusAdNativeBannerViewController.xib in Resources */,
 				0448433D248F6AB400550234 /* AdvancedNativeAdViewSampleGG.xib in Resources */,
+				5A1508DE2795191E00952903 /* NativeGDTDrawView.xib in Resources */,
 				048B02A7248D41670003F53E /* readme.txt in Resources */,
 				5AF1AC622705B830006E2645 /* TradPlusAdInterstitialViewController.xib in Resources */,
 				5AFA31F226F5B0E800F21A36 /* TradPlusAdBannerViewController.xib in Resources */,
@@ -435,6 +478,7 @@
 				5AF1AC672705B8A7006E2645 /* TradPlusAdRewardedViewController.xib in Resources */,
 				048B028E248C01010003F53E /* InterstitialViewController.xib in Resources */,
 				5AD5CA8E26E1DF16008C517E /* TradPlusAdNativeSplashViewController.xib in Resources */,
+				5A1508D32795127300952903 /* TradPlusAdNativeDrawViewController.xib in Resources */,
 				89D605CE255E7D6D008659F5 /* OfferwallViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -507,12 +551,16 @@
 			files = (
 				5ACB75262711AC3500FC9735 /* CustomRewardedAdapter.m in Sources */,
 				048B0290248C01010003F53E /* RewardedVideoViewController.m in Sources */,
+				5A1508E22795191E00952903 /* NativeGDTDrawListViewController.m in Sources */,
+				5A1508D22795127300952903 /* TradPlusAdNativeDrawViewController.m in Sources */,
 				5AD5DE0F277BFAF8005BAA07 /* TPNativePasterView.m in Sources */,
 				5AD5CA8A26E1D532008C517E /* NativeBannerTemplate.m in Sources */,
 				5AD5C98926E0975E008C517E /* TradPlusAdNativeBannerViewController.m in Sources */,
+				5A1508E32795191E00952903 /* NativeGDTDrawView.m in Sources */,
 				048B029F248C122E0003F53E /* NativeHTViewController.m in Sources */,
 				048B024D248BF4540003F53E /* AppDelegate.m in Sources */,
 				048B0253248BF4540003F53E /* MsADTableViewController.m in Sources */,
+				5A1508E02795191E00952903 /* NativeDrawListViewController.m in Sources */,
 				048B028F248C01010003F53E /* InterstitialViewController.m in Sources */,
 				5AF1AC632705B830006E2645 /* TradPlusAdInterstitialViewController.m in Sources */,
 				5AE6C5B22750C4D900B0AD17 /* File.swift in Sources */,
@@ -687,7 +735,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 6.6.10;
+				MARKETING_VERSION = 6.9.0;
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tradplusad.koala;
 				PRODUCT_NAME = TradPlusDemoN;
@@ -714,7 +762,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 6.6.10;
+				MARKETING_VERSION = 6.9.0;
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tradplusad.koala;
 				PRODUCT_NAME = TradPlusDemoN;

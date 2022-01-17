@@ -83,9 +83,9 @@
     NSLog(@"%s \n%@", __FUNCTION__ ,adInfo);
 }
 ///bidding结束
-- (void)tpSplashAdBidEnd:(NSDictionary *)adInfo success:(BOOL)success
+- (void)tpSplashAdBidEnd:(NSDictionary *)adInfo error:(NSError *)error
 {
-    NSLog(@"%s \n%@ success :%@", __FUNCTION__ ,adInfo,@(success));
+    NSLog(@"%s \n%@ error :%@", __FUNCTION__ ,adInfo,error);
 }
 ///开始加载
 - (void)tpSplashAdLoadStart:(NSDictionary *)adInfo

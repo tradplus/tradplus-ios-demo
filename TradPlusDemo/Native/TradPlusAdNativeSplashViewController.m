@@ -139,9 +139,9 @@
     NSLog(@"%s \n%@", __FUNCTION__ ,adInfo);
 }
 ///bidding结束
-- (void)tpNativeSplashAdBidEnd:(NSDictionary *)adInfo success:(BOOL)success
+- (void)tpNativeSplashAdBidEnd:(NSDictionary *)adInfo error:(NSError *)error
 {
-    NSLog(@"%s \n%@ \n success %@", __FUNCTION__ ,adInfo,@(success));
+    NSLog(@"%s \n%@ \n error %@", __FUNCTION__ ,adInfo,error);
 }
 ///开始加载
 - (void)tpNativeSplashAdLoadStart:(NSDictionary *)adInfo
