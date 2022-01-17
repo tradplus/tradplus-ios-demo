@@ -54,6 +54,7 @@
             {
                 //其他广告源讯Draw信息流都是模版类型
                 NativeDrawListViewController *drawListViewController = [[NativeDrawListViewController alloc] initWithNibName:@"NativeDrawListViewController" bundle:nil];
+                //getDrawList 如果广告源是 穿山甲的情况下 请在展示前调用（提前调用会导致页面渲染内容不全）
                 drawListViewController.drawList = [self.nativeObject getDrawList];
                 [self.navigationController pushViewController:drawListViewController animated:YES];
             }
