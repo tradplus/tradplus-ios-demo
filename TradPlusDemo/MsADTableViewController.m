@@ -22,6 +22,7 @@
 #import "TradPlusAdSplashViewController.h"
 #import "TradPlusAdNativePasterViewController.h"
 #import "TradPlusAdNativeDrawViewController.h"
+#import "TradPlusAdNativeCustomCountViewController.h"
 
 @interface MsADTableViewController ()
 
@@ -48,7 +49,7 @@
     //5.x
     self.titleList = @[@"横幅",@"插屏",@"激励视频",@"积分墙",@"高级原生",@"高级原生(并发拉取多个素材)"];
     
-    self.titleArray = @[@"高级原生",@"原生开屏",@"原生横幅",@"横幅",@"插屏",@"激励视频",@"开屏",@"原生视频贴片",@"原生Draw信息流"];
+    self.titleArray = @[@"高级原生",@"原生开屏",@"原生横幅",@"横幅",@"插屏",@"激励视频",@"开屏",@"原生视频贴片",@"原生Draw信息流",@"高级原生(自定义缓存数)"];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -162,6 +163,11 @@
             case 8://原生Draw信息流 v6.9.0新增
             {
                 detailViewController = [[TradPlusAdNativeDrawViewController alloc] initWithNibName:@"TradPlusAdNativeDrawViewController" bundle:nil];
+                break;
+            }
+            case 9://高级原生(自定义缓存数) v7.1.0新增
+            {
+                detailViewController = [[TradPlusAdNativeCustomCountViewController alloc] initWithNibName:@"TradPlusAdNativeCustomCountViewController" bundle:nil];
                 break;
             }
         }

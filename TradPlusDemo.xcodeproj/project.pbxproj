@@ -59,6 +59,8 @@
 		5AD5DE0A277BFAE5005BAA07 /* TradPlusAdNativePasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5AD5DE08277BFAE5005BAA07 /* TradPlusAdNativePasterViewController.xib */; };
 		5AD5DE0E277BFAF8005BAA07 /* TPNativePasterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5AD5DE0C277BFAF8005BAA07 /* TPNativePasterView.xib */; };
 		5AD5DE0F277BFAF8005BAA07 /* TPNativePasterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AD5DE0D277BFAF8005BAA07 /* TPNativePasterView.m */; };
+		5AE342B427CF5E5100D33504 /* TradPlusAdNativeCustomCountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AE342B227CF5E5100D33504 /* TradPlusAdNativeCustomCountViewController.m */; };
+		5AE342B527CF5E5100D33504 /* TradPlusAdNativeCustomCountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5AE342B327CF5E5100D33504 /* TradPlusAdNativeCustomCountViewController.xib */; };
 		5AE6C5B22750C4D900B0AD17 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE6C5B12750C4D900B0AD17 /* File.swift */; };
 		5AF1AC622705B830006E2645 /* TradPlusAdInterstitialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5AF1AC5F2705B830006E2645 /* TradPlusAdInterstitialViewController.xib */; };
 		5AF1AC632705B830006E2645 /* TradPlusAdInterstitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AF1AC612705B830006E2645 /* TradPlusAdInterstitialViewController.m */; };
@@ -158,6 +160,9 @@
 		5AD5DE0B277BFAF8005BAA07 /* TPNativePasterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPNativePasterView.h; sourceTree = "<group>"; };
 		5AD5DE0C277BFAF8005BAA07 /* TPNativePasterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TPNativePasterView.xib; sourceTree = "<group>"; };
 		5AD5DE0D277BFAF8005BAA07 /* TPNativePasterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPNativePasterView.m; sourceTree = "<group>"; };
+		5AE342B127CF5E5100D33504 /* TradPlusAdNativeCustomCountViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TradPlusAdNativeCustomCountViewController.h; sourceTree = "<group>"; };
+		5AE342B227CF5E5100D33504 /* TradPlusAdNativeCustomCountViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TradPlusAdNativeCustomCountViewController.m; sourceTree = "<group>"; };
+		5AE342B327CF5E5100D33504 /* TradPlusAdNativeCustomCountViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TradPlusAdNativeCustomCountViewController.xib; sourceTree = "<group>"; };
 		5AE6C5B12750C4D900B0AD17 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		5AF1AC5F2705B830006E2645 /* TradPlusAdInterstitialViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TradPlusAdInterstitialViewController.xib; sourceTree = "<group>"; };
 		5AF1AC602705B830006E2645 /* TradPlusAdInterstitialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TradPlusAdInterstitialViewController.h; sourceTree = "<group>"; };
@@ -289,6 +294,9 @@
 				5AD5C98126E0973C008C517E /* TradPlusAdNativeSplashViewController.h */,
 				5AD5C98226E0973C008C517E /* TradPlusAdNativeSplashViewController.m */,
 				5AD5CA8D26E1DF16008C517E /* TradPlusAdNativeSplashViewController.xib */,
+				5AE342B127CF5E5100D33504 /* TradPlusAdNativeCustomCountViewController.h */,
+				5AE342B227CF5E5100D33504 /* TradPlusAdNativeCustomCountViewController.m */,
+				5AE342B327CF5E5100D33504 /* TradPlusAdNativeCustomCountViewController.xib */,
 			);
 			path = Native;
 			sourceTree = "<group>";
@@ -469,6 +477,7 @@
 				5A98A01C26CB58D200C11B85 /* TradPlusAdNativeViewController.xib in Resources */,
 				5AD5CA7F26E1C1B4008C517E /* TradPlusAdNativeBannerViewController.xib in Resources */,
 				0448433D248F6AB400550234 /* AdvancedNativeAdViewSampleGG.xib in Resources */,
+				5AE342B527CF5E5100D33504 /* TradPlusAdNativeCustomCountViewController.xib in Resources */,
 				5A1508DE2795191E00952903 /* NativeGDTDrawView.xib in Resources */,
 				048B02A7248D41670003F53E /* readme.txt in Resources */,
 				5AF1AC622705B830006E2645 /* TradPlusAdInterstitialViewController.xib in Resources */,
@@ -561,6 +570,7 @@
 				048B024D248BF4540003F53E /* AppDelegate.m in Sources */,
 				048B0253248BF4540003F53E /* MsADTableViewController.m in Sources */,
 				5A1508E02795191E00952903 /* NativeDrawListViewController.m in Sources */,
+				5AE342B427CF5E5100D33504 /* TradPlusAdNativeCustomCountViewController.m in Sources */,
 				048B028F248C01010003F53E /* InterstitialViewController.m in Sources */,
 				5AF1AC632705B830006E2645 /* TradPlusAdInterstitialViewController.m in Sources */,
 				5AE6C5B22750C4D900B0AD17 /* File.swift in Sources */,

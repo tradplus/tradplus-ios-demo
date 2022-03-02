@@ -73,7 +73,6 @@
         {
             //添加自定义播放器
             [self addPlayerWithCustomVideoPaster:self.nativeObject.customVideoPaster];
-            
         }
         [nativeRenderer setCustomerView:self.nativePasterView.mainView key:@"videoView" canClick:YES];
         self.videoActTool.hidden = (self.nativeObject.customVideoPaster == nil);
@@ -90,7 +89,8 @@
     {
         [self.myPlayerLayer removeFromSuperlayer];
     }
-    NSURL *url = [NSURL fileURLWithPath:customVideoPaster.videoUrl];
+    
+    NSURL *url = [NSURL URLWithString:customVideoPaster.videoUrl];
     
     self.playerItem = [[AVPlayerItem alloc] initWithURL:url];
     [self.playerItem addObserver:self forKeyPath:@"status" options:NSKeyValueObservingOptionNew context:nil];
@@ -118,6 +118,7 @@
 - (void)videoFailed
 {
     NSError *error = self.playerItem.error;
+    NSLog(@"videoFailed %@",error);
     self.infoLabel.text = [NSString stringWithFormat:@"视频加载失败 %@",error];
     [self.nativeObject.customVideoPaster didPlayFailedWithError:error];
 }
@@ -125,6 +126,7 @@
 //开始播放
 - (void)startPlay
 {
+    NSLog(@"startPlay");
     self.infoLabel.text = @"视频播放中...";
     [self.myPlayer play];
     //调用自定义贴片的埋点上报
@@ -135,6 +137,7 @@
 //播放完成
 - (void)playFinish
 {
+    NSLog(@"playFinish");
     self.infoLabel.text = @"播放完成";
     //调用自定义贴片的埋点上报
     [self.nativeObject.customVideoPaster didFinishVideo];
