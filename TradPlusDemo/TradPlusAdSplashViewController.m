@@ -45,7 +45,7 @@
 }
 
 
-#pragma mark - TradPlusADNativeBannerDelegate
+#pragma mark - TradPlusADSplashDelegate
 
 ///AD加载完成
 - (void)tpSplashAdLoaded:(NSDictionary *)adInfo

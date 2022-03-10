@@ -11,6 +11,8 @@
 #import <TradPlusAds/MSLogging.h>
 #import <TradPlusAds/MsCommon.h>
 #import <TradPlusAds/TPSplashAd.h>
+#import <AppTrackingTransparency/AppTrackingTransparency.h>
+
 
 @interface AppDelegate ()<TPSplashAdDelegate>
 @property (nonatomic, strong) TPSplashAd *splashAd;
@@ -48,8 +50,13 @@
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    if (@available(iOS 14.0, *))
+    {
+        [ATTrackingManager requestTrackingAuthorizationWithCompletionHandler:^(ATTrackingManagerAuthorizationStatus status) {
+        }];
+    }
     // Override point for customization after application launch.
-    [TradPlus initSDK:@"TradPlus后台应用对应的appid" completionBlock:^(NSError * _Nonnull error) {
+    [TradPlus initSDK:@"75AA158112F1EFA29169E26AC63AFF94" completionBlock:^(NSError * _Nonnull error) {
         if (!error)
         {
             //mFluteSDKInited = YES;

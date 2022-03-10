@@ -31,12 +31,6 @@
 //    [self.nativeAd setTemplateRenderSize:CGSizeMake(320, 200)];
 }
 
-///部分三方源需要设置rootviewController
-- (UIViewController *)viewControllerForPresentingModalView
-{
-    return self;
-}
-
 - (IBAction)loadAct:(id)sender
 {
     //加载
@@ -83,6 +77,14 @@
     [nativeRenderer setAdChoiceImageView:adView.adChoiceImageView canClick:YES];
     [nativeRenderer setAdView:adView canClick:YES];
     [self.nativeAd showADWithNativeRenderer:nativeRenderer subview:self.adView sceneId:nil];
+}
+
+#pragma mark - TradPlusADNativeDelegate
+
+///部分三方源需要设置rootviewController
+- (UIViewController *)viewControllerForPresentingModalView
+{
+    return self;
 }
 
 ///AD加载完成

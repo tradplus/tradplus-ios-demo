@@ -42,7 +42,7 @@
 }
 
 
-#pragma mark - TradPlusADNativeBannerDelegate
+#pragma mark - TradPlusADRewardedDelegate
 
 ///AD加载完成
 - (void)tpRewardedAdLoaded:(NSDictionary *)adInfo

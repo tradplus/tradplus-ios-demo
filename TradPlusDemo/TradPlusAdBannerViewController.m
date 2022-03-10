@@ -56,7 +56,7 @@
 }
 
 
-#pragma mark - TradPlusADNativeBannerDelegate
+#pragma mark - TradPlusADBannerDelegate
 
 - (UIViewController *)viewControllerForPresentingModalView
 {
