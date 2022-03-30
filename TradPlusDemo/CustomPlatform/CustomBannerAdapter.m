@@ -30,7 +30,7 @@
         return;
     }
     
-    GADAdSize adSize = kGADAdSizeBanner;
+    GADAdSize adSize = GADAdSizeBanner;
     self.bannerView = [[GADBannerView alloc] initWithAdSize:adSize];
     self.bannerView.adUnitID = placementId;
     self.bannerView.rootViewController = self.waterfallItem.bannerRootViewController;

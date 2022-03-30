@@ -67,7 +67,7 @@
     self.adLoader =
           [[GADAdLoader alloc] initWithAdUnitID:placementId
                              rootViewController:nil
-                                        adTypes:@[ kGADAdLoaderAdTypeNative ]
+                                        adTypes:@[ GADAdLoaderAdTypeNative ]
                                         options:@[ nativeAdImageLoaderOptions, nativeAdViewAdOptions, nativeAdMediaAdLoaderOptions ]];
     self.adLoader.delegate = self;
       
