@@ -132,10 +132,18 @@
 {
     NSLog(@"tpNativeAdBidEnd %@\n%@\n<<<<<<",adInfo,error);
 }
-///开始加载
-- (void)tpNativeAdLoadStart:(NSDictionary *)adInfo
+
+///v7.6.0+新增 开始加载流程
+- (void)tpNativeAdStartLoad:(NSDictionary *)adInfo
 {
-    NSLog(@"tpNativeAdLoadStart \n%@\n<<<<<<",adInfo);
+    NSLog(@"tpNativeAdStartLoad \n%@\n<<<<<<",adInfo);
+}
+
+///当每个广告源开始加载时会都会回调一次。
+///v7.6.0+新增。替代原回调接口：tpNativeAdLoadStart:(NSDictionary *)adInfo;
+- (void)tpNativeAdOneLayerStartLoad:(NSDictionary *)adInfo
+{
+    NSLog(@"tpNativeAdOneLayerStartLoad \n%@\n<<<<<<",adInfo);
 }
 
 ///加载流程全部结束

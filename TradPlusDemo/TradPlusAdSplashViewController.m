@@ -90,11 +90,20 @@
 {
     NSLog(@"%s \n%@ error :%@", __FUNCTION__ ,adInfo,error);
 }
-///开始加载
-- (void)tpSplashAdLoadStart:(NSDictionary *)adInfo
+
+///v7.6.0+新增 开始加载流程
+- (void)tpSplashAdStartLoad:(NSDictionary *)adInfo
 {
     NSLog(@"%s \n%@", __FUNCTION__ ,adInfo);
 }
+
+///当每个广告源开始加载时会都会回调一次。
+///v7.6.0+新增。替代原回调接口：tpSplashAdLoadStart:(NSDictionary *)adInfo;
+- (void)tpSplashAdOneLayerStartLoad:(NSDictionary *)adInfo
+{
+    NSLog(@"%s \n%@", __FUNCTION__ ,adInfo);
+}
+
 //多缓存情况下，当每个广告源加载成功后会都会回调一次。
 - (void)tpSplashAdOneLayerLoaded:(NSDictionary *)adInfo
 {

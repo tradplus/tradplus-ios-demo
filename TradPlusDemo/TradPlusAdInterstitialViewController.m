@@ -89,11 +89,20 @@
 {
     NSLog(@"%s \n%@ error :%@", __FUNCTION__ ,adInfo,error);
 }
-///开始加载
-- (void)tpInterstitialAdLoadStart:(NSDictionary *)adInfo
+
+///v7.6.0+ 开始加载流程
+- (void)tpInterstitialAdStartLoad:(NSDictionary *)adInfo
 {
     NSLog(@"%s \n%@", __FUNCTION__ ,adInfo);
 }
+
+///当每个广告源开始加载时会都会回调一次。
+///v7.6.0+新增。替代原回调接口：tpInterstitialAdLoadStart:(NSDictionary *)adInfo;
+- (void)tpInterstitialAdOneLayerStartLoad:(NSDictionary *)adInfo
+{
+    NSLog(@"%s \n%@", __FUNCTION__ ,adInfo);
+}
+
 //多缓存情况下，当每个广告源加载成功后会都会回调一次。
 - (void)tpInterstitialAdOneLayerLoaded:(NSDictionary *)adInfo
 {

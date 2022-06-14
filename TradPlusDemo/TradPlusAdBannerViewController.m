@@ -100,11 +100,20 @@
 {
     NSLog(@"%s \n%@ error :%@", __FUNCTION__ ,adInfo,error);
 }
-///开始加载
-- (void)tpBannerAdLoadStart:(NSDictionary *)adInfo
+
+///v7.6.0+新增 开始加载流程
+- (void)tpBannerAdStartLoad:(NSDictionary *)adInfo
 {
     NSLog(@"%s \n%@", __FUNCTION__ ,adInfo);
 }
+
+///当每个广告源开始加载时会都会回调一次。
+///v7.6.0+新增。替代原回调接口：tpBannerAdLoadStart:(NSDictionary *)adInfo;
+- (void)tpBannerAdOneLayerStartLoad:(NSDictionary *)adInfo
+{
+    NSLog(@"%s \n%@", __FUNCTION__ ,adInfo);
+}
+
 //多缓存情况下，当每个广告源加载成功后会都会回调一次。
 - (void)tpBannerAdOneLayerLoaded:(NSDictionary *)adInfo
 {

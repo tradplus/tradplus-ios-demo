@@ -7,12 +7,6 @@
 //
 
 #import "MsADTableViewController.h"
-#import "BannerViewController.h"
-#import "NativeViewController.h"
-#import "RewardedVideoViewController.h"
-#import "InterstitialViewController.h"
-#import "NativeHTViewController.h"
-#import "OfferwallViewController.h"
 #import "TradPlusAdNativeViewController.h"
 #import "TradPlusAdNativeBannerViewController.h"
 #import "TradPlusAdNativeSplashViewController.h"
@@ -46,8 +40,6 @@
     CGRect rect = [UIScreen mainScreen].bounds;
     rect.size.height = 20;
     self.tableView.tableFooterView = [[UIView alloc] initWithFrame:rect];
-    //5.x
-    self.titleList = @[@"横幅",@"插屏",@"激励视频",@"积分墙",@"高级原生",@"高级原生(并发拉取多个素材)"];
     
     self.titleArray = @[@"高级原生",@"原生开屏",@"原生横幅",@"横幅",@"插屏",@"激励视频",@"开屏",@"原生视频贴片",@"原生Draw信息流",@"高级原生(自定义缓存数)"];
 }
@@ -61,7 +53,7 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 2;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -70,10 +62,7 @@
     {
         return self.titleArray.count;
     }
-    else
-    {
-        return self.titleList.count;
-    }
+    return 0;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -168,43 +157,6 @@
             case 9://高级原生(自定义缓存数) v7.1.0新增
             {
                 detailViewController = [[TradPlusAdNativeCustomCountViewController alloc] initWithNibName:@"TradPlusAdNativeCustomCountViewController" bundle:nil];
-                break;
-            }
-        }
-    }
-    else//5.x
-    {
-        switch (indexPath.row)
-        {
-            case 0://横幅
-            {
-                detailViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"b"];
-                break;
-            }
-            case 1://插屏
-            {
-                detailViewController = [[InterstitialViewController alloc] initWithNibName:@"InterstitialViewController" bundle:nil];
-                break;
-            }
-            case 2://激励视频
-            {
-                detailViewController = [[RewardedVideoViewController alloc] initWithNibName:@"RewardedVideoViewController" bundle:nil];
-                break;
-            }
-            case 3://积分墙
-            {
-                detailViewController = [[OfferwallViewController alloc] initWithNibName:@"OfferwallViewController" bundle:nil];
-                break;
-            }
-            case 4://高级原生
-            {
-                detailViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"n"];
-                ((NativeViewController *)detailViewController).nativeADType = MsNativeADTypeAdvanced;
-                break;
-            }
-            case 5://高级原生(并发拉取多个素材)
-            {
-                detailViewController = [[NativeHTViewController alloc] initWithNibName:@"NativeHTViewController" bundle:nil];
                 break;
             }
         }

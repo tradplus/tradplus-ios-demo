@@ -86,11 +86,19 @@
     self.logLabel.text = [NSString stringWithFormat:@"加载错误：%ld",(long)error.code];
 }
 
-///开始加载
-- (void)tpNativeAdLoadStart:(NSDictionary *)adInfo
+///v7.6.0+新增 开始加载流程
+- (void)tpNativeAdStartLoad:(NSDictionary *)adInfo
 {
     NSLog(@"%s \n%@", __FUNCTION__ ,adInfo);
 }
+
+///当每个广告源开始加载时会都会回调一次。
+///v7.6.0+新增。替代原回调接口：tpNativeAdLoadStart:(NSDictionary *)adInfo;
+- (void)tpNativeAdOneLayerStartLoad:(NSDictionary *)adInfo
+{
+    NSLog(@"%s \n%@", __FUNCTION__ ,adInfo);
+}
+
 
 //多缓存情况下，当每个广告源加载成功后会都会回调一次。
 - (void)tpNativeAdOneLayerLoaded:(NSDictionary *)adInfo

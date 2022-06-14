@@ -10,44 +10,13 @@
 #import <TradPlusAds/TradPlus.h>
 #import <TradPlusAds/MSLogging.h>
 #import <TradPlusAds/MsCommon.h>
-#import <TradPlusAds/TPSplashAd.h>
 #import <AppTrackingTransparency/AppTrackingTransparency.h>
 
 
-@interface AppDelegate ()<TPSplashAdDelegate>
-@property (nonatomic, strong) TPSplashAd *splashAd;
-@property (nonatomic, assign)BOOL openShow;
+@interface AppDelegate ()
 @end
 
 @implementation AppDelegate
-
-- (void)loadSplash
-{
-    if(self.openShow)
-    {
-        if (!_splashAd)
-        {
-            _splashAd = [[TPSplashAd alloc] init];
-            _splashAd.delegate = self;
-            _splashAd.pangleBottomHeight = 110;
-            [_splashAd setAdUnitID:@"E5BC6369FC7D96FD47612B279BC5AAE0"];
-        }
-        [_splashAd loadAd];
-    }
-}
-
-- (void)showSplash
-{
-    if (_splashAd && _splashAd.isAdReady)
-    {
-        CGRect frame = UIScreen.mainScreen.bounds;
-        CGRect newframe = CGRectMake(0, frame.size.height - 110, frame.size.width, 110);
-        UIView *view = [[UIView alloc] initWithFrame:newframe];
-        view.backgroundColor = [UIColor blueColor];
-
-        [_splashAd showSplashInWindow:[UIApplication sharedApplication].keyWindow withBottomView:view];
-    }
-}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     if (@available(iOS 14.0, *))
@@ -63,8 +32,6 @@
             MSLogInfo(@"flute sdk init success!");
         }
     }];
-
-    [self loadSplash];
     return YES;
 }
 
@@ -93,64 +60,5 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
-}
-
-#pragma mark MsSplashViewDelegate
-- (void)splashAdDidLoaded:(NSDictionary *)dicChannelInfo
-{
-    [self showSplash];
-}
-- (void)splashAd:(NSDictionary *)dicChannelInfo didFailedWithError:(NSError *)error
-{
-    
-}
-- (void)splashAdShown:(NSDictionary *)dicChannelInfo
-{
-    
-}
-- (void)splashAdFailToPlay:(NSDictionary *)dicChannelInfo error:(NSError *)error
-{
-    
-}
-- (void)splashAdClicked:(NSDictionary *)dicChannelInfo
-{
-    
-}
-- (void)splashAdDismissed:(NSDictionary *)dicChannelInfo
-{
-    
-}
-
-- (void)splashAdAllLoaded:(int)readyCount
-{
-    
-}
-- (void)splashAdOneLayerLoaded:(NSDictionary *)dicChannelInfo
-{
-    
-}
-- (void)splashAdOneLayer:(NSDictionary *)dicChannelInfo didFailWithError:(NSError *)error
-{
-    
-}
-- (void)splashAdBidStart:(NSDictionary *)dicChannelInfo
-{
-    
-}
-- (void)splashAdBidEnd:(NSDictionary *)dicChannelInfo
-{
-    
-}
-- (void)splashAdLoadStart:(NSDictionary *)dicChannelInfo
-{
-    
-}
-- (void)splashAdPlayStart:(NSDictionary *)dicChannelInfo
-{
-    
-}
-- (void)splashAdPlayEnd:(NSDictionary *)dicChannelInfo
-{
-    
 }
 @end

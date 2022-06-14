@@ -104,10 +104,6 @@
     [self AdClose];
 }
 
-- (void)adDidPresentFullScreenContent:(nonnull id<GADFullScreenPresentingAd>)ad
-{
-}
-
 - (void)adWillDismissFullScreenContent:(nonnull id<GADFullScreenPresentingAd>)ad
 {
 }
