@@ -37,7 +37,6 @@ target 'TradPlusDemo' do
   pod 'GDTMobSDK', '4.13.70'
   pod 'TradPlusAdSDK/PangleAdapter', '7.6.0'
   pod 'Ads-CN', '4.4.0.7', :subspecs => ['BUAdSDK', 'International']
-  #只使用海外Pangle时 可以将 Ads-CN换成 Ads-Global
   pod 'TradPlusAdSDK/YouDaoAdapter', '7.6.0'
   pod 'YDADSDK', '2.16.12'
   pod 'TradPlusAdSDK/SmaatoAdapter', '7.6.0'
@@ -119,7 +118,6 @@ target 'TradPlusDemo' do
 #  pod 'SigmobAd-iOS', '4.1.0'
 #  pod 'GDTMobSDK', '4.13.70'
 #  pod 'Ads-CN', '4.4.0.7', :subspecs => ['BUAdSDK', 'International']
-#  #只使用海外Pangle时 可以将 Ads-CN换成 Ads-Global
 #  pod 'YDADSDK', '2.16.12'
 #  pod 'smaato-ios-sdk', '21.7.5'
 #  pod 'smaato-ios-sdk/Banner', '21.7.5'
