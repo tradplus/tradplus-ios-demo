@@ -23,8 +23,12 @@
 {
     [super viewDidLoad];
     self.nativeAd = [[TradPlusAdNative alloc] init];
-    [self.nativeAd setAdUnitID:@"E8D198EBD7FDC4F8A725066C82D707E1"];
     self.nativeAd.delegate = self;
+    [self.nativeAd setAdUnitID:@"E8D198EBD7FDC4F8A725066C82D707E1"];
+    self.logLabel.text = @"加载中...";
+    //设置是否需要自动加载
+//    [self.nativeAd setAdUnitID:@"063265866B93A4C6F93D1DDF7BF7329B" isAutoLoad:BOOL]
+    
     //资源下载完成后再通知load完成
 //    self.nativeAd.finishDownload = YES;
     //设置模版类型的基础尺寸

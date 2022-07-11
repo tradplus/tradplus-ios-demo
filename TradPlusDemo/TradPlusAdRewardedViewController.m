@@ -27,6 +27,9 @@
     self.rewardedVideoAd = [[TradPlusAdRewarded alloc] init];
     self.rewardedVideoAd.delegate = self;
     [self.rewardedVideoAd setAdUnitID:@"160AFCDF01DDA48CCE0DBDBE69C8C669"];
+    self.logLabel.text = @"加载中...";
+    //设置是否需要自动加载
+//    [self.rewardedVideoAd setAdUnitID:@"063265866B93A4C6F93D1DDF7BF7329B" isAutoLoad:BOOL]
 }
 
 - (IBAction)loadAct:(id)sender
@@ -38,7 +41,7 @@
 
 - (IBAction)showAct:(id)sender
 {
-    [self.rewardedVideoAd showAdFromRootViewController:self sceneId:nil];
+    [self.rewardedVideoAd showAdWithSceneId:nil];
 }
 
 
