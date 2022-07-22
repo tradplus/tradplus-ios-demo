@@ -9,7 +9,7 @@
 #import "TradPlusAdRewardedViewController.h"
 #import <TradPlusAds/TradPlusAdRewarded.h>
 
-@interface TradPlusAdRewardedViewController ()<TradPlusADRewardedDelegate>
+@interface TradPlusAdRewardedViewController ()<TradPlusADRewardedDelegate,TradPlusADRewardedPlayAgainDelegate>
 {
     
 }
@@ -26,6 +26,8 @@
     [super viewDidLoad];
     self.rewardedVideoAd = [[TradPlusAdRewarded alloc] init];
     self.rewardedVideoAd.delegate = self;
+    //v7.8.0新增
+    self.rewardedVideoAd.playAgainDelegate = self;
     [self.rewardedVideoAd setAdUnitID:@"160AFCDF01DDA48CCE0DBDBE69C8C669"];
     self.logLabel.text = @"加载中...";
     //设置是否需要自动加载
@@ -134,8 +136,41 @@
     NSLog(@"%s \n%@", __FUNCTION__ ,adInfo);
 }
 
-///再看一个的完成奖励 （快手） v6.9.0新增
+
+#pragma mark - TradPlusADRewardedPlayAgainDelegate
+
+///AD展现
+- (void)tpRewardedAdPlayAgainImpression:(NSDictionary *)adInfo
+{
+    NSLog(@"%s \n%@", __FUNCTION__ ,adInfo);
+}
+
+///AD展现失败
+- (void)tpRewardedAdPlayAgainShow:(NSDictionary *)adInfo didFailWithError:(NSError *)error
+{
+    NSLog(@"%s \n%@ error:%@", __FUNCTION__ ,adInfo,error);
+}
+
+///AD被点击
+- (void)tpRewardedAdPlayAgainClicked:(NSDictionary *)adInfo
+{
+    NSLog(@"%s \n%@", __FUNCTION__ ,adInfo);
+}
+
+///完成奖励
 - (void)tpRewardedAdPlayAgainReward:(NSDictionary *)adInfo
+{
+    NSLog(@"%s \n%@", __FUNCTION__ ,adInfo);
+}
+
+///开始播放
+- (void)tpRewardedAdPlayAgainPlayStart:(NSDictionary *)adInfo
+{
+    NSLog(@"%s \n%@", __FUNCTION__ ,adInfo);
+}
+
+///播放结束
+- (void)tpRewardedAdPlayAgainPlayEnd:(NSDictionary *)adInfo
 {
     NSLog(@"%s \n%@", __FUNCTION__ ,adInfo);
 }

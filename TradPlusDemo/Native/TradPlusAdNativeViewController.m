@@ -170,4 +170,16 @@
 {
     NSLog(@"%s \n%@", __FUNCTION__ ,adInfo);
 }
+
+///开始播放 v7.8.0+
+- (void)tpNativeAdVideoPlayStart:(NSDictionary *)adInfo
+{
+    NSLog(@"%s \n%@", __FUNCTION__ ,adInfo);
+}
+
+///播放结束 v7.8.0+
+- (void)tpNativeAdVideoPlayEnd:(NSDictionary *)adInfo
+{
+    NSLog(@"%s \n%@", __FUNCTION__ ,adInfo);
+}
 @end
