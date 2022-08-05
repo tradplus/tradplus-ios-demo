@@ -17,6 +17,7 @@
 #import "TradPlusAdNativePasterViewController.h"
 #import "TradPlusAdNativeDrawViewController.h"
 #import "TradPlusAdNativeCustomCountViewController.h"
+#import "TradPlusAdOfferwallViewController.h"
 
 @interface MsADTableViewController ()
 
@@ -41,7 +42,7 @@
     rect.size.height = 20;
     self.tableView.tableFooterView = [[UIView alloc] initWithFrame:rect];
     
-    self.titleArray = @[@"高级原生",@"原生开屏",@"原生横幅",@"横幅",@"插屏",@"激励视频",@"开屏",@"原生视频贴片",@"原生Draw信息流",@"高级原生(自定义缓存数)"];
+    self.titleArray = @[@"高级原生",@"原生开屏",@"原生横幅",@"横幅",@"插屏",@"激励视频",@"开屏",@"原生视频贴片",@"原生Draw信息流",@"高级原生(自定义缓存数)",@"积分墙"];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -86,18 +87,6 @@
     cell.detailTextLabel.textColor = [UIColor colorWithRed:0.86 green:0.86 blue:0.86 alpha:1];
     
     return cell;
-}
-
-- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
-{
-    if(section == 0)
-    {
-        return @"------ ADType ------";
-    }
-    else
-    {
-        return @"------ 旧API  ------";
-    }
 }
 
 #pragma mark - Table view delegate
@@ -157,6 +146,11 @@
             case 9://高级原生(自定义缓存数) v7.1.0新增
             {
                 detailViewController = [[TradPlusAdNativeCustomCountViewController alloc] initWithNibName:@"TradPlusAdNativeCustomCountViewController" bundle:nil];
+                break;
+            }
+            case 10://积分墙
+            {
+                detailViewController = [[TradPlusAdOfferwallViewController alloc] initWithNibName:@"TradPlusAdOfferwallViewController" bundle:nil];
                 break;
             }
         }

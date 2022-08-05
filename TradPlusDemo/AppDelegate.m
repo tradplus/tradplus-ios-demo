@@ -18,6 +18,7 @@
 
 @property (nonatomic, strong) TradPlusAdSplash *splashAd;
 @property (nonatomic, assign)BOOL isFirstSplashAd;
+@property (nonatomic, assign)BOOL showSplash;
 @end
 
 @implementation AppDelegate
@@ -51,14 +52,20 @@
 
 - (void)loadSplashAd
 {
-    [self.splashAd loadAdWithWindow:self.window bottomView:nil];
+    if(self.showSplash)
+    {
+        [self.splashAd loadAdWithWindow:self.window bottomView:nil];
+    }
 }
 
 - (void)showSplashAd
 {
-    if(self.splashAd.isAdReady)
+    if(self.showSplash)
     {
-        [self.splashAd show];
+        if(self.splashAd.isAdReady)
+        {
+            [self.splashAd show];
+        }
     }
 }
 
