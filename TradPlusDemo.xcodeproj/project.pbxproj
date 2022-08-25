@@ -28,6 +28,11 @@
 		5A19D466289CC78D0054CB52 /* TradPlusAdOfferwallViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A19D464289CC78D0054CB52 /* TradPlusAdOfferwallViewController.xib */; };
 		5A2F261A26CB57C300CAD358 /* TPNativeTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A2F261726CB57C300CAD358 /* TPNativeTemplate.m */; };
 		5A2F261B26CB57C300CAD358 /* TPNativeTemplate.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A2F261826CB57C300CAD358 /* TPNativeTemplate.xib */; };
+		5A95FCC428B74C3700FAF758 /* TradPlusAdNativeInListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A95FCC228B74C3700FAF758 /* TradPlusAdNativeInListViewController.m */; };
+		5A95FCC528B74C3700FAF758 /* TradPlusAdNativeInListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A95FCC328B74C3700FAF758 /* TradPlusAdNativeInListViewController.xib */; };
+		5A95FCCE28B755CD00FAF758 /* TPListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A95FCCD28B755CD00FAF758 /* TPListItem.m */; };
+		5A95FCD428B77BE200FAF758 /* TPNativeInListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A95FCD228B77BE200FAF758 /* TPNativeInListView.m */; };
+		5A95FCD528B77BE200FAF758 /* TPNativeInListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A95FCD328B77BE200FAF758 /* TPNativeInListView.xib */; };
 		5A98A01B26CB58D200C11B85 /* TradPlusAdNativeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A98A01926CB58D200C11B85 /* TradPlusAdNativeViewController.m */; };
 		5A98A01C26CB58D200C11B85 /* TradPlusAdNativeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A98A01A26CB58D200C11B85 /* TradPlusAdNativeViewController.xib */; };
 		5ACB75252711AC3500FC9735 /* CustomAdMobNativeAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ACB751D2711AC3500FC9735 /* CustomAdMobNativeAdapter.m */; };
@@ -95,6 +100,14 @@
 		5A2F261726CB57C300CAD358 /* TPNativeTemplate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPNativeTemplate.m; sourceTree = "<group>"; };
 		5A2F261826CB57C300CAD358 /* TPNativeTemplate.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TPNativeTemplate.xib; sourceTree = "<group>"; };
 		5A2F261926CB57C300CAD358 /* TPNativeTemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPNativeTemplate.h; sourceTree = "<group>"; };
+		5A95FCC128B74C3700FAF758 /* TradPlusAdNativeInListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TradPlusAdNativeInListViewController.h; sourceTree = "<group>"; };
+		5A95FCC228B74C3700FAF758 /* TradPlusAdNativeInListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TradPlusAdNativeInListViewController.m; sourceTree = "<group>"; };
+		5A95FCC328B74C3700FAF758 /* TradPlusAdNativeInListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TradPlusAdNativeInListViewController.xib; sourceTree = "<group>"; };
+		5A95FCCC28B755CD00FAF758 /* TPListItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TPListItem.h; sourceTree = "<group>"; };
+		5A95FCCD28B755CD00FAF758 /* TPListItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TPListItem.m; sourceTree = "<group>"; };
+		5A95FCD128B77BE200FAF758 /* TPNativeInListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPNativeInListView.h; sourceTree = "<group>"; };
+		5A95FCD228B77BE200FAF758 /* TPNativeInListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPNativeInListView.m; sourceTree = "<group>"; };
+		5A95FCD328B77BE200FAF758 /* TPNativeInListView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TPNativeInListView.xib; sourceTree = "<group>"; };
 		5A98A01826CB58D200C11B85 /* TradPlusAdNativeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TradPlusAdNativeViewController.h; sourceTree = "<group>"; };
 		5A98A01926CB58D200C11B85 /* TradPlusAdNativeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TradPlusAdNativeViewController.m; sourceTree = "<group>"; };
 		5A98A01A26CB58D200C11B85 /* TradPlusAdNativeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TradPlusAdNativeViewController.xib; sourceTree = "<group>"; };
@@ -261,6 +274,7 @@
 				5AE342B127CF5E5100D33504 /* TradPlusAdNativeCustomCountViewController.h */,
 				5AE342B227CF5E5100D33504 /* TradPlusAdNativeCustomCountViewController.m */,
 				5AE342B327CF5E5100D33504 /* TradPlusAdNativeCustomCountViewController.xib */,
+				5A95FCD628B77BEF00FAF758 /* NativeInList */,
 			);
 			path = Native;
 			sourceTree = "<group>";
@@ -282,6 +296,21 @@
 				5A1508D12795127300952903 /* TradPlusAdNativeDrawViewController.xib */,
 			);
 			path = NativeDraw;
+			sourceTree = "<group>";
+		};
+		5A95FCD628B77BEF00FAF758 /* NativeInList */ = {
+			isa = PBXGroup;
+			children = (
+				5A95FCCC28B755CD00FAF758 /* TPListItem.h */,
+				5A95FCCD28B755CD00FAF758 /* TPListItem.m */,
+				5A95FCD128B77BE200FAF758 /* TPNativeInListView.h */,
+				5A95FCD228B77BE200FAF758 /* TPNativeInListView.m */,
+				5A95FCD328B77BE200FAF758 /* TPNativeInListView.xib */,
+				5A95FCC128B74C3700FAF758 /* TradPlusAdNativeInListViewController.h */,
+				5A95FCC228B74C3700FAF758 /* TradPlusAdNativeInListViewController.m */,
+				5A95FCC328B74C3700FAF758 /* TradPlusAdNativeInListViewController.xib */,
+			);
+			path = NativeInList;
 			sourceTree = "<group>";
 		};
 		5AD5DE05277BFABB005BAA07 /* NativePaster */ = {
@@ -389,6 +418,7 @@
 				5AD5CA7F26E1C1B4008C517E /* TradPlusAdNativeBannerViewController.xib in Resources */,
 				5AE342B527CF5E5100D33504 /* TradPlusAdNativeCustomCountViewController.xib in Resources */,
 				5A1508DE2795191E00952903 /* NativeGDTDrawView.xib in Resources */,
+				5A95FCD528B77BE200FAF758 /* TPNativeInListView.xib in Resources */,
 				5AF1AC622705B830006E2645 /* TradPlusAdInterstitialViewController.xib in Resources */,
 				5AFA31F226F5B0E800F21A36 /* TradPlusAdBannerViewController.xib in Resources */,
 				5AD5DE0A277BFAE5005BAA07 /* TradPlusAdNativePasterViewController.xib in Resources */,
@@ -396,6 +426,7 @@
 				5AF1AC672705B8A7006E2645 /* TradPlusAdRewardedViewController.xib in Resources */,
 				5AD5CA8E26E1DF16008C517E /* TradPlusAdNativeSplashViewController.xib in Resources */,
 				5A1508D32795127300952903 /* TradPlusAdNativeDrawViewController.xib in Resources */,
+				5A95FCC528B74C3700FAF758 /* TradPlusAdNativeInListViewController.xib in Resources */,
 				5A19D466289CC78D0054CB52 /* TradPlusAdOfferwallViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -468,6 +499,7 @@
 			files = (
 				5ACB75262711AC3500FC9735 /* CustomRewardedAdapter.m in Sources */,
 				5A1508E22795191E00952903 /* NativeGDTDrawListViewController.m in Sources */,
+				5A95FCCE28B755CD00FAF758 /* TPListItem.m in Sources */,
 				5A1508D22795127300952903 /* TradPlusAdNativeDrawViewController.m in Sources */,
 				5AD5DE0F277BFAF8005BAA07 /* TPNativePasterView.m in Sources */,
 				5AD5CA8A26E1D532008C517E /* NativeBannerTemplate.m in Sources */,
@@ -480,6 +512,7 @@
 				5AE342B427CF5E5100D33504 /* TradPlusAdNativeCustomCountViewController.m in Sources */,
 				5AF1AC632705B830006E2645 /* TradPlusAdInterstitialViewController.m in Sources */,
 				5AE6C5B22750C4D900B0AD17 /* File.swift in Sources */,
+				5A95FCC428B74C3700FAF758 /* TradPlusAdNativeInListViewController.m in Sources */,
 				5ACB75272711AC3500FC9735 /* CustomSplashAdapter.m in Sources */,
 				5ACB75332713EAAA00FC9735 /* CustomFacebookNativeAdapter.m in Sources */,
 				5AFA31F326F5B0E800F21A36 /* TradPlusAdBannerViewController.m in Sources */,
@@ -488,6 +521,7 @@
 				5AD5DE09277BFAE5005BAA07 /* TradPlusAdNativePasterViewController.m in Sources */,
 				5ACB75292711AC3500FC9735 /* CustomBannerAdapter.m in Sources */,
 				5AF1AC6D2705B91B006E2645 /* TradPlusAdSplashViewController.m in Sources */,
+				5A95FCD428B77BE200FAF758 /* TPNativeInListView.m in Sources */,
 				5AD5C98426E0973C008C517E /* TradPlusAdNativeSplashViewController.m in Sources */,
 				5ACB75252711AC3500FC9735 /* CustomAdMobNativeAdapter.m in Sources */,
 				5A98A01B26CB58D200C11B85 /* TradPlusAdNativeViewController.m in Sources */,

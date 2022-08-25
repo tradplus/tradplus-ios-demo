@@ -18,6 +18,7 @@
 #import "TradPlusAdNativeDrawViewController.h"
 #import "TradPlusAdNativeCustomCountViewController.h"
 #import "TradPlusAdOfferwallViewController.h"
+#import "TradPlusAdNativeInListViewController.h"
 
 @interface MsADTableViewController ()
 
@@ -42,7 +43,7 @@
     rect.size.height = 20;
     self.tableView.tableFooterView = [[UIView alloc] initWithFrame:rect];
     
-    self.titleArray = @[@"高级原生",@"原生开屏",@"原生横幅",@"横幅",@"插屏",@"激励视频",@"开屏",@"原生视频贴片",@"原生Draw信息流",@"高级原生(自定义缓存数)",@"积分墙"];
+    self.titleArray = @[@"高级原生",@"原生开屏",@"原生横幅",@"横幅",@"插屏",@"激励视频",@"开屏",@"原生视频贴片",@"原生Draw信息流",@"高级原生(自定义缓存数)",@"积分墙",@"列表中展示原生广告"];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -151,6 +152,11 @@
             case 10://积分墙
             {
                 detailViewController = [[TradPlusAdOfferwallViewController alloc] initWithNibName:@"TradPlusAdOfferwallViewController" bundle:nil];
+                break;
+            }
+            case 11://列表中展示原生广告
+            {
+                detailViewController = [[TradPlusAdNativeInListViewController alloc] initWithNibName:@"TradPlusAdNativeInListViewController" bundle:nil];
                 break;
             }
         }
