@@ -177,4 +177,20 @@
 {
     NSLog(@"%s \n%@", __FUNCTION__ ,@(success));
 }
+
+//v8.1.0+新增 跳过
+- (void)tpSplashAdSkip:(NSDictionary *)adInfo
+{
+    NSLog(@"%s \n%@", __FUNCTION__ ,adInfo);
+}
+//v8.1.0+新增 点睛开始
+- (void)tpSplashAdZoomOutViewShow:(NSDictionary *)adInfo
+{
+    NSLog(@"%s \n%@", __FUNCTION__ ,adInfo);
+}
+//v8.1.0+新增 点睛关闭
+- (void)tpSplashAdZoomOutViewClose:(NSDictionary *)adInfo
+{
+    NSLog(@"%s \n%@", __FUNCTION__ ,adInfo);
+}
 @end
