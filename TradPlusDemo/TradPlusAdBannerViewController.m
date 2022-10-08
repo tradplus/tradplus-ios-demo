@@ -52,6 +52,7 @@
 
 - (IBAction)showAct:(id)sender
 {
+    self.logLabel.text = @"";
     [self.banner showWithSceneId:nil];
 }
 

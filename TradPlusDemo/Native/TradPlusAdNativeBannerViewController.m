@@ -53,6 +53,7 @@
 
 - (IBAction)showAct:(id)sender
 {
+    self.logLabel.text = @"";
     [self.nativeBanner showWithSceneId:nil];
     
     //自定义模版方式 需要关闭自动显示

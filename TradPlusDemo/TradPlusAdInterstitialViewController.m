@@ -43,6 +43,7 @@
 
 - (IBAction)showAct:(id)sender
 {
+    self.logLabel.text = @"";
     [self.interstitial showAdWithSceneId:nil];
 }
 

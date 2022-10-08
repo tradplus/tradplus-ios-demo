@@ -9,6 +9,8 @@
 #import <TradPlusAds/TradPlusAdNative.h>
 #import <TradPlusAds/MsCommon.h>
 #import "TPNativeTemplate.h"
+#import "AutoLayoutNativeTemplate.h"
+#import "AutoLayoutNatvieRenderer.h"
 
 @interface TradPlusAdNativeViewController ()<TradPlusADNativeDelegate>
 
@@ -44,8 +46,13 @@
 
 - (IBAction)showAct:(id)sender
 {
-    [self showWithRenderingViewClass];
+    self.logLabel.text = @"";
+    //直接通过布局Class进行渲染
+//    [self showWithRenderingViewClass];
+    //通过自定义Renderer进行渲染
 //    [self showWithRenderer];
+    //自定义Renderer支持自动布局
+    [self showWithAutoLayoutNatvie];
     
 //    NSDictionary *adInfo = [self.nativeAd getReadyAdInfo];
 //    //为空则说明没有广告
@@ -57,6 +64,22 @@
 //        NSLog(@"%@ %u",adsource_name ,thirdNetwork);
 //    }
     
+}
+
+//自动布局
+- (void)showWithAutoLayoutNatvie
+{
+    TPNativeTemplate *adView = [[NSBundle mainBundle] loadNibNamed:@"AutoLayoutNativeTemplate" owner:self options:nil].lastObject;
+    //AutoLayoutNatvieRenderer 中实现添加了自动布局相关代码
+    AutoLayoutNatvieRenderer *nativeRenderer = [[AutoLayoutNatvieRenderer alloc] init];
+    [nativeRenderer setTitleLable:adView.titleLabel canClick:YES];
+    [nativeRenderer setTextLable:adView.textLabel canClick:YES];
+    [nativeRenderer setCtaLable:adView.ctaLabel canClick:YES];
+    [nativeRenderer setIconView:adView.iconImageView canClick:YES];
+    [nativeRenderer setMainImageView:adView.mainImageView canClick:YES];
+    [nativeRenderer setAdChoiceImageView:adView.adChoiceImageView canClick:YES];
+    [nativeRenderer setAdView:adView canClick:YES];
+    [self.nativeAd showADWithNativeRenderer:nativeRenderer subview:self.adView sceneId:nil];
 }
 
 //通过设置 RenderingViewClass 来渲染

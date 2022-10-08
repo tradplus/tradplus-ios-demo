@@ -39,6 +39,7 @@
 
 - (IBAction)showAct:(id)sender
 {
+    self.logLabel.text = @"";
     [self.offerwall showAdFromRootViewController:self sceneId:nil];
 }
 

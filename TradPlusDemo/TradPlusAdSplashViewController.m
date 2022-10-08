@@ -41,6 +41,7 @@
 
 - (IBAction)showAct:(id)sender
 {
+    self.logLabel.text = @"";
     [self.splashAd show];
 }
 

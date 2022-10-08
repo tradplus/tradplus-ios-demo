@@ -28,6 +28,11 @@
 		5A19D466289CC78D0054CB52 /* TradPlusAdOfferwallViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A19D464289CC78D0054CB52 /* TradPlusAdOfferwallViewController.xib */; };
 		5A2F261A26CB57C300CAD358 /* TPNativeTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A2F261726CB57C300CAD358 /* TPNativeTemplate.m */; };
 		5A2F261B26CB57C300CAD358 /* TPNativeTemplate.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A2F261826CB57C300CAD358 /* TPNativeTemplate.xib */; };
+		5A7FF42C28F161AE00CDB172 /* CustomBidInMobiInterstitialAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A7FF42828F161AE00CDB172 /* CustomBidInMobiInterstitialAdapter.m */; };
+		5A7FF42D28F161AE00CDB172 /* CustomBidBaiduInterstitialAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A7FF42A28F161AE00CDB172 /* CustomBidBaiduInterstitialAdapter.m */; };
+		5A7FF43128F169FC00CDB172 /* AutoLayoutNatvieRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A7FF42F28F169FC00CDB172 /* AutoLayoutNatvieRenderer.m */; };
+		5A7FF43528F16A2C00CDB172 /* AutoLayoutNativeTemplate.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A7FF43328F16A2C00CDB172 /* AutoLayoutNativeTemplate.xib */; };
+		5A7FF43628F16A2C00CDB172 /* AutoLayoutNativeTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A7FF43428F16A2C00CDB172 /* AutoLayoutNativeTemplate.m */; };
 		5A95FCC428B74C3700FAF758 /* TradPlusAdNativeInListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A95FCC228B74C3700FAF758 /* TradPlusAdNativeInListViewController.m */; };
 		5A95FCC528B74C3700FAF758 /* TradPlusAdNativeInListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A95FCC328B74C3700FAF758 /* TradPlusAdNativeInListViewController.xib */; };
 		5A95FCCE28B755CD00FAF758 /* TPListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A95FCCD28B755CD00FAF758 /* TPListItem.m */; };
@@ -100,6 +105,15 @@
 		5A2F261726CB57C300CAD358 /* TPNativeTemplate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPNativeTemplate.m; sourceTree = "<group>"; };
 		5A2F261826CB57C300CAD358 /* TPNativeTemplate.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TPNativeTemplate.xib; sourceTree = "<group>"; };
 		5A2F261926CB57C300CAD358 /* TPNativeTemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPNativeTemplate.h; sourceTree = "<group>"; };
+		5A7FF42828F161AE00CDB172 /* CustomBidInMobiInterstitialAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomBidInMobiInterstitialAdapter.m; sourceTree = "<group>"; };
+		5A7FF42928F161AE00CDB172 /* CustomBidInMobiInterstitialAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomBidInMobiInterstitialAdapter.h; sourceTree = "<group>"; };
+		5A7FF42A28F161AE00CDB172 /* CustomBidBaiduInterstitialAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomBidBaiduInterstitialAdapter.m; sourceTree = "<group>"; };
+		5A7FF42B28F161AE00CDB172 /* CustomBidBaiduInterstitialAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomBidBaiduInterstitialAdapter.h; sourceTree = "<group>"; };
+		5A7FF42F28F169FC00CDB172 /* AutoLayoutNatvieRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoLayoutNatvieRenderer.m; sourceTree = "<group>"; };
+		5A7FF43028F169FC00CDB172 /* AutoLayoutNatvieRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoLayoutNatvieRenderer.h; sourceTree = "<group>"; };
+		5A7FF43228F16A2C00CDB172 /* AutoLayoutNativeTemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoLayoutNativeTemplate.h; sourceTree = "<group>"; };
+		5A7FF43328F16A2C00CDB172 /* AutoLayoutNativeTemplate.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AutoLayoutNativeTemplate.xib; sourceTree = "<group>"; };
+		5A7FF43428F16A2C00CDB172 /* AutoLayoutNativeTemplate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoLayoutNativeTemplate.m; sourceTree = "<group>"; };
 		5A95FCC128B74C3700FAF758 /* TradPlusAdNativeInListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TradPlusAdNativeInListViewController.h; sourceTree = "<group>"; };
 		5A95FCC228B74C3700FAF758 /* TradPlusAdNativeInListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TradPlusAdNativeInListViewController.m; sourceTree = "<group>"; };
 		5A95FCC328B74C3700FAF758 /* TradPlusAdNativeInListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TradPlusAdNativeInListViewController.xib; sourceTree = "<group>"; };
@@ -220,6 +234,7 @@
 				5AF1AC652705B8A7006E2645 /* TradPlusAdRewardedViewController.h */,
 				5AF1AC662705B8A7006E2645 /* TradPlusAdRewardedViewController.m */,
 				5AF1AC642705B8A7006E2645 /* TradPlusAdRewardedViewController.xib */,
+				5A7FF42E28F169EE00CDB172 /* AutoLayoutNatvie */,
 				5A1508CE27950DEC00952903 /* NativeDraw */,
 				048B0280248C01010003F53E /* Native */,
 				5AD5DE05277BFABB005BAA07 /* NativePaster */,
@@ -298,6 +313,18 @@
 			path = NativeDraw;
 			sourceTree = "<group>";
 		};
+		5A7FF42E28F169EE00CDB172 /* AutoLayoutNatvie */ = {
+			isa = PBXGroup;
+			children = (
+				5A7FF43228F16A2C00CDB172 /* AutoLayoutNativeTemplate.h */,
+				5A7FF43428F16A2C00CDB172 /* AutoLayoutNativeTemplate.m */,
+				5A7FF43328F16A2C00CDB172 /* AutoLayoutNativeTemplate.xib */,
+				5A7FF43028F169FC00CDB172 /* AutoLayoutNatvieRenderer.h */,
+				5A7FF42F28F169FC00CDB172 /* AutoLayoutNatvieRenderer.m */,
+			);
+			path = AutoLayoutNatvie;
+			sourceTree = "<group>";
+		};
 		5A95FCD628B77BEF00FAF758 /* NativeInList */ = {
 			isa = PBXGroup;
 			children = (
@@ -329,6 +356,10 @@
 		5AF1AC6F2705B954006E2645 /* CustomPlatform */ = {
 			isa = PBXGroup;
 			children = (
+				5A7FF42B28F161AE00CDB172 /* CustomBidBaiduInterstitialAdapter.h */,
+				5A7FF42A28F161AE00CDB172 /* CustomBidBaiduInterstitialAdapter.m */,
+				5A7FF42928F161AE00CDB172 /* CustomBidInMobiInterstitialAdapter.h */,
+				5A7FF42828F161AE00CDB172 /* CustomBidInMobiInterstitialAdapter.m */,
 				5ACB75202711AC3500FC9735 /* CustomBannerAdapter.h */,
 				5ACB75242711AC3500FC9735 /* CustomBannerAdapter.m */,
 				5ACB75212711AC3500FC9735 /* CustomInterstitialAdapter.h */,
@@ -415,6 +446,7 @@
 				5AD5DE0E277BFAF8005BAA07 /* TPNativePasterView.xib in Resources */,
 				5AD5CA8B26E1D532008C517E /* NativeBannerTemplate.xib in Resources */,
 				5A98A01C26CB58D200C11B85 /* TradPlusAdNativeViewController.xib in Resources */,
+				5A7FF43528F16A2C00CDB172 /* AutoLayoutNativeTemplate.xib in Resources */,
 				5AD5CA7F26E1C1B4008C517E /* TradPlusAdNativeBannerViewController.xib in Resources */,
 				5AE342B527CF5E5100D33504 /* TradPlusAdNativeCustomCountViewController.xib in Resources */,
 				5A1508DE2795191E00952903 /* NativeGDTDrawView.xib in Resources */,
@@ -498,6 +530,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5ACB75262711AC3500FC9735 /* CustomRewardedAdapter.m in Sources */,
+				5A7FF43128F169FC00CDB172 /* AutoLayoutNatvieRenderer.m in Sources */,
 				5A1508E22795191E00952903 /* NativeGDTDrawListViewController.m in Sources */,
 				5A95FCCE28B755CD00FAF758 /* TPListItem.m in Sources */,
 				5A1508D22795127300952903 /* TradPlusAdNativeDrawViewController.m in Sources */,
@@ -509,6 +542,7 @@
 				048B024D248BF4540003F53E /* AppDelegate.m in Sources */,
 				048B0253248BF4540003F53E /* MsADTableViewController.m in Sources */,
 				5A1508E02795191E00952903 /* NativeDrawListViewController.m in Sources */,
+				5A7FF43628F16A2C00CDB172 /* AutoLayoutNativeTemplate.m in Sources */,
 				5AE342B427CF5E5100D33504 /* TradPlusAdNativeCustomCountViewController.m in Sources */,
 				5AF1AC632705B830006E2645 /* TradPlusAdInterstitialViewController.m in Sources */,
 				5AE6C5B22750C4D900B0AD17 /* File.swift in Sources */,
@@ -523,7 +557,9 @@
 				5AF1AC6D2705B91B006E2645 /* TradPlusAdSplashViewController.m in Sources */,
 				5A95FCD428B77BE200FAF758 /* TPNativeInListView.m in Sources */,
 				5AD5C98426E0973C008C517E /* TradPlusAdNativeSplashViewController.m in Sources */,
+				5A7FF42D28F161AE00CDB172 /* CustomBidBaiduInterstitialAdapter.m in Sources */,
 				5ACB75252711AC3500FC9735 /* CustomAdMobNativeAdapter.m in Sources */,
+				5A7FF42C28F161AE00CDB172 /* CustomBidInMobiInterstitialAdapter.m in Sources */,
 				5A98A01B26CB58D200C11B85 /* TradPlusAdNativeViewController.m in Sources */,
 				5AF1AC682705B8A7006E2645 /* TradPlusAdRewardedViewController.m in Sources */,
 				5A2F261A26CB57C300CAD358 /* TPNativeTemplate.m in Sources */,

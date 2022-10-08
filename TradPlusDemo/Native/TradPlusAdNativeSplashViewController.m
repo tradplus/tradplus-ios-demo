@@ -36,6 +36,7 @@
 
 - (IBAction)showAct:(id)sender
 {
+    self.logLabel.text = @"";
     UIWindow *window = [UIApplication sharedApplication].keyWindow;
     [self.nativeSplash showInWindow:window];
     

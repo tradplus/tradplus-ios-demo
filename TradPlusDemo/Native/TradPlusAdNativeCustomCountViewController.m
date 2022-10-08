@@ -42,6 +42,7 @@
 
 - (IBAction)showAct:(id)sender
 {
+    self.infoLabel.text = @"";
     if(self.native.readyAdCount > 0)
     {
         self.infoLabel.text = @"展示广告";
