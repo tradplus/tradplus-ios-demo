@@ -41,5 +41,6 @@ target 'TradPlusDemo' do
   pod 'TradPlusAdSDK/PangleAdapter', '8.2.0'
   pod 'Ads-CN/BUAdSDK_Compatible', '4.7.1.1'
   
-
+  #测试工具
+  pod "TPMediationHelper",'1.0.2'
 end

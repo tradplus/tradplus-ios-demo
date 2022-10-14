@@ -19,6 +19,7 @@
 #import "TradPlusAdNativeCustomCountViewController.h"
 #import "TradPlusAdOfferwallViewController.h"
 #import "TradPlusAdNativeInListViewController.h"
+#import <TPMediationHelper/TPMediationHelper.h>
 
 @interface MsADTableViewController ()
 
@@ -28,10 +29,16 @@
 
 @implementation MsADTableViewController
 
+- (void)openMediationHelper
+{
+    [TPMediationHelper open];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"测试工具" style:UIBarButtonItemStylePlain target:self action:@selector(openMediationHelper)];
     self.view.backgroundColor = [UIColor whiteColor];
     self.tableView.separatorColor = [UIColor colorWithRed:0.31 green:0.31 blue:0.31 alpha:1];
     self.tableView.rowHeight = 50;

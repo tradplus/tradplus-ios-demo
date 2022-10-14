@@ -24,11 +24,6 @@
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    if (@available(iOS 14.0, *))
-    {
-        [ATTrackingManager requestTrackingAuthorizationWithCompletionHandler:^(ATTrackingManagerAuthorizationStatus status) {
-        }];
-    }
     // Override point for customization after application launch.
     [TradPlus initSDK:@"75AA158112F1EFA29169E26AC63AFF94" completionBlock:^(NSError * _Nonnull error) {
         if (!error)
@@ -88,6 +83,10 @@
 
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
+    if (@available(iOS 14.5, *)) {
+        [ATTrackingManager requestTrackingAuthorizationWithCompletionHandler:^(ATTrackingManagerAuthorizationStatus status) {
+        }];
+     }
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
     [self showSplashAd];
 }
