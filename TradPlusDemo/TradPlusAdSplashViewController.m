@@ -42,6 +42,9 @@
 - (IBAction)showAct:(id)sender
 {
     self.logLabel.text = @"";
+    //展示前设置自定义透传信息
+    NSInteger time = [[NSDate date] timeIntervalSince1970];
+    self.splashAd.customAdInfo = @{@"act":@"Show",@"time":@(time)};
     [self.splashAd show];
 }
 

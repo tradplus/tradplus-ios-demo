@@ -37,6 +37,9 @@
 - (IBAction)showAct:(id)sender
 {
     self.logLabel.text = @"";
+    //展示前设置自定义透传信息
+    NSInteger time = [[NSDate date] timeIntervalSince1970];
+    self.nativeSplash.customAdInfo = @{@"act":@"Show",@"time":@(time)};
     UIWindow *window = [UIApplication sharedApplication].keyWindow;
     [self.nativeSplash showInWindow:window];
     

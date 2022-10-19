@@ -25,7 +25,7 @@
 {
     [super viewDidLoad];
     self.native = [[TradPlusAdNative alloc] init];
-    [self.native setAdUnitID:@"E8D198EBD7FDC4F8A725066C82D707E1"];
+    [self.native setAdUnitID:@"E8D198EBD7FDC4F8A725066C82D707E1" isAutoLoad:NO];
     self.native.delegate = self;
     CGFloat width = CGRectGetWidth([UIScreen mainScreen].bounds);
     self.adSize = CGSizeMake(width, width);

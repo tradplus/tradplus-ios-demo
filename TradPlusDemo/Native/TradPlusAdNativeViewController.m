@@ -47,6 +47,9 @@
 - (IBAction)showAct:(id)sender
 {
     self.logLabel.text = @"";
+    //展示前设置自定义透传信息
+    NSInteger time = [[NSDate date] timeIntervalSince1970];
+    self.nativeAd.customAdInfo = @{@"act":@"Show",@"time":@(time)};
     //直接通过布局Class进行渲染
 //    [self showWithRenderingViewClass];
     //通过自定义Renderer进行渲染

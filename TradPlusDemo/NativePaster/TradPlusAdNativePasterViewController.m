@@ -53,6 +53,9 @@
     self.nativeObject = [self.native getReadyNativeObject];
     if(self.nativeObject != nil)
     {
+        //展示前设置自定义透传信息
+        NSInteger time = [[NSDate date] timeIntervalSince1970];
+        self.nativeObject.customAdInfo = @{@"act":@"Show",@"time":@(time)};
         if(self.nativePasterView != nil)
         {
             [self.nativePasterView removeFromSuperview];

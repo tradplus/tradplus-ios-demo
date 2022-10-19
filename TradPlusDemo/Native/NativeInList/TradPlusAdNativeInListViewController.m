@@ -26,7 +26,7 @@
     
     self.native = [[TradPlusAdNative alloc] init];
     self.native.delegate = self;
-    [self.native setTemplateRenderSize:CGSizeMake([UIScreen mainScreen].bounds.size.width, 100)];
+    [self.native setTemplateRenderSize:CGSizeMake([UIScreen mainScreen].bounds.size.width, 150)];
     [self.native setAdUnitID:@"E8D198EBD7FDC4F8A725066C82D707E1"];
     
     self.itemArray = [[NSMutableArray alloc] init];
@@ -52,7 +52,7 @@
     {
         return 0;
     }
-    return 100;
+    return 150;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -61,7 +61,7 @@
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"listCell"];
         CGRect rect = [UIScreen mainScreen].bounds;
-        rect.size.height = 100;
+        rect.size.height = 150;
         cell.frame = rect;
     }
     cell.textLabel.text = [NSString stringWithFormat:@"%ld",(long)indexPath.row+1];
@@ -71,7 +71,7 @@
     if(item.nativeObject != nil)
     {
         CGRect rect = [UIScreen mainScreen].bounds;
-        rect.size.height = 100;
+        rect.size.height = 150;
         UIView *adView = [[UIView alloc] initWithFrame:rect];
         [item.nativeObject showADWithRenderingViewClass:[TPNativeInListView class] subview:adView sceneId:nil];
         [cell.contentView addSubview:adView];
