@@ -43,5 +43,5 @@ pod 'Ads-CN/BUAdSDK_Compatible', '4.8.0.8'
 pod 'TradPlusAdSDK/PangleAdapter', '8.3.20'
 pod 'Ads-Global/BUAdSDK_Compatible', '4.7.0.6'
 #测试工具
-pod "TPMediationHelper",'1.0.2'
+pod "TPMediationHelper",'1.0.3'
 end
