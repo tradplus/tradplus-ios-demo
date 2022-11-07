@@ -8,6 +8,7 @@
 
 #import "TradPlusAdSplashViewController.h"
 #import <TradPlusAds/TradPlusAdSplash.h>
+#import "TPNativeTemplate.h"
 
 @interface TradPlusAdSplashViewController ()<TradPlusADSplashDelegate>
 {
@@ -26,7 +27,7 @@
     [super viewDidLoad];
     self.splashAd = [[TradPlusAdSplash alloc] init];
     self.splashAd.delegate = self;
-    [self.splashAd setAdUnitID:@"E5BC6369FC7D96FD47612B279BC5AAE0"];
+    [self.splashAd setAdUnitID:@"7075DD1F6D9A184E40C6821CE2AD4488"];
     //设置
 //    UIImage *image = [UIImage imageNamed:@"icon"];
 //    self.splashAd.dicCustomValue = @{@"pangleGlobal_appIcon":image};
@@ -46,6 +47,24 @@
     NSInteger time = [[NSDate date] timeIntervalSince1970];
     self.splashAd.customAdInfo = @{@"act":@"Show",@"time":@(time)};
     [self.splashAd show];
+    
+//    //v8.4.0+ 开屏支持原生广告混用,可通过此API设置原生的自定义模版，不设置时会使用默认模版
+//    [self.splashAd showWithRenderingViewClass:[TPNativeTemplate class]];
+    
+//    //自定义view方式
+//    TPNativeTemplate *adView = [[NSBundle mainBundle] loadNibNamed:@"TPNativeTemplate" owner:self options:nil].lastObject;
+//    adView.frame = [UIScreen mainScreen].bounds;
+//    [adView layoutIfNeeded];
+//    TradPlusNativeRenderer *nativeRenderer = [[TradPlusNativeRenderer alloc] init];
+//    [nativeRenderer setTitleLable:adView.titleLabel canClick:YES];
+//    [nativeRenderer setTextLable:adView.textLabel canClick:YES];
+//    [nativeRenderer setCtaLable:adView.ctaLabel canClick:YES];
+//    [nativeRenderer setIconView:adView.iconImageView canClick:YES];
+//    [nativeRenderer setMainImageView:adView.mainImageView canClick:YES];
+//    [nativeRenderer setAdChoiceImageView:adView.adChoiceImageView canClick:YES];
+//    [nativeRenderer setAdView:adView canClick:YES];
+//    //v8.4.0+ 开屏支持原生广告混用，可通过此API设置原生的自定义Renderer，不设置时会使用默认模版
+//    [self.splashAd showWithRenderer:nativeRenderer];
 }
 
 

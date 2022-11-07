@@ -387,8 +387,8 @@
 				048B0211248BF2600003F53E /* Sources */,
 				048B0212248BF2600003F53E /* Frameworks */,
 				048B0213248BF2600003F53E /* Resources */,
-				07CBCDDBB42FEAAD21362E98 /* [CP] Embed Pods Frameworks */,
 				611C9B16E220F38AD742D260 /* [CP] Copy Pods Resources */,
+				4A845343DD03DCCFA122FB1B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -466,7 +466,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		07CBCDDBB42FEAAD21362E98 /* [CP] Embed Pods Frameworks */ = {
+		4A845343DD03DCCFA122FB1B /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -717,7 +717,7 @@
 				);
 				MARKETING_VERSION = 6.9.0;
 				OTHER_LDFLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tradplusad.koala;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pujiadev.SakuraSimulator;
 				PRODUCT_NAME = TradPlusDemoN;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -744,7 +744,7 @@
 				);
 				MARKETING_VERSION = 6.9.0;
 				OTHER_LDFLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tradplusad.koala;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pujiadev.SakuraSimulator;
 				PRODUCT_NAME = TradPlusDemoN;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

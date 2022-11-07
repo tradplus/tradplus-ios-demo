@@ -40,6 +40,23 @@
         [self.adView addSubview:self.banner];
         //关闭自动显示
 //        self.banner.autoShow = NO;
+        
+//        //v8.4.0+ banner支持原生广告混用,可通过此API设置原生的自定义模版，不设置时会使用默认模版
+//        self.banner.customRenderingViewClass = [NativeBannerTemplate class];
+        
+//        //自定义View设置方式
+//        NativeBannerTemplate *adView = [[NSBundle mainBundle] loadNibNamed:@"NativeBannerTemplate" owner:self options:nil].lastObject;
+//        adView.frame = self.adView.bounds;
+//        TradPlusNativeRenderer *nativeRenderer = [[TradPlusNativeRenderer alloc] init];
+//        [nativeRenderer setTitleLable:adView.titleLabel canClick:YES];
+//        [nativeRenderer setTextLable:adView.textLabel canClick:YES];
+//        [nativeRenderer setCtaLable:adView.ctaLabel canClick:YES];
+//        [nativeRenderer setIconView:adView.iconImageView canClick:YES];
+//        [nativeRenderer setAdChoiceImageView:adView.adChoiceImageView canClick:YES];
+//        [nativeRenderer setAdView:adView canClick:YES];
+//        //v8.4.0+ banner支持原生广告混用，可通过此API设置原生的自定义Renderer，不设置时会使用默认模版
+//        self.banner.customRenderer = nativeRenderer;
+        
     }
 }
 
