@@ -717,7 +717,7 @@
 				);
 				MARKETING_VERSION = 6.9.0;
 				OTHER_LDFLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = com.pujiadev.SakuraSimulator;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tradplusad.koala;
 				PRODUCT_NAME = TradPlusDemoN;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -744,7 +744,7 @@
 				);
 				MARKETING_VERSION = 6.9.0;
 				OTHER_LDFLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = com.pujiadev.SakuraSimulator;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tradplusad.koala;
 				PRODUCT_NAME = TradPlusDemoN;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

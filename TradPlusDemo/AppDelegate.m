@@ -14,7 +14,7 @@
 #import <AppTrackingTransparency/AppTrackingTransparency.h>
 
 
-@interface AppDelegate ()<TradPlusADSplashDelegate>
+@interface AppDelegate ()<TradPlusADSplashDelegate,TradPlusAdImpressionDelegate>
 
 @property (nonatomic, strong) TradPlusAdSplash *splashAd;
 @property (nonatomic, assign)BOOL isFirstSplashAd;
@@ -37,10 +37,17 @@
             MSLogInfo(@"flute sdk init success!");
         }
     }];
+    //v8.5.0+全局展示回调
+    [TradPlus sharedInstance].impressionDelegate = self;
     self.isFirstSplashAd = YES;
     [self initSplashAd];
     [self loadSplashAd];
     return YES;
+}
+
+- (void)tradPlusAdImpression:(NSDictionary *)adInfo
+{
+    NSLog(@"tradPlusAdImpression adInfo %@",adInfo);
 }
 
 - (void)initSplashAd
