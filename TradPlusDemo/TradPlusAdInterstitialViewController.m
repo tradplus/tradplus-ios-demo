@@ -27,11 +27,8 @@
     [super viewDidLoad];
     self.interstitial = [[TradPlusAdInterstitial alloc] init];
     self.interstitial.delegate = self;
-    //v7.7.0 默认开启自动加载
     [self.interstitial setAdUnitID:@"063265866B93A4C6F93D1DDF7BF7329B"];
     self.logLabel.text = @"加载中...";
-    //设置是否需要自动加载
-//    [self.interstitial setAdUnitID:@"063265866B93A4C6F93D1DDF7BF7329B" isAutoLoad:BOOL]
 }
 
 - (IBAction)loadAct:(id)sender
