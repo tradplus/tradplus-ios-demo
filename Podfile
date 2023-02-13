@@ -30,6 +30,8 @@ pod 'MintegralAdSDK/All','7.2.9'
 pod 'TradPlusAdSDK/SmaatoAdapter', '8.9.0'
 pod 'smaato-ios-sdk', '22.0.1'
 pod 'TradPlusAdSDK/TPCrossAdapter', '8.9.0'
+pod 'TradPlusAdSDK/BaiduAdapter', '8.9.0'
+pod 'BaiduMobAdSDK','5.11'
 pod 'TradPlusAdSDK/GDTMobAdapter', '8.9.0'
 pod 'GDTMobSDK', '4.14.10'
 ###穿山甲
