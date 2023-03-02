@@ -28,6 +28,11 @@
 		5A19D466289CC78D0054CB52 /* TradPlusAdOfferwallViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A19D464289CC78D0054CB52 /* TradPlusAdOfferwallViewController.xib */; };
 		5A2F261A26CB57C300CAD358 /* TPNativeTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A2F261726CB57C300CAD358 /* TPNativeTemplate.m */; };
 		5A2F261B26CB57C300CAD358 /* TPNativeTemplate.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A2F261826CB57C300CAD358 /* TPNativeTemplate.xib */; };
+		5A63CA5C29B0445C00F13C07 /* TradPlusAdMediaVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A63CA5A29B0445C00F13C07 /* TradPlusAdMediaVideoViewController.m */; };
+		5A63CA5D29B0445C00F13C07 /* TradPlusAdMediaVideoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A63CA5B29B0445C00F13C07 /* TradPlusAdMediaVideoViewController.xib */; };
+		5A63CA6029B0546100F13C07 /* MediaVideoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A63CA5F29B0546100F13C07 /* MediaVideoManager.m */; };
+		5A63CA6429B0579600F13C07 /* TradPlusAdPreloadMediaVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A63CA6229B0579600F13C07 /* TradPlusAdPreloadMediaVideoViewController.m */; };
+		5A63CA6529B0579600F13C07 /* TradPlusAdPreloadMediaVideoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A63CA6329B0579600F13C07 /* TradPlusAdPreloadMediaVideoViewController.xib */; };
 		5A7FF42C28F161AE00CDB172 /* CustomBidInMobiInterstitialAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A7FF42828F161AE00CDB172 /* CustomBidInMobiInterstitialAdapter.m */; };
 		5A7FF42D28F161AE00CDB172 /* CustomBidBaiduInterstitialAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A7FF42A28F161AE00CDB172 /* CustomBidBaiduInterstitialAdapter.m */; };
 		5A7FF43128F169FC00CDB172 /* AutoLayoutNatvieRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A7FF42F28F169FC00CDB172 /* AutoLayoutNatvieRenderer.m */; };
@@ -105,6 +110,14 @@
 		5A2F261726CB57C300CAD358 /* TPNativeTemplate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPNativeTemplate.m; sourceTree = "<group>"; };
 		5A2F261826CB57C300CAD358 /* TPNativeTemplate.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TPNativeTemplate.xib; sourceTree = "<group>"; };
 		5A2F261926CB57C300CAD358 /* TPNativeTemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPNativeTemplate.h; sourceTree = "<group>"; };
+		5A63CA5929B0445C00F13C07 /* TradPlusAdMediaVideoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TradPlusAdMediaVideoViewController.h; sourceTree = "<group>"; };
+		5A63CA5A29B0445C00F13C07 /* TradPlusAdMediaVideoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TradPlusAdMediaVideoViewController.m; sourceTree = "<group>"; };
+		5A63CA5B29B0445C00F13C07 /* TradPlusAdMediaVideoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TradPlusAdMediaVideoViewController.xib; sourceTree = "<group>"; };
+		5A63CA5E29B0546100F13C07 /* MediaVideoManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MediaVideoManager.h; sourceTree = "<group>"; };
+		5A63CA5F29B0546100F13C07 /* MediaVideoManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MediaVideoManager.m; sourceTree = "<group>"; };
+		5A63CA6129B0579600F13C07 /* TradPlusAdPreloadMediaVideoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TradPlusAdPreloadMediaVideoViewController.h; sourceTree = "<group>"; };
+		5A63CA6229B0579600F13C07 /* TradPlusAdPreloadMediaVideoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TradPlusAdPreloadMediaVideoViewController.m; sourceTree = "<group>"; };
+		5A63CA6329B0579600F13C07 /* TradPlusAdPreloadMediaVideoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TradPlusAdPreloadMediaVideoViewController.xib; sourceTree = "<group>"; };
 		5A7FF42828F161AE00CDB172 /* CustomBidInMobiInterstitialAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomBidInMobiInterstitialAdapter.m; sourceTree = "<group>"; };
 		5A7FF42928F161AE00CDB172 /* CustomBidInMobiInterstitialAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomBidInMobiInterstitialAdapter.h; sourceTree = "<group>"; };
 		5A7FF42A28F161AE00CDB172 /* CustomBidBaiduInterstitialAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomBidBaiduInterstitialAdapter.m; sourceTree = "<group>"; };
@@ -244,6 +257,14 @@
 				048B023E248BF4540003F53E /* MsADTableViewController.h */,
 				048B0245248BF4540003F53E /* MsADTableViewController.m */,
 				048B0229248BF2650003F53E /* Info.plist */,
+				5A63CA5929B0445C00F13C07 /* TradPlusAdMediaVideoViewController.h */,
+				5A63CA5A29B0445C00F13C07 /* TradPlusAdMediaVideoViewController.m */,
+				5A63CA5B29B0445C00F13C07 /* TradPlusAdMediaVideoViewController.xib */,
+				5A63CA6129B0579600F13C07 /* TradPlusAdPreloadMediaVideoViewController.h */,
+				5A63CA6229B0579600F13C07 /* TradPlusAdPreloadMediaVideoViewController.m */,
+				5A63CA6329B0579600F13C07 /* TradPlusAdPreloadMediaVideoViewController.xib */,
+				5A63CA5E29B0546100F13C07 /* MediaVideoManager.h */,
+				5A63CA5F29B0546100F13C07 /* MediaVideoManager.m */,
 			);
 			path = TradPlusDemo;
 			sourceTree = "<group>";
@@ -446,11 +467,13 @@
 				5AD5DE0E277BFAF8005BAA07 /* TPNativePasterView.xib in Resources */,
 				5AD5CA8B26E1D532008C517E /* NativeBannerTemplate.xib in Resources */,
 				5A98A01C26CB58D200C11B85 /* TradPlusAdNativeViewController.xib in Resources */,
+				5A63CA5D29B0445C00F13C07 /* TradPlusAdMediaVideoViewController.xib in Resources */,
 				5A7FF43528F16A2C00CDB172 /* AutoLayoutNativeTemplate.xib in Resources */,
 				5AD5CA7F26E1C1B4008C517E /* TradPlusAdNativeBannerViewController.xib in Resources */,
 				5AE342B527CF5E5100D33504 /* TradPlusAdNativeCustomCountViewController.xib in Resources */,
 				5A1508DE2795191E00952903 /* NativeGDTDrawView.xib in Resources */,
 				5A95FCD528B77BE200FAF758 /* TPNativeInListView.xib in Resources */,
+				5A63CA6529B0579600F13C07 /* TradPlusAdPreloadMediaVideoViewController.xib in Resources */,
 				5AF1AC622705B830006E2645 /* TradPlusAdInterstitialViewController.xib in Resources */,
 				5AFA31F226F5B0E800F21A36 /* TradPlusAdBannerViewController.xib in Resources */,
 				5AD5DE0A277BFAE5005BAA07 /* TradPlusAdNativePasterViewController.xib in Resources */,
@@ -556,10 +579,13 @@
 				5ACB75292711AC3500FC9735 /* CustomBannerAdapter.m in Sources */,
 				5AF1AC6D2705B91B006E2645 /* TradPlusAdSplashViewController.m in Sources */,
 				5A95FCD428B77BE200FAF758 /* TPNativeInListView.m in Sources */,
+				5A63CA6429B0579600F13C07 /* TradPlusAdPreloadMediaVideoViewController.m in Sources */,
 				5AD5C98426E0973C008C517E /* TradPlusAdNativeSplashViewController.m in Sources */,
+				5A63CA6029B0546100F13C07 /* MediaVideoManager.m in Sources */,
 				5A7FF42D28F161AE00CDB172 /* CustomBidBaiduInterstitialAdapter.m in Sources */,
 				5ACB75252711AC3500FC9735 /* CustomAdMobNativeAdapter.m in Sources */,
 				5A7FF42C28F161AE00CDB172 /* CustomBidInMobiInterstitialAdapter.m in Sources */,
+				5A63CA5C29B0445C00F13C07 /* TradPlusAdMediaVideoViewController.m in Sources */,
 				5A98A01B26CB58D200C11B85 /* TradPlusAdNativeViewController.m in Sources */,
 				5AF1AC682705B8A7006E2645 /* TradPlusAdRewardedViewController.m in Sources */,
 				5A2F261A26CB57C300CAD358 /* TPNativeTemplate.m in Sources */,
