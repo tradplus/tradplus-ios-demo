@@ -34,7 +34,6 @@
         if(self.mediaVideoObject != nil)
         {
             [MediaVideoManager sharedInstance].adView.frame = self.bgView.bounds;
-            [MediaVideoManager sharedInstance].adView.hidden = YES;
             [self.bgView addSubview:[MediaVideoManager sharedInstance].adView];
             [self.mediaVideoObject startWithViewController:self sceneId:nil];
         }
@@ -55,10 +54,6 @@
     [MediaVideoManager sharedInstance].playFinish = ^{
         [[MediaVideoManager sharedInstance].adView removeFromSuperview];
         [weakSelf.contentPlayer play];
-    };
-    //收到开始播放时再显示广告
-    [MediaVideoManager sharedInstance].starPlay = ^{
-        [MediaVideoManager sharedInstance].adView.hidden = NO;
     };
 }
 
