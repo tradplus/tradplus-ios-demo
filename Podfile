@@ -36,7 +36,7 @@ pod 'TradPlusAdSDK/GDTMobAdapter', '9.2.0'
 pod 'GDTMobSDK', '4.14.20'
 ###Pangle
 pod 'TradPlusAdSDK/PangleAdapter', '9.2.0'
-pod 'Ads-Global/BUAdSDK_Compatible', '5.1.0.7'
+pod 'Ads-Global', '5.1.0.7'
 ###穿山甲
 pod 'TradPlusAdSDK/CSJAdapter', '9.2.0'
 pod 'Ads-CN/BUAdSDK_Compatible', '5.1.1.0'
@@ -45,5 +45,5 @@ pod 'TradPlusAdSDK/TPGoogleIMAAdapter', '9.2.0'
 pod 'GoogleAds-IMA-iOS-SDK','3.18.4'
 
 ##测试工具
-pod "TPMediationHelper",'1.0.8'
+pod "TPMediationHelper",'1.0.9'
 end
