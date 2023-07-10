@@ -28,7 +28,6 @@
     self.interstitial = [[TradPlusAdInterstitial alloc] init];
     self.interstitial.delegate = self;
     [self.interstitial setAdUnitID:@"063265866B93A4C6F93D1DDF7BF7329B"];
-    self.logLabel.text = @"加载中...";
 }
 
 - (IBAction)loadAct:(id)sender

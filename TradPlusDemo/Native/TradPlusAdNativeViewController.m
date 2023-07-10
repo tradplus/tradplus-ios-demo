@@ -27,7 +27,6 @@
     self.nativeAd = [[TradPlusAdNative alloc] init];
     self.nativeAd.delegate = self;
     [self.nativeAd setAdUnitID:@"E8D198EBD7FDC4F8A725066C82D707E1"];
-    self.logLabel.text = @"加载中...";
     
     //资源下载完成后再通知load完成
 //    self.nativeAd.finishDownload = YES;

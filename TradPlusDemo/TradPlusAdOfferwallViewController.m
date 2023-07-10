@@ -25,7 +25,6 @@
     self.offerwall = [[TradPlusAdOfferwall alloc] init];
     self.offerwall.delegate = self;
     [self.offerwall setAdUnitID:@"470166B2D4DEA9A7DCD3F42C5CE658B0"];
-    self.logLabel.text = @"加载中...";
 }
 
 - (IBAction)loadAct:(id)sender

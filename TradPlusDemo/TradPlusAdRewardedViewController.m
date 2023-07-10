@@ -29,7 +29,6 @@
     //v7.8.0新增
     self.rewardedVideoAd.playAgainDelegate = self;
     [self.rewardedVideoAd setAdUnitID:@"160AFCDF01DDA48CCE0DBDBE69C8C669"];
-    self.logLabel.text = @"加载中...";
 }
 
 - (IBAction)loadAct:(id)sender
