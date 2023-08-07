@@ -4,3 +4,8 @@ TradPlusDemo.xcworkspace
 xcuserdata
 Build
 
+.DS_Store
+Assets.xcassets/.DS_Store
+TradPlusDemo/.DS_Store
+TradPlusDemo/AutoLayoutNatvie/.DS_Store
+TradPlusDemo/Native/.DS_Store
