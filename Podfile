@@ -6,6 +6,8 @@ target 'TradPlusDemo' do
   use_frameworks!
 
 pod 'TradPlusAdSDK', '9.8.0'
+pod 'TradPlusAdSDK/TPZMaticooAdapter', '9.8.0'
+pod 'zMaticoo','1.2.3'
 pod 'TradPlusAdSDK/TPCrossAdapter', '9.8.0'
 pod 'TradPlusAdSDK/FacebookAdapter', '9.8.0'
 pod 'FBAudienceNetwork','6.14.0'
@@ -42,5 +44,5 @@ pod 'TradPlusAdSDK/TPGoogleIMAAdapter', '9.8.0'
 pod 'GoogleAds-IMA-iOS-SDK','3.18.4'
 
 ##测试工具
-pod "TPMediationHelper",'1.1.0'
+pod "TPMediationHelper",'1.1.1'
 end
