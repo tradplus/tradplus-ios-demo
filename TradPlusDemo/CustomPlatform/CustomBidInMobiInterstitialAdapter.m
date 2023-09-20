@@ -94,7 +94,7 @@
 //展示
 - (void)showAdFromRootViewController:(UIViewController *)rootViewController
 {
-    [self.interstitial showFromViewController:rootViewController];
+    [self.interstitial showFrom:rootViewController];
 }
 
 - (BOOL)isReady
