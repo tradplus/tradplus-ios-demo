@@ -81,36 +81,30 @@
     [self.mediaVideo loadAd:self.bgView viewController:self mute:NO];
 }
 
-- (IBAction)showAct:(id)sender
-{
-    self.infoLabel.text = @"";
-    if([self.mediaVideo isAdReady])
-    {
-        self.mediaVideoObject  = [self.mediaVideo getReadyMediaVideoObject];
-        IMAAd *ad = self.mediaVideoObject.getCustomNetworkObj;
-        if(ad != nil)
-        {
-            NSLog(@"ad.duration %@",@(ad.duration));
-            NSLog(@"ad.adPodInfo.totalAds %@",@(ad.adPodInfo.totalAds));
-        }
-        IMAAdsManager *manager = self.mediaVideoObject.getAdsManager;
-        if(manager != nil)
-        {
-            NSLog(@"manager.adCuePoints %@",manager.adCuePoints);
-        }
-//        //获取到广告后可以设置delegate方便处理回调
-//        self.mediaVideoObject.delegate = self;
-        [self.mediaVideoObject startWithViewController:nil sceneId:nil];
-    }
-}
-
 #pragma mark - TradPlusADMediaVideoDelegate
 
 ///AD加载完成 首个广告源加载成功时回调 一次加载流程只会回调一次
 - (void)tpMediaVideoAdLoaded:(NSDictionary *)adInfo
 {
-    self.infoLabel.text = @"加载成功";
+    self.infoLabel.text = @"加载成功并展示";
     NSLog(@"%s \n%@", __FUNCTION__ ,adInfo);
+    self.mediaVideoObject  = [self.mediaVideo getReadyMediaVideoObject];
+    IMAAd *ad = self.mediaVideoObject.getCustomNetworkObj;
+    if(ad != nil)
+    {
+        NSLog(@"ad.duration %@",@(ad.duration));
+        NSLog(@"ad.adPodInfo.totalAds %@",@(ad.adPodInfo.totalAds));
+    }
+    IMAAdsManager *manager = self.mediaVideoObject.getAdsManager;
+    if(manager != nil)
+    {
+        NSLog(@"manager.adCuePoints %@",manager.adCuePoints);
+    }
+}
+
+- (void)tpMediaVideoAdStart:(NSDictionary *)adInfo
+{
+    self.infoLabel.text = @"";
 }
 
 ///AD加载失败

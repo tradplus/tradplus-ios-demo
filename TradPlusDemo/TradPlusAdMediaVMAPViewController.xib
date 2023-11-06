@@ -35,27 +35,15 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ctJ-dk-yA2">
-                    <rect key="frame" x="40" y="305" width="100" height="40"/>
+                    <rect key="frame" x="112.5" y="305" width="150" height="40"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="100" id="CWB-Cz-TET"/>
+                        <constraint firstAttribute="width" constant="150" id="CWB-Cz-TET"/>
                         <constraint firstAttribute="height" constant="40" id="GgE-LC-9Va"/>
                     </constraints>
                     <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="plain" title="加载"/>
+                    <buttonConfiguration key="configuration" style="plain" title="加载并展示"/>
                     <connections>
                         <action selector="loadAct:" destination="-1" eventType="touchUpInside" id="0ha-vV-S5W"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ga-AV-Adf">
-                    <rect key="frame" x="229" y="305" width="100" height="40"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="100" id="VZO-tI-bFF"/>
-                        <constraint firstAttribute="height" constant="40" id="nfl-Xm-uXw"/>
-                    </constraints>
-                    <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="plain" title="展示"/>
-                    <connections>
-                        <action selector="showAct:" destination="-1" eventType="touchUpInside" id="CBp-vM-T7F"/>
                     </connections>
                 </button>
             </subviews>
@@ -64,14 +52,12 @@
             <constraints>
                 <constraint firstItem="ctJ-dk-yA2" firstAttribute="top" secondItem="Hux-T0-enV" secondAttribute="bottom" constant="30" id="C4S-2X-Bqj"/>
                 <constraint firstItem="l3f-lc-XeO" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="Jn4-tN-dis"/>
-                <constraint firstItem="ctJ-dk-yA2" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="40" id="PRO-x9-6Ya"/>
                 <constraint firstItem="l3f-lc-XeO" firstAttribute="width" secondItem="l3f-lc-XeO" secondAttribute="height" multiplier="16:9" id="VPI-cq-FGL"/>
                 <constraint firstItem="Hux-T0-enV" firstAttribute="top" secondItem="l3f-lc-XeO" secondAttribute="bottom" id="VvL-an-fS2"/>
-                <constraint firstItem="6ga-AV-Adf" firstAttribute="top" secondItem="Hux-T0-enV" secondAttribute="bottom" constant="30" id="WE8-Mj-Cgd"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="Hux-T0-enV" secondAttribute="trailing" id="bBg-M6-4nP"/>
                 <constraint firstItem="l3f-lc-XeO" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="c9a-1F-KxQ"/>
+                <constraint firstItem="ctJ-dk-yA2" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="cgu-ne-Tpq"/>
                 <constraint firstItem="Hux-T0-enV" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="hhu-NU-B4m"/>
-                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="6ga-AV-Adf" secondAttribute="trailing" constant="46" id="p16-xP-MKS"/>
                 <constraint firstItem="l3f-lc-XeO" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="yUr-Tv-c0Q"/>
             </constraints>
             <point key="canvasLocation" x="132" y="-11"/>
