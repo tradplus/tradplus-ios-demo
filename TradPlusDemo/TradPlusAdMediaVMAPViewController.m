@@ -143,7 +143,7 @@
 /// 10.0.0新增 返回IMA kIMAAdEvent_AD_BREAK_READY事件
 - (void)tpMediaVideoAdBreakReady:(NSDictionary *)adInfo
 {
-    //收到AdBreakReady后调用start来展示中贴和后贴
+    //收到AdBreakReady后调用start来展示广告
     if(self.mediaVideoObject != nil)
     {
         [self.mediaVideoObject start];
