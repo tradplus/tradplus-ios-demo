@@ -40,7 +40,8 @@ pod 'TradPlusAdSDK/CSJAdapter', '10.4.0'
 pod 'Ads-CN', '5.7.1.1'
 pod 'TradPlusAdSDK/TPGoogleIMAAdapter', '10.4.0'
 pod 'GoogleAds-IMA-iOS-SDK','3.19.1'
-
+pod 'TradPlusAdSDK/BaiduAdapter', '10.4.0'
+pod 'BaiduMobAdSDK','5.325'
 
 ##测试工具
 pod "TPMediationHelper",'1.1.4'
