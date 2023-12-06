@@ -41,6 +41,7 @@ pod 'Ads-CN', '5.7.1.1'
 pod 'TradPlusAdSDK/TPGoogleIMAAdapter', '10.4.0'
 pod 'GoogleAds-IMA-iOS-SDK','3.19.1'
 
+
 ##测试工具
 pod "TPMediationHelper",'1.1.4'
 end
