@@ -27,6 +27,15 @@
 
 @implementation TradPlusAdMediaVMAPViewController
 
+- (void)viewDidDisappear:(BOOL)animated
+{
+    [super viewDidDisappear:animated];
+    if(self.mediaVideoObject != nil)
+    {
+        [self.mediaVideoObject destory];
+    }
+}
+
 - (void)viewDidLayoutSubviews
 {
     [super viewDidLayoutSubviews];
