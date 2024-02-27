@@ -40,7 +40,7 @@
     //设置coppa
     int coppa = (int)[[NSUserDefaults standardUserDefaults] integerForKey:gTPCOPPAStorageKey];
     if (coppa != 0)
-        [GADMobileAds.sharedInstance.requestConfiguration tagForChildDirectedTreatment:coppa == 2];
+        [GADMobileAds sharedInstance].requestConfiguration.tagForChildDirectedTreatment = @(coppa == 2);
     
     GADRequest *request = [GADRequest request];
     

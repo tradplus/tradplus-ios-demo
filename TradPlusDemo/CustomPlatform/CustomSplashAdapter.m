@@ -38,10 +38,8 @@
         [request registerAdNetworkExtras:extras];
     }
     
-    UIInterfaceOrientation orientation = [UIApplication sharedApplication].statusBarOrientation;
-    
     __weak typeof(self) weakSelf = self;
-    [GADAppOpenAd loadWithAdUnitID:placementId request:request orientation:orientation completionHandler:^(GADAppOpenAd * _Nullable appOpenAd, NSError * _Nullable error) {
+    [GADAppOpenAd loadWithAdUnitID:placementId request:request completionHandler:^(GADAppOpenAd * _Nullable appOpenAd, NSError * _Nullable error) {
         if(error == nil)
         {
             weakSelf.appOpenAd = appOpenAd;
