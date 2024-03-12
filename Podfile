@@ -5,41 +5,55 @@ target 'TradPlusDemo' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-pod 'TradPlusAdSDK', '10.9.0'
-pod 'TradPlusAdSDK/FacebookAdapter', '10.9.0'
+#pod 'TradPlusAdSDK/BaiduAdapter', '10.9.0'
+#pod 'BaiduMobAdSDK','5.331'
+
+pod 'TradPlusAdSDK', '11.0.0'
+pod 'TradPlusAdSDK/FacebookAdapter', '11.0.0'
 pod 'FBAudienceNetwork','6.14.0'
-pod 'TradPlusAdSDK/AdMobAdapter', '10.9.0'
+pod 'TradPlusAdSDK/AdMobAdapter', '11.0.0'
 pod 'Google-Mobile-Ads-SDK','11.0.1'
-pod 'TradPlusAdSDK/UnityAdapter', '10.9.0'
-pod 'UnityAds','4.9.2'
-pod 'TradPlusAdSDK/AppLovinAdapter', '10.9.0'
-pod 'AppLovinSDK','12.1.0'
-pod 'TradPlusAdSDK/TapjoyAdapter', '10.9.0'
+pod 'TradPlusAdSDK/UnityAdapter', '11.0.0'
+pod 'UnityAds','4.9.3'
+pod 'TradPlusAdSDK/AppLovinAdapter', '11.0.0'
+pod 'AppLovinSDK','12.2.1'
+pod 'TradPlusAdSDK/TapjoyAdapter', '11.0.0'
 pod 'TapjoySDK','13.3.0'
-pod 'TradPlusAdSDK/VungleAdapter', '10.9.0'
+pod 'TradPlusAdSDK/VungleAdapter', '11.0.0'
 pod 'VungleAds', '7.2.2'
-pod 'TradPlusAdSDK/IronSourceAdapter', '10.9.0'
-pod 'IronSourceSDK','7.7.0'
-pod 'TradPlusAdSDK/AdColonyAdapter', '10.9.0'
+pod 'TradPlusAdSDK/IronSourceAdapter', '11.0.0'
+pod 'IronSourceSDK','7.8.0'
+pod 'TradPlusAdSDK/AdColonyAdapter', '11.0.0'
 pod 'AdColony','4.9.0'
-pod 'TradPlusAdSDK/InMobiAdapter', '10.9.0'
+pod 'TradPlusAdSDK/InMobiAdapter', '11.0.0'
 pod 'InMobiSDK' ,'10.6.4'
-pod 'TradPlusAdSDK/MintegralAdapter', '10.9.0'
-pod 'MintegralAdSDK' ,'7.5.6'
-pod 'MintegralAdSDK/All','7.5.6'
-pod 'TradPlusAdSDK/SmaatoAdapter', '10.9.0'
+pod 'TradPlusAdSDK/MintegralAdapter', '11.0.0'
+pod 'MintegralAdSDK' ,'7.5.7'
+pod 'MintegralAdSDK/All','7.5.7'
+pod 'TradPlusAdSDK/SmaatoAdapter', '11.0.0'
 pod 'smaato-ios-sdk', '22.7.0'
-pod 'TradPlusAdSDK/GDTMobAdapter', '10.9.0'
-pod 'GDTMobSDK', '4.14.63'
-pod 'TradPlusAdSDK/PangleAdapter', '10.9.0'
-pod 'Ads-Global', '5.7.0.8'
-pod 'TradPlusAdSDK/CSJAdapter', '10.9.0'
+pod 'TradPlusAdSDK/GDTMobAdapter', '11.0.0'
+pod 'GDTMobSDK', '4.14.70'
+pod 'TradPlusAdSDK/PangleAdapter', '11.0.0'
+pod 'Ads-Global', '5.8.0.7'
+pod 'TradPlusAdSDK/CSJAdapter', '11.0.0'
 pod 'Ads-CN', '5.9.1.1'
-pod 'TradPlusAdSDK/TPGoogleIMAAdapter', '10.9.0'
+pod 'TradPlusAdSDK/TPGoogleIMAAdapter', '11.0.0'
 pod 'GoogleAds-IMA-iOS-SDK','3.20.0'
-pod 'TradPlusAdSDK/BaiduAdapter', '10.9.0'
-pod 'BaiduMobAdSDK','5.331'
+pod 'TradPlusAdSDK/BaiduAdapter', '11.0.0'
+pod 'BaiduMobAdSDK','5.34'
 
 ##测试工具
 pod "TPMediationHelper",'1.1.5'
 end
+
+post_install do |installer|
+      installer.pods_project.targets.each do |target|
+          target.build_configurations.each do |config|
+          xcconfig_path = config.base_configuration_reference.real_path
+          xcconfig = File.read(xcconfig_path)
+          xcconfig_mod = xcconfig.gsub(/DT_TOOLCHAIN_DIR/, "TOOLCHAIN_DIR")
+          File.open(xcconfig_path, "w") { |file| file << xcconfig_mod }
+          end
+      end
+  end
