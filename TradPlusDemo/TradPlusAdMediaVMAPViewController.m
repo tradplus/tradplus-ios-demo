@@ -133,7 +133,7 @@
     }
 }
 
-/// 10.0.0新增 返回IMA RequestContentPause事件
+/// 10.0.0新增 返回IMA RequestContentResume事件
 - (void)tpMediaVideoAdRequestContentResume:(NSDictionary *)adInfo
 {
     if(self.contentPlayer != nil)
