@@ -9,7 +9,7 @@
 #import "TradPlusAdMediaVMAPViewController.h"
 #import <TradPlusAds/TradPlusAds.h>
 #import <AVFoundation/AVFoundation.h>
-#import "VideoPlayhead.h"
+#import <TPGoogleIMAAdapter/TPGooogleIMAPlayhead.h>
 
 @interface TradPlusAdMediaVMAPViewController ()<TradPlusADMediaVideoDelegate>
 
@@ -22,7 +22,6 @@
 @property (nonatomic,strong) AVPlayerItem *playerItem;
 @property (nonatomic,strong) AVPlayerLayer *contentPlayerLayer;
 @property (nonatomic,assign)BOOL didLayoutSubviews;
-@property (nonatomic,strong)VideoPlayhead *videoPlayhead;
 @end
 
 @implementation TradPlusAdMediaVMAPViewController
@@ -62,10 +61,6 @@
     self.mediaVideo = [[TradPlusAdMediaVideo alloc] init];
     self.mediaVideo.delegate = self;
     [self.mediaVideo setAdUnitID:@"1099F8439751CD1D9647C7D1942CDA3F"];
-    //设置 videoPlayhead
-    self.videoPlayhead = [[VideoPlayhead alloc] init];
-    self.mediaVideo.contentPlayhead = self.videoPlayhead;
-    self.videoPlayhead.contentPlayer = self.contentPlayer;
 }
 
 
@@ -87,7 +82,7 @@
 -(IBAction)loadAct:(id)sender
 {
     self.infoLabel.text = @"加载中...";
-    [self.mediaVideo loadAd:self.bgView viewController:self mute:NO];
+    [self.mediaVideo loadAdWithRootViewController:self mute:NO];
 }
 
 #pragma mark - TradPlusADMediaVideoDelegate
@@ -98,17 +93,32 @@
     self.infoLabel.text = @"加载成功并展示";
     NSLog(@"%s \n%@", __FUNCTION__ ,adInfo);
     self.mediaVideoObject  = [self.mediaVideo getReadyMediaVideoObject];
-    IMAAd *ad = self.mediaVideoObject.getCustomNetworkObj;
-    if(ad != nil)
+    id contentPlayhead = self.mediaVideoObject.contentPlayhead;
+    if(contentPlayhead != nil && [contentPlayhead isKindOfClass:[TPGooogleIMAPlayhead class]])
     {
-        NSLog(@"ad.duration %@",@(ad.duration));
-        NSLog(@"ad.adPodInfo.totalAds %@",@(ad.adPodInfo.totalAds));
+        TPGooogleIMAPlayhead *tpContentPlayhead = contentPlayhead;
+        __weak typeof(self) weakSelf = self;
+        tpContentPlayhead.currentTimeCallBack = ^NSTimeInterval{
+            return CMTimeGetSeconds(weakSelf.contentPlayer.currentTime);
+        };
     }
-    IMAAdsManager *manager = self.mediaVideoObject.getAdsManager;
-    if(manager != nil)
+    if(self.mediaVideoObject.adView != nil)
     {
-        NSLog(@"manager.adCuePoints %@",manager.adCuePoints);
+        self.mediaVideoObject.adView.hidden = NO;
+        self.mediaVideoObject.adView.frame = self.bgView.bounds;
+        [self.bgView addSubview:self.mediaVideoObject.adView];
     }
+//    IMAAd *ad = self.mediaVideoObject.getCustomNetworkObj;
+//    if(ad != nil)
+//    {
+//        NSLog(@"ad.duration %@",@(ad.duration));
+//        NSLog(@"ad.adPodInfo.totalAds %@",@(ad.adPodInfo.totalAds));
+//    }
+//    IMAAdsManager *manager = self.mediaVideoObject.getAdsManager;
+//    if(manager != nil)
+//    {
+//        NSLog(@"manager.adCuePoints %@",manager.adCuePoints);
+//    }
 }
 
 - (void)tpMediaVideoAdStart:(NSDictionary *)adInfo

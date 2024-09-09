@@ -51,7 +51,7 @@
 {
     //绑定容器并加载
     self.infoLabel.text = @"加载中...";
-    [self.mediaVideo loadAd:self.bgView viewController:self mute:NO];
+    [self.mediaVideo loadAdWithRootViewController:self mute:NO];
 }
 
 - (IBAction)showAct:(id)sender
@@ -62,7 +62,13 @@
         //获取加载完成的 mediaVideoAdObject 对象
         self.mediaVideoAdObject = [self.mediaVideo getReadyMediaVideoObject];
         //展示广告
-        [self.mediaVideoAdObject startWithViewController:self sceneId:nil];
+        if(self.mediaVideoAdObject.adView != nil)
+        {
+            self.mediaVideoAdObject.adView.hidden = NO;
+            self.mediaVideoAdObject.adView.frame = self.bgView.bounds;
+            [self.bgView addSubview:self.mediaVideoAdObject.adView];
+            [self.mediaVideoAdObject startWithSceneId:nil];
+        }
     }
 }
 
@@ -100,9 +106,7 @@
         [weakSelf nextAct];
     };
     //预载容器需要添加到屏幕上才能进行加载
-    [MediaVideoManager sharedInstance].adView = [[UIView alloc] init];
-    [self.view addSubview:[MediaVideoManager sharedInstance].adView];
-    [[MediaVideoManager sharedInstance].mediaVideo loadAd:[MediaVideoManager sharedInstance].adView viewController:self mute:NO];
+    [[MediaVideoManager sharedInstance].mediaVideo loadAdWithRootViewController:self mute:NO];
 }
 
 - (void)nextAct

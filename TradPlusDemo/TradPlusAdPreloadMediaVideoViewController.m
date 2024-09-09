@@ -33,9 +33,13 @@
         self.mediaVideoObject = [[MediaVideoManager sharedInstance].mediaVideo getReadyMediaVideoObject];
         if(self.mediaVideoObject != nil)
         {
-            [MediaVideoManager sharedInstance].adView.frame = self.bgView.bounds;
-            [self.bgView addSubview:[MediaVideoManager sharedInstance].adView];
-            [self.mediaVideoObject startWithViewController:self sceneId:nil];
+            if(self.mediaVideoObject.adView != nil)
+            {
+                self.mediaVideoObject.adView.hidden = NO;
+                self.mediaVideoObject.adView.frame = self.bgView.bounds;
+                [self.bgView addSubview:self.mediaVideoObject.adView];
+                [self.mediaVideoObject startWithSceneId:nil];
+            }
         }
     }
 }
@@ -52,7 +56,7 @@
     
     __weak typeof(self) weakSelf = self;
     [MediaVideoManager sharedInstance].playFinish = ^{
-        [[MediaVideoManager sharedInstance].adView removeFromSuperview];
+        [weakSelf.mediaVideoObject destory];
         [weakSelf.contentPlayer play];
     };
 }

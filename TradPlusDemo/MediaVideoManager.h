@@ -15,7 +15,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 +(MediaVideoManager *)sharedInstance;
 @property (nonatomic,readonly)TradPlusAdMediaVideo *mediaVideo;
-@property (nonatomic,strong)UIView *adView;
 
 @property (nonatomic,copy) void (^loadFinish)(void);
 @property (nonatomic,copy) void (^starPlay)(void);
