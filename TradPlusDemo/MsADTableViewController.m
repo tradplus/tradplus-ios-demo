@@ -8,8 +8,6 @@
 
 #import "MsADTableViewController.h"
 #import "TradPlusAdNativeViewController.h"
-#import "TradPlusAdNativeBannerViewController.h"
-#import "TradPlusAdNativeSplashViewController.h"
 #import "TradPlusAdBannerViewController.h"
 #import "TradPlusAdInterstitialViewController.h"
 #import "TradPlusAdRewardedViewController.h"
@@ -52,7 +50,7 @@
     rect.size.height = 20;
     self.tableView.tableFooterView = [[UIView alloc] initWithFrame:rect];
     
-    self.titleArray = @[@"高级原生",@"原生开屏",@"原生横幅",@"横幅",@"插屏",@"激励视频",@"开屏",@"插播广告",@"插播广告(VMAP)",@"原生视频贴片",@"原生Draw信息流",@"高级原生(自定义缓存数)",@"积分墙",@"列表中展示原生广告"];
+    self.titleArray = @[@"高级原生",@"横幅",@"插屏",@"激励视频",@"开屏",@"插播广告",@"插播广告(VMAP)",@"原生视频贴片",@"原生Draw信息流",@"高级原生(自定义缓存数)",@"积分墙",@"列表中展示原生广告"];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -113,67 +111,57 @@
                 detailViewController = [[TradPlusAdNativeViewController alloc] initWithNibName:@"TradPlusAdNativeViewController" bundle:nil];
                 break;
             }
-            case 1://原生开屏
-            {
-                detailViewController = [[TradPlusAdNativeSplashViewController alloc] initWithNibName:@"TradPlusAdNativeSplashViewController" bundle:nil];
-                break;
-            }
-            case 2://原生开屏
-            {
-                detailViewController = [[TradPlusAdNativeBannerViewController alloc] initWithNibName:@"TradPlusAdNativeBannerViewController" bundle:nil];
-                break;
-            }
-            case 3://横幅
+            case 1://横幅
             {
                 detailViewController = [[TradPlusAdBannerViewController alloc] initWithNibName:@"TradPlusAdBannerViewController" bundle:nil];
                 break;
             }
-            case 4://插屏
+            case 2://插屏
             {
                 detailViewController = [[TradPlusAdInterstitialViewController alloc] initWithNibName:@"TradPlusAdInterstitialViewController" bundle:nil];
                 break;
             }
-            case 5://激励视频
+            case 3://激励视频
             {
                 detailViewController = [[TradPlusAdRewardedViewController alloc] initWithNibName:@"TradPlusAdRewardedViewController" bundle:nil];
                 break;
             }
-            case 6://开屏
+            case 4://开屏
             {
                 detailViewController = [[TradPlusAdSplashViewController alloc] initWithNibName:@"TradPlusAdSplashViewController" bundle:nil];
                 break;
             }
-            case 7://插播广告 v9.0.0新增
+            case 5://插播广告 v9.0.0新增
             {
                 detailViewController = [[TradPlusAdMediaVideoViewController alloc] initWithNibName:@"TradPlusAdMediaVideoViewController" bundle:nil];
                 break;
             }
-            case 8://插播广告(VMAP) v10.0.0新增
+            case 6://插播广告(VMAP) v10.0.0新增
             {
                 detailViewController = [[TradPlusAdMediaVMAPViewController alloc] initWithNibName:@"TradPlusAdMediaVMAPViewController" bundle:nil];
                 break;
             }
-            case 9://原生视频贴片 v6.8.0新增
+            case 7://原生视频贴片 v6.8.0新增
             {
                 detailViewController = [[TradPlusAdNativePasterViewController alloc] initWithNibName:@"TradPlusAdNativePasterViewController" bundle:nil];
                 break;
             }
-            case 10://原生Draw信息流 v6.9.0新增
+            case 8://原生Draw信息流 v6.9.0新增
             {
                 detailViewController = [[TradPlusAdNativeDrawViewController alloc] initWithNibName:@"TradPlusAdNativeDrawViewController" bundle:nil];
                 break;
             }
-            case 11://高级原生(自定义缓存数) v7.1.0新增
+            case 9://高级原生(自定义缓存数) v7.1.0新增
             {
                 detailViewController = [[TradPlusAdNativeCustomCountViewController alloc] initWithNibName:@"TradPlusAdNativeCustomCountViewController" bundle:nil];
                 break;
             }
-            case 12://积分墙
+            case 10://积分墙
             {
                 detailViewController = [[TradPlusAdOfferwallViewController alloc] initWithNibName:@"TradPlusAdOfferwallViewController" bundle:nil];
                 break;
             }
-            case 13://列表中展示原生广告
+            case 11://列表中展示原生广告
             {
                 detailViewController = [[TradPlusAdNativeInListViewController alloc] initWithNibName:@"TradPlusAdNativeInListViewController" bundle:nil];
                 break;
