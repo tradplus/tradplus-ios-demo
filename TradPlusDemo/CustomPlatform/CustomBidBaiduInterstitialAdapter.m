@@ -8,6 +8,7 @@
 @interface CustomBidBaiduInterstitialAdapter ()<BaiduMobAdExpressFullScreenVideoDelegate>
 
 @property (nonatomic,copy) NSString *appId;
+@property (nonatomic, assign) BOOL didWin;
 @property (nonatomic,strong) BaiduMobAdExpressFullScreenVideo *expressFullscreenVideoAd;
 @end
 
@@ -27,11 +28,33 @@
         //竞价成功后的加载流程
         [self loadAdC2SBidding];
     }
+    else if([event isEqualToString:@"C2SLoss"])
+    {
+        //竞价失败返回
+        [self sendC2SLoss:config];
+    }
     else
     {
         return NO;
     }
     return YES;
+}
+
+- (void)sendC2SLoss:(NSDictionary *)config
+{
+    if(self.didWin)
+    {
+        return;
+    }
+    //向三方上报loss
+//    NSString *topPirce = config[@"topPirce"];//最高价
+//    NSString *topPirce_cny = config[@"topPirce_cny"];//最高价人民币
+}
+
+- (void)sendC2SWin
+{
+    self.didWin = YES;
+    //向三方上报win
 }
 
 #pragma mark - C2SBidding
@@ -153,6 +176,7 @@
 - (void)fullScreenVideoAdDidStarted:(BaiduMobAdExpressFullScreenVideo *)video
 {
     //展示成功
+    [self sendC2SWin];//上报win
     [self AdShow];
 }
 
