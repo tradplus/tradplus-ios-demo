@@ -12,7 +12,7 @@
 #import <TradPlusAds/MSLogging.h>
 #import <TradPlusAds/MsCommon.h>
 #import <AppTrackingTransparency/AppTrackingTransparency.h>
-
+#import <FBAudienceNetwork/FBAudienceNetwork.h>
 
 @interface AppDelegate ()<TradPlusADSplashDelegate,TradPlusAdImpressionDelegate>
 
@@ -39,6 +39,13 @@
     }];
     //v8.5.0+全局展示回调
     [TradPlus sharedInstance].impressionDelegate = self;
+    
+    //添加meta测试设备
+    [FBAdSettings setLogLevel:FBAdLogLevelLog];
+    NSString *deviceHash = [FBAdSettings testDeviceHash];
+    MSLogTrace(@"Meta Test Device Hash: %@", deviceHash);
+    [FBAdSettings addTestDevice:deviceHash];
+    
     self.isFirstSplashAd = YES;
     [self initSplashAd];
     [self loadSplashAd];
