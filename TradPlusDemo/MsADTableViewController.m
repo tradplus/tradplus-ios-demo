@@ -19,6 +19,7 @@
 #import "TradPlusAdNativeInListViewController.h"
 #import "TradPlusAdMediaVideoViewController.h"
 #import "TradPlusAdMediaVMAPViewController.h"
+#import "TPBannerInListViewController.h"
 #import <TPMediationHelper/TPMediationHelper.h>
 
 @interface MsADTableViewController ()
@@ -50,7 +51,7 @@
     rect.size.height = 20;
     self.tableView.tableFooterView = [[UIView alloc] initWithFrame:rect];
     
-    self.titleArray = @[@"高级原生",@"横幅",@"插屏",@"激励视频",@"开屏",@"插播广告",@"插播广告(VMAP)",@"原生视频贴片",@"原生Draw信息流",@"高级原生(自定义缓存数)",@"积分墙",@"列表中展示原生广告"];
+    self.titleArray = @[@"高级原生",@"横幅",@"插屏",@"激励视频",@"开屏",@"插播广告",@"插播广告(VMAP)",@"原生视频贴片",@"原生Draw信息流",@"高级原生(自定义缓存数)",@"积分墙",@"列表中展示横幅广告",@"列表中展示原生广告"];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -161,7 +162,12 @@
                 detailViewController = [[TradPlusAdOfferwallViewController alloc] initWithNibName:@"TradPlusAdOfferwallViewController" bundle:nil];
                 break;
             }
-            case 11://列表中展示原生广告
+            case 11://列表中展示横幅广告
+            {
+                detailViewController = [[TPBannerInListViewController alloc] init];
+                break;
+            }
+            case 12://列表中展示原生广告
             {
                 detailViewController = [[TradPlusAdNativeInListViewController alloc] initWithNibName:@"TradPlusAdNativeInListViewController" bundle:nil];
                 break;

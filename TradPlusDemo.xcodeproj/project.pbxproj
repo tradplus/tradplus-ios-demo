@@ -46,6 +46,7 @@
 		5A95FCD528B77BE200FAF758 /* TPNativeInListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A95FCD328B77BE200FAF758 /* TPNativeInListView.xib */; };
 		5A98A01B26CB58D200C11B85 /* TradPlusAdNativeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A98A01926CB58D200C11B85 /* TradPlusAdNativeViewController.m */; };
 		5A98A01C26CB58D200C11B85 /* TradPlusAdNativeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A98A01A26CB58D200C11B85 /* TradPlusAdNativeViewController.xib */; };
+		5AAAE0A42FE28ED8001E9B18 /* TPBannerInListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AAAE0A32FE28ED8001E9B18 /* TPBannerInListViewController.m */; };
 		5ABF4AE32C8EF3B400C646B1 /* TradPlusAdMediaVMAPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ABF4AE12C8EF3B400C646B1 /* TradPlusAdMediaVMAPViewController.m */; };
 		5ABF4AE42C8EF3B400C646B1 /* TradPlusAdMediaVMAPViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5ABF4AE22C8EF3B400C646B1 /* TradPlusAdMediaVMAPViewController.xib */; };
 		5ACB75252711AC3500FC9735 /* CustomAdMobNativeAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ACB751D2711AC3500FC9735 /* CustomAdMobNativeAdapter.m */; };
@@ -138,6 +139,8 @@
 		5A98A01826CB58D200C11B85 /* TradPlusAdNativeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TradPlusAdNativeViewController.h; sourceTree = "<group>"; };
 		5A98A01926CB58D200C11B85 /* TradPlusAdNativeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TradPlusAdNativeViewController.m; sourceTree = "<group>"; };
 		5A98A01A26CB58D200C11B85 /* TradPlusAdNativeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TradPlusAdNativeViewController.xib; sourceTree = "<group>"; };
+		5AAAE0A22FE28ED8001E9B18 /* TPBannerInListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TPBannerInListViewController.h; sourceTree = "<group>"; };
+		5AAAE0A32FE28ED8001E9B18 /* TPBannerInListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TPBannerInListViewController.m; sourceTree = "<group>"; };
 		5ABF4AE02C8EF3B400C646B1 /* TradPlusAdMediaVMAPViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TradPlusAdMediaVMAPViewController.h; sourceTree = "<group>"; };
 		5ABF4AE12C8EF3B400C646B1 /* TradPlusAdMediaVMAPViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TradPlusAdMediaVMAPViewController.m; sourceTree = "<group>"; };
 		5ABF4AE22C8EF3B400C646B1 /* TradPlusAdMediaVMAPViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TradPlusAdMediaVMAPViewController.xib; sourceTree = "<group>"; };
@@ -230,42 +233,44 @@
 		048B0217248BF2600003F53E /* TradPlusDemo */ = {
 			isa = PBXGroup;
 			children = (
-				5A19D462289CC78D0054CB52 /* TradPlusAdOfferwallViewController.h */,
-				5A19D463289CC78D0054CB52 /* TradPlusAdOfferwallViewController.m */,
-				5A19D464289CC78D0054CB52 /* TradPlusAdOfferwallViewController.xib */,
+				048B0243248BF4540003F53E /* AppDelegate.h */,
+				048B023A248BF4540003F53E /* AppDelegate.m */,
+				5A7FF42E28F169EE00CDB172 /* AutoLayoutNatvie */,
+				5AF1AC6F2705B954006E2645 /* CustomPlatform */,
+				048B0229248BF2650003F53E /* Info.plist */,
+				5A63CA5E29B0546100F13C07 /* MediaVideoManager.h */,
+				5A63CA5F29B0546100F13C07 /* MediaVideoManager.m */,
+				048B023E248BF4540003F53E /* MsADTableViewController.h */,
+				048B0245248BF4540003F53E /* MsADTableViewController.m */,
+				048B0280248C01010003F53E /* Native */,
+				5A1508CE27950DEC00952903 /* NativeDraw */,
+				5AD5DE05277BFABB005BAA07 /* NativePaster */,
+				5AAAE0A22FE28ED8001E9B18 /* TPBannerInListViewController.h */,
+				5AAAE0A32FE28ED8001E9B18 /* TPBannerInListViewController.m */,
 				5AFA31EF26F5B0E800F21A36 /* TradPlusAdBannerViewController.h */,
 				5AFA31F126F5B0E800F21A36 /* TradPlusAdBannerViewController.m */,
 				5AFA31F026F5B0E800F21A36 /* TradPlusAdBannerViewController.xib */,
 				5AF1AC602705B830006E2645 /* TradPlusAdInterstitialViewController.h */,
-				5AF1AC5F2705B830006E2645 /* TradPlusAdInterstitialViewController.xib */,
 				5AF1AC612705B830006E2645 /* TradPlusAdInterstitialViewController.m */,
-				5AF1AC6B2705B91B006E2645 /* TradPlusAdSplashViewController.h */,
-				5AF1AC6A2705B91B006E2645 /* TradPlusAdSplashViewController.m */,
-				5AF1AC6C2705B91B006E2645 /* TradPlusAdSplashViewController.xib */,
-				5AF1AC652705B8A7006E2645 /* TradPlusAdRewardedViewController.h */,
-				5AF1AC662705B8A7006E2645 /* TradPlusAdRewardedViewController.m */,
-				5AF1AC642705B8A7006E2645 /* TradPlusAdRewardedViewController.xib */,
-				5A7FF42E28F169EE00CDB172 /* AutoLayoutNatvie */,
-				5A1508CE27950DEC00952903 /* NativeDraw */,
-				048B0280248C01010003F53E /* Native */,
-				5AD5DE05277BFABB005BAA07 /* NativePaster */,
-				5AF1AC6F2705B954006E2645 /* CustomPlatform */,
-				048B0243248BF4540003F53E /* AppDelegate.h */,
-				048B023A248BF4540003F53E /* AppDelegate.m */,
-				048B023E248BF4540003F53E /* MsADTableViewController.h */,
-				048B0245248BF4540003F53E /* MsADTableViewController.m */,
-				048B0229248BF2650003F53E /* Info.plist */,
-				5ABF4AE02C8EF3B400C646B1 /* TradPlusAdMediaVMAPViewController.h */,
-				5ABF4AE12C8EF3B400C646B1 /* TradPlusAdMediaVMAPViewController.m */,
-				5ABF4AE22C8EF3B400C646B1 /* TradPlusAdMediaVMAPViewController.xib */,
+				5AF1AC5F2705B830006E2645 /* TradPlusAdInterstitialViewController.xib */,
 				5A63CA5929B0445C00F13C07 /* TradPlusAdMediaVideoViewController.h */,
 				5A63CA5A29B0445C00F13C07 /* TradPlusAdMediaVideoViewController.m */,
 				5A63CA5B29B0445C00F13C07 /* TradPlusAdMediaVideoViewController.xib */,
+				5ABF4AE02C8EF3B400C646B1 /* TradPlusAdMediaVMAPViewController.h */,
+				5ABF4AE12C8EF3B400C646B1 /* TradPlusAdMediaVMAPViewController.m */,
+				5ABF4AE22C8EF3B400C646B1 /* TradPlusAdMediaVMAPViewController.xib */,
+				5A19D462289CC78D0054CB52 /* TradPlusAdOfferwallViewController.h */,
+				5A19D463289CC78D0054CB52 /* TradPlusAdOfferwallViewController.m */,
+				5A19D464289CC78D0054CB52 /* TradPlusAdOfferwallViewController.xib */,
 				5A63CA6129B0579600F13C07 /* TradPlusAdPreloadMediaVideoViewController.h */,
 				5A63CA6229B0579600F13C07 /* TradPlusAdPreloadMediaVideoViewController.m */,
 				5A63CA6329B0579600F13C07 /* TradPlusAdPreloadMediaVideoViewController.xib */,
-				5A63CA5E29B0546100F13C07 /* MediaVideoManager.h */,
-				5A63CA5F29B0546100F13C07 /* MediaVideoManager.m */,
+				5AF1AC652705B8A7006E2645 /* TradPlusAdRewardedViewController.h */,
+				5AF1AC662705B8A7006E2645 /* TradPlusAdRewardedViewController.m */,
+				5AF1AC642705B8A7006E2645 /* TradPlusAdRewardedViewController.xib */,
+				5AF1AC6B2705B91B006E2645 /* TradPlusAdSplashViewController.h */,
+				5AF1AC6A2705B91B006E2645 /* TradPlusAdSplashViewController.m */,
+				5AF1AC6C2705B91B006E2645 /* TradPlusAdSplashViewController.xib */,
 			);
 			path = TradPlusDemo;
 			sourceTree = "<group>";
@@ -492,9 +497,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-TradPlusDemo/Pods-TradPlusDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-TradPlusDemo/Pods-TradPlusDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -509,9 +518,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-TradPlusDemo/Pods-TradPlusDemo-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-TradPlusDemo/Pods-TradPlusDemo-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -577,6 +590,7 @@
 				5A63CA6029B0546100F13C07 /* MediaVideoManager.m in Sources */,
 				5A7FF42D28F161AE00CDB172 /* CustomBidBaiduInterstitialAdapter.m in Sources */,
 				5ACB75252711AC3500FC9735 /* CustomAdMobNativeAdapter.m in Sources */,
+				5AAAE0A42FE28ED8001E9B18 /* TPBannerInListViewController.m in Sources */,
 				5ABF4AE32C8EF3B400C646B1 /* TradPlusAdMediaVMAPViewController.m in Sources */,
 				5A7FF42C28F161AE00CDB172 /* CustomBidInMobiInterstitialAdapter.m in Sources */,
 				5A63CA5C29B0445C00F13C07 /* TradPlusAdMediaVideoViewController.m in Sources */,
