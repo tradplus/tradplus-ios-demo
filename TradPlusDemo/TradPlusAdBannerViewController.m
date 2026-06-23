@@ -155,4 +155,15 @@
 {
     NSLog(@"%s \n%@", __FUNCTION__ ,adInfo);
 }
+///Banner 广告展示尺寸变化回调，适用于 SDK 检测到 Banner 尺寸变化的场景。
+///该回调主要用于 Gam 多尺寸 validAdSizes 或 google Gam Adaptive Banner 返回实际广告尺寸后，开发者根据 size 更新 TradPlusAdBanner 的 frame，避免展示不全或留白。
+///如业务没有动态调整 Banner 容器尺寸的需求，可无需实现。
+- (void)tpBannerAdSizeDidChange:(CGSize)size adInfo:(NSDictionary *)adInfo
+{
+    NSLog(@"%s \n%@", __FUNCTION__ ,adInfo);
+    CGRect frame = CGRectMake(0, 0, size.width, size.height);
+    frame.origin.x = (CGRectGetWidth(self.adView.bounds) - size.width) / 2.0;
+    self.banner.frame = frame;
+}
+
 @end
