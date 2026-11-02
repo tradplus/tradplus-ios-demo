@@ -39,6 +39,8 @@
     }];
     //v8.5.0+全局展示回调
     [TradPlus sharedInstance].impressionDelegate = self;
+    //打开全部日志
+    [TradPlus setLogLevel:MSLogLevelAll];
     
     //添加meta测试设备
     [FBAdSettings setLogLevel:FBAdLogLevelLog];
